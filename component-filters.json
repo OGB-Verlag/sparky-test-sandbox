@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "container"
     ]
   },
   {
@@ -17,7 +18,8 @@
       "button",
       "title",
       "embed",
-      "wrappercreation"
+      "wrappercreation",
+      "container"
     ]
   },
   {
@@ -31,7 +33,8 @@
       "cards",
       "columns",
       "embed",
-      "wrappercreation"
+      "wrappercreation",
+      "container"
     ]
   },
   {
@@ -39,5 +42,13 @@
     "components": [
       "card"
     ]
+  },
+    { 
+  "id" : "div",
+  "components": null
+  },
+  {
+    "id":"container",
+    "components" : []
   }
 ]
