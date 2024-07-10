@@ -5,11 +5,11 @@
  */
 
 const loadScript = (url, callback, type) => {
-  const head = document.querySelector("head");
-  const script = document.createElement("script");
+  const head = document.querySelector('head');
+  const script = document.createElement('script');
   script.src = url;
   if (type) {
-    script.setAttribute("type", type);
+    script.setAttribute('type', type);
   }
   script.onload = callback;
   head.append(script);
@@ -17,7 +17,7 @@ const loadScript = (url, callback, type) => {
 };
 
 const getDefaultEmbed = (
-  url
+  url,
 ) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
       <iframe src="${url.href}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
         scrolling="no" allow="encrypted-media" title="Content from ${url.hostname}" loading="lazy">
@@ -26,10 +26,10 @@ const getDefaultEmbed = (
 
 const embedYoutube = (url, autoplay) => {
   const usp = new URLSearchParams(url.search);
-  const suffix = autoplay ? "&muted=1&autoplay=1" : "";
-  let vid = usp.get("v") ? encodeURIComponent(usp.get("v")) : "";
+  const suffix = autoplay ? '&muted=1&autoplay=1' : '';
+  let vid = usp.get('v') ? encodeURIComponent(usp.get('v')) : '';
   const embed = url.pathname;
-  if (url.origin.includes("youtu.be")) {
+  if (url.origin.includes('youtu.be')) {
     [, vid] = url.pathname.split("/");
   }
   const embedHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
