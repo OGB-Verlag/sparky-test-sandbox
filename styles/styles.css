@@ -33,6 +33,45 @@ textarea:focus {
 
 :root {
   /* colors */
+  --primary: #E2001A;
+  --primary-inverted: #FFDDDD;
+  --white: #FFFFFF;
+  --black: #000000;
+  --editor-warning: #03CFFC;
+  --interactive-state-hover: #C60000;
+  --title: #E2001A;
+  --default-color: #282829; /* default text on the page */
+  --default-inverted: #FFFFFF; /*  default text color used on dark background */
+  --topic: #000000; /*  herostory / pagelist / search / article topic */
+  --preview: #6D7278; /*  herostory / pagelist / search preview text */
+  --details: #8A898E; /*  herostory / pagelist date / author, image details */
+  --alternative-color: #E2001A; /*  article / rte alternative color */
+  --highlight-light: #FFFFFF88;
+  --highlight-dark: #33333388;
+  --details-highlight: #007FC0; /*  for page-list portrait details button */
+
+  --navigation-active: #e2001a;
+  --navigation-separator: #afb0b1;
+  --navigation-bg: #e6e6e6;
+  --navigation-bg-active: #ffffff;
+  --navigation-bg-hover: #F1F1F1;
+  --burger-menu-icon-bar: #474849;
+
+  --button-text: #FFFFFF;
+
+  --gray-1: #282829;
+  --gray-2: #6D7278;
+  --gray-3: #8A898E;
+  --gray-4: #AFAFB0;
+  --gray-5: #F5F8FA;
+
+  --navigation-active: #e2001a;
+  --navigation-separator: #afb0b1;
+  --navigation-bg: #e6e6e6;
+  --navigation-bg-active: #ffffff;
+  --navigation-bg-hover: #F1F1F1;
+  --burger-menu-icon-bar: #474849;
+  --button-text: #FFFFFF;
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --background-color: white;
@@ -44,9 +83,7 @@ textarea:focus {
   --tw-text-opacity: 1;
   --darkcharcoal: #333333;
   --darkgrey: #666666;
-  --white: #ffffff;
   --orange: #F26841;
-  --black: #000000;
   --grey: #808080;
   --darkblack: #030303;
   --green: #41C66E;
@@ -87,7 +124,7 @@ textarea:focus {
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family: 'Roboto Mono; menlo, consolas, 'Liberation Mono; monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
