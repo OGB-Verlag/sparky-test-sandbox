@@ -252,13 +252,13 @@ main pre {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: var(--navigation-active);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--link-hover-color);
+  color: var(--interactive-state-hover);
 }
 
 /* buttons */
@@ -275,7 +275,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   color: var(--background-color);
-  background-color: var(--link-color);
+  background-color: var(--primary);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -287,7 +287,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--navigation-active);
   cursor: pointer;
 }
 
