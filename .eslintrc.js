@@ -4,10 +4,7 @@ module.exports = {
     'airbnb-base',
     'plugin:json/recommended',
     'plugin:xwalk/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
   ],
-  plugins: ['prettier', 'html'],
   env: {
     browser: true,
   },
@@ -18,7 +15,6 @@ module.exports = {
     requireConfigFile: false,
   },
   rules: {
-    'prettier/prettier': 'error',
     'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
     'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
     'no-param-reassign': [2, { props: false }], // allow modifying properties of param
