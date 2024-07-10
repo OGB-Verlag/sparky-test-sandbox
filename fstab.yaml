@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p136111-e1367719.adobeaemcloud.com/bin/franklin.delivery/OGB-Verlag/sparky-test-sandbox/main"
+    url: "https://author-p136111-e1367719.adobeaemcloud.com/bin/franklin.delivery/OGB-Verlag/sparky-test-sandbox/teo"
     type: "markup"
     suffix: ".html"
