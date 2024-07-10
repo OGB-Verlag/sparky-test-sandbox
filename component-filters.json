@@ -16,7 +16,8 @@
       "image",
       "button",
       "title",
-      "embed"
+      "embed",
+      "wrappercreation"
     ]
   },
   {
@@ -29,7 +30,8 @@
       "hero",
       "cards",
       "columns",
-      "embed"
+      "embed",
+      "wrappercreation"
     ]
   },
   {
