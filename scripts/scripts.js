@@ -34,11 +34,11 @@ export function moveAttributes(from, to, attributes) {
 }
 
 export function renderHelper(data, template, callBack) {
-  var dom = document.createElement("div");
+  var dom = document.createElement('div');
   dom.innerHTML = template;
-  var loopEl = dom.getElementsByClassName("forName");
+  var loopEl = dom.getElementsByClassName('forName');
   Array.prototype.slice.call(loopEl).forEach(function (eachLoop) {
-    var templates = "";
+    var templates = '';
     var localtemplate = eachLoop.innerHTML;
     for (var key in data) {
       if (Object.hasOwnProperty.call(data, key)) {
@@ -47,18 +47,18 @@ export function renderHelper(data, template, callBack) {
         var dataItem = callBack ? callBack(element, key) : element;
         var keys = Object.keys(dataItem);
         var copyTemplate = localtemplate;
-        copyTemplate.split("{").forEach(function (ecahKey) {
-          var key = ecahKey.split("}")[0];
-          var keys = key.split(".");
+        copyTemplate.split('{').forEach(function (ecahKey) {
+          var key = ecahKey.split('}')[0];
+          var keys = key.split('.');
           var value = dataItem;
           keys.forEach(function (key) {
             if (value && value.hasOwnProperty(key)) {
               value = value[key];
             } else {
-              value = "";
+              value = '';
             }
           });
-          copyTemplate = copyTemplate.replace("{" + key + "}", value);
+          copyTemplate = copyTemplate.replace('{' + key + '}', value);
         });
         templates += copyTemplate;
         // });
@@ -72,18 +72,18 @@ export function renderHelper(data, template, callBack) {
 export function fetchAPI(method, url, data) {
   return new Promise(async function (resolve, reject) {
     try {
-      if (method === "GET") {
+      if (method === 'GET') {
         const resp = await fetch(url);
         resolve(resp);
-      } else if (method === "POST") {
+      } else if (method === 'POST') {
         data.headerJson = data.headerJson || {
-          "Content-Type": "application/json",
-        }
-        data.headerJson["Content-Type"] = data.headerJson["Content-Type"] ? data.headerJson["Content-Type"] : "application/json";
+          'Content-Type': 'application/json',
+        };
+        data.headerJson['Content-Type'] = data.headerJson['Content-Type'] ? data.headerJson['Content-Type'] : 'application/json';
         const request = new Request(url, {
-          method: "POST",
+          method: 'POST',
           body: JSON.stringify(data.requestJson),
-          headers: data.headerJson
+          headers: data.headerJson,
         });
         const response = await fetch(request);
         const json = await response.json();
