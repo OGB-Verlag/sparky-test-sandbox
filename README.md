@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--sparky-test-sandbox--OGB-Verlag.hlx.page/
-- Live: https://main--sparky-test-sandbox--OGB-Verlag.hlx.live/
+- Preview: https://teo--sparky-test-sandbox--OGB-Verlag.hlx.page/
+- Live: https://teo--sparky-test-sandbox--OGB-Verlag.hlx.live/
 
 ## Installation
 
