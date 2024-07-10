@@ -69,6 +69,33 @@ export function renderHelper(data, template, callBack) {
   return dom.innerHTML;
 }
 
+export function fetchAPI(method, url, data) {
+  return new Promise(async function (resolve, reject) {
+    try {
+      if (method === "GET") {
+        const resp = await fetch(url);
+        resolve(resp);
+      } else if (method === "POST") {
+        data.headerJson = data.headerJson || {
+          "Content-Type": "application/json",
+        }
+        data.headerJson["Content-Type"] = data.headerJson["Content-Type"] ? data.headerJson["Content-Type"] : "application/json";
+        const request = new Request(url, {
+          method: "POST",
+          body: JSON.stringify(data.requestJson),
+          headers: data.headerJson
+        });
+        const response = await fetch(request);
+        const json = await response.json();
+        resolve({ responseJson: json });
+      }
+    } catch (error) {
+      console.warn(error);
+      reject(error);
+    }
+  });
+}
+
 /**
  * Move instrumentation attributes from a given element to another given element.
  * @param {Element} from the element to copy attributes from
