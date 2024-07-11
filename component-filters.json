@@ -43,6 +43,20 @@
       "card"
     ]
   },
+    {
+    "id": "text",
+    "rte": {
+      "format": ["bold", "italic", "underline", "strikethrough"],
+      "alignment": ["left", "center", "right"],
+      "indentation": ["indent", "outdent"],
+      "sr_script": ["superscript", "subscript"],
+      "list": ["bullist", "numlist"],
+      "insert": ["link", "image", "table"],
+      "advanced": [],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
     { 
   "id" : "div",
   "components": null
