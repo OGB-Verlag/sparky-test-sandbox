@@ -308,6 +308,21 @@ button.secondary {
   color: var(--text-color);
 }
 
+.button-align-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.button-align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 main img {
   max-width: 100%;
   width: auto;

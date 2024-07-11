@@ -155,11 +155,12 @@
           }
         ]
       },
-            {
+        {
         "component": "select",
         "name": "classes",
         "value": "",
-        "label": "Style",
+        "label": "Ausrichtung",
+        "description": "Ausrichtung des Buttons",
         "valueType": "string",
         "options": [
           {
