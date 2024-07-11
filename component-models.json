@@ -157,7 +157,7 @@
       },
         {
         "component": "select",
-        "name": "classes",
+        "name": "style",
         "value": "",
         "label": "Ausrichtung",
         "description": "Ausrichtung des Buttons",
