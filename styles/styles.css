@@ -35,6 +35,10 @@ textarea:focus {
   /* colors */
   --primary: #E2001A;
   --primary-inverted: #FFDDDD;
+
+  --primary-sozialstaat: #45095a;
+  --primary-inverted-sozialstaat: #FFDDDD;
+
   --white: #FFFFFF;
   --black: #000000;
   --editor-warning: #03CFFC;
@@ -275,7 +279,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   color: var(--background-color);
-  background-color: var(--primary);
+  background-color: var(--primary-sozialstaat);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
