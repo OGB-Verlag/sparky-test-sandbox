@@ -215,3 +215,17 @@ async function loadPage() {
 }
 
 loadPage();
+
+
+async function loadingCustomCss() {
+  // load custom css files
+  var loadCssArray = [
+    `${window.hlx.codeBasePath}/styles/reset.css`,
+    `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
+  ]
+
+  loadCssArray.forEach(async (eachCss) => {
+    await loadCSS(eachCss);
+  });
+}
+
