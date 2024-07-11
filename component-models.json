@@ -110,75 +110,6 @@
       }
     ]
   },
-    {
-    "id": "buttoncustom",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "href",
-        "value": "",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "text",
-        "value": "",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "value": "",
-        "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "type",
-        "value": "",
-        "label": "Type",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
-      },
-        {
-        "component": "select",
-        "name": "style",
-        "value": "",
-        "label": "Ausrichtung",
-        "description": "Ausrichtung des Buttons",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Links",
-            "value": "button-align-left"
-          },
-          {
-            "name": "Zentriert",
-            "value": "button-align-center"
-          },
-          {
-            "name": "Rechts",
-            "value": "button-align-right"
-          }
-        ]
-      }
-    ]
-  },
   {
     "id": "columns",
     "fields": [
@@ -225,6 +156,18 @@
             "valueType": "string"
           }
         ]
+      }
+    ]
+  },
+    {
+    "id": "rte",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Rich-Text Field",
+        "valueType": "string",
+        "raw": true
       }
     ]
   },
