@@ -47,10 +47,21 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
+                "template": {}
+              }
+            }
+          }
+        },
+                        {
+          "title": "Button Anpassbar",
+          "id": "buttoncustom",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/button/v1/button",
                 "template": {
-                  "name": "Button",
-                  "model": "button"
-
+                  "name": "buttoncustom",
+                  "model": "buttoncustom"
                 }
               }
             }

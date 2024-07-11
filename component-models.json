@@ -107,12 +107,59 @@
             "value": "secondary"
           }
         ]
+      }
+    ]
+  },
+    {
+    "id": "buttoncustom",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
       },
-            {
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
         "component": "select",
         "name": "type",
         "value": "",
-        "label": "Ausrichtung",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+            {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Style",
         "valueType": "string",
         "options": [
           {
@@ -125,7 +172,7 @@
           },
           {
             "name": "Rechts",
-            "value": "button-aligna-right"
+            "value": "button-align-right"
           }
         ]
       }
