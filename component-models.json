@@ -107,6 +107,27 @@
             "value": "secondary"
           }
         ]
+      },
+            {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Ausrichtung",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Links",
+            "value": "button-align-left"
+          },
+          {
+            "name": "Zentriert",
+            "value": "button-align-center"
+          },
+          {
+            "name": "Rechts",
+            "value": "button-aligna-right"
+          }
+        ]
       }
     ]
   },

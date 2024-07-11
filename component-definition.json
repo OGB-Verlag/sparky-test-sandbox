@@ -47,7 +47,11 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
-                "template": {}
+                "template": {
+                  "name": "Button",
+                  "model": "button"
+
+                }
               }
             }
           }
