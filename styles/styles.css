@@ -280,7 +280,7 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: 1px;
 }
 
 a.button:hover,
