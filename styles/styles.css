@@ -815,10 +815,10 @@ main .section.highlight {
 
 .footer-center-gray2 {
   text-align: center;
-  color: var(--gray-2);
+  color: var(--gray-1);
   a:any-link {
   color: var(--gray-2);
-  text-decoration: none;
+  text-decoration: underline;
   }
 }
 
