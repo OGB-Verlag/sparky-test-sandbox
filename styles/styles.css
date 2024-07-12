@@ -308,21 +308,6 @@ button.secondary {
   color: var(--text-color);
 }
 
-.button-align-left {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.button-align-center {
-  display: flex;
-  justify-content: center;
-}
-
-.button-align-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
 main img {
   max-width: 100%;
   width: auto;
@@ -818,21 +803,36 @@ main .section.highlight {
 
 
 /* Experimental quick and dirty */
-.px-16px__grey-3__xs {
+.px16px-grey3-xs {
   padding: 16px;
   color: var(--gray-3);
   font-size: var(--body-font-size-xs);
 }
 
-.px-16px {
+.px16px {
   padding: 0 16px;
 }
 
-.footer__center__gray-2 {
+.footer-center-gray2 {
   text-align: center;
   color: var(--gray-2);
   a:any-link {
   color: var(--gray-2);
   text-decoration: none;
   }
+}
+
+.button-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
+}
+
+.button-right {
+  display: flex;
+  justify-content: flex-end;
 }
