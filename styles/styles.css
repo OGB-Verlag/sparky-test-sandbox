@@ -815,3 +815,24 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+
+/* Experimental quick and dirty */
+.px-16px__grey-3__xs {
+  padding: 16px;
+  color: var(--gray-3);
+  font-size: var(--body-font-size-xs);
+}
+
+.px-16px {
+  padding: 0 16px;
+}
+
+.footer__center__gray-2 {
+  text-align: center;
+  color: var(--gray-2);
+  a:any-link {
+  color: var(--gray-2);
+  text-decoration: none;
+  }
+}
