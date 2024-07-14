@@ -812,6 +812,7 @@ main .section.highlight {
 
 .px16px {
   padding: 0 16px;
+  background-color: var(--bg-sozialstaat-1);
 }
 
 .footer-center-gray2 {
