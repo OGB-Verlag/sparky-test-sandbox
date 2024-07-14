@@ -836,3 +836,15 @@ main .section.highlight {
   display: flex;
   justify-content: flex-end;
 }
+
+.centered-text-maxwidth-600 {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.centered-image-maxwidth-400 {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+}
