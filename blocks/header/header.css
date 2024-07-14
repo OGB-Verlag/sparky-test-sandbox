@@ -5,6 +5,7 @@ header .nav-wrapper {
   z-index: 2;
   position: fixed;
   top: 0;
+  border-bottom: 1px solid var(--primary-inverted-sozialstaat);
 }
 
 header nav {
