@@ -827,16 +827,19 @@ main .section.highlight {
 .button-left {
   display: flex;
   justify-content: flex-start;
+  padding: 0 16px;
 }
 
 .button-center {
   display: flex;
   justify-content: center;
+  padding: 0 16px;
 }
 
 .button-right {
   display: flex;
   justify-content: flex-end;
+  padding: 0 16px;
 }
 
 .centered-text-maxwidth-800 {
