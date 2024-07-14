@@ -838,14 +838,14 @@ main .section.highlight {
   justify-content: flex-end;
 }
 
-.centered-text-maxwidth-600 {
+.centered-text-maxwidth-800 {
   max-width: 800px;
   margin: 0 auto;
   padding-bottom: 50px;
   text-align: center;
 }
 
-.centered-image-maxwidth-400 {
+.centered-image-maxwidth-500 {
     display: block;
     max-width: 500px;
     padding-top: 58px;
