@@ -38,6 +38,7 @@ textarea:focus {
 
   --primary-sozialstaat: #45095a;
   --primary-inverted-sozialstaat: #dad1ec;
+  --bg-sozialstaat-1: #eeebb9;
 
   --white: #FFFFFF;
   --black: #000000;
@@ -144,7 +145,7 @@ textarea:focus {
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 112px;
+  --nav-height: 100px;
 }
 
 @font-face {
@@ -173,7 +174,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
-  padding-top: 112px !important;
+  padding-top: 100px !important;
 }
 
 body.appear {
@@ -549,7 +550,7 @@ main img {
 
 @media screen and (max-width:768px) {
   body {
-    padding-top: 112px !important;
+    padding-top: 100px !important;
   }
 
   /* mobile */
@@ -771,7 +772,7 @@ main img {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
-    padding-top: 112px !important;
+    padding-top: 100px !important;
   }
 }
 
@@ -838,13 +839,15 @@ main .section.highlight {
 }
 
 .centered-text-maxwidth-600 {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 50px;
   text-align: center;
 }
 
 .centered-image-maxwidth-400 {
     display: block;
-    max-width: 400px;
+    max-width: 500px;
+    padding-top: 58px;
     margin: 0 auto;
 }
