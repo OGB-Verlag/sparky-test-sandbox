@@ -1,9 +1,4 @@
 /* justify-content*/
-.ex-flex-justify-content-center {
-  display: flex;
-  justify-content: center;
-}
-
 .ex-flex-justify-content-start {
   display: flex;
   justify-content: flex-start;
@@ -12,6 +7,11 @@
 .ex-flex-justify-content-end {
   display: flex;
   justify-content: flex-end;
+}
+
+.ex-flex-justify-content-center {
+  display: flex;
+  justify-content: center;
 }
 
 .ex-flex-justify-content-space-between {

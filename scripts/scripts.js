@@ -222,13 +222,14 @@ loadPage()
 async function loadingCustomCss() {
   // load custom css files
   var loadCssArray = [
-    `${window.hlx.codeBasePath}/styles/bg/bg.css`,
-    `${window.hlx.codeBasePath}/styles/column/column.css`,
-    `${window.hlx.codeBasePath}/styles/flexbox/flexbox.css`,
-    `${window.hlx.codeBasePath}/styles/margin/margin.css`,
-    `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
-    `${window.hlx.codeBasePath}/styles/padding/padding.css`,
-    `${window.hlx.codeBasePath}/styles/width/width.css`,
+    `${window.hlx.codeBasePath}/styles/custom/bg.css`,
+    `${window.hlx.codeBasePath}/styles/custom/column.css`,
+    `${window.hlx.codeBasePath}/styles/custom/flexbox.css`,
+    `${window.hlx.codeBasePath}/styles/custom/mobile.css`,
+    `${window.hlx.codeBasePath}/styles/custom/margin.css`,
+    `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
+    `${window.hlx.codeBasePath}/styles/custom/padding.css`,
+    `${window.hlx.codeBasePath}/styles/custom/width.css`,
     `${window.hlx.codeBasePath}/styles/reset.css`,
   ]
 
