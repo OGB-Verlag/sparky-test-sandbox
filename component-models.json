@@ -10,6 +10,13 @@
         "label": "Text"
       },
       {
+        "component": "textcustom",
+        "valueType": "string",
+        "name": "jcr:title",
+        "value": "",
+        "label": "Text Custom"
+      },
+      {
         "component": "select",
         "name": "type",
         "value": "h1",
