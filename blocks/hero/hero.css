@@ -18,10 +18,36 @@ main .hero-container {
 .hero h4,
 .hero h5,
 .hero h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 100;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   color: var(--rosewhite);
+}
+
+.hero h1 {
+  font-size: var(--heading-font-size-xxl);
+}
+
+.hero h2 {
+  font-size: var(--heading-font-size-xl);
+}
+
+.hero h3 {
+  font-size: var(--heading-font-size-l);
+}
+
+.hero h4 {
+  font-size: var(--heading-font-size-m);
+}
+
+.hero h5 {
+  font-size: var(--heading-font-size-s);
+}
+
+.hero h6 {
+  font-size: var(--heading-font-size-xs);
 }
 
 .hero picture {
