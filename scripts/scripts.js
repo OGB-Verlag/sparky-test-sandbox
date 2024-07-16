@@ -228,7 +228,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/margin/margin.css`,
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/padding/padding.css`,
-    `${window.hlx.codeBasePath}/styles/size/size.css`,
+    `${window.hlx.codeBasePath}/styles/width/width.css`,
     `${window.hlx.codeBasePath}/styles/reset.css`,
   ]
 
