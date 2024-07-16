@@ -871,13 +871,15 @@ main .section.highlight {
   padding: 0 128px;
 }
 
-.custom-background-color- {
+.ex-background-color--lila {
+  background-color: var(--primary-sozialstaat);
 }
 
-.vanilla {
+.ex-background-color--vanilla {
   background-color: var(--bg-sozialstaat-1);
 }
 
-.lila {
-  background-color: var(--primary-sozialstaat);
+.ex-align-center {
+  display: flex;
+  justify-content: center;
 }
