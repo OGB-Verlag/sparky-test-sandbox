@@ -224,9 +224,11 @@ async function loadingCustomCss() {
   var loadCssArray = [
     `${window.hlx.codeBasePath}/styles/bg/bg.css`,
     `${window.hlx.codeBasePath}/styles/column/column.css`,
+    `${window.hlx.codeBasePath}/styles/flexbox/flexbox.css`,
     `${window.hlx.codeBasePath}/styles/margin/margin.css`,
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/padding/padding.css`,
+    `${window.hlx.codeBasePath}/styles/size/size.css`,
     `${window.hlx.codeBasePath}/styles/reset.css`,
   ]
 

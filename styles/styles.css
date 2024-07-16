@@ -581,13 +581,7 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
-/* Experimental quick and dirty */
-.px16px-grey3-xs {
-  padding: 16px;
-  color: var(--gray-3);
-  font-size: var(--body-font-size-xs);
-}
-
+/* Custom clsses */
 .ex-footer {
   text-align: center;
   color: var(--gray-1);
@@ -597,34 +591,6 @@ main .section.highlight {
   }
 }
 
-.ex-align-left {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.ex-align-center {
-  display: flex;
-  justify-content: center;
-}
-
-.ex-align-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .ex-center {
   margin: 0 auto;
-}
-
-.ex-maxwidth-800 {
-  max-width: 800px;
-}
-
-.ex-maxwidth-500 {
-  max-width: 500px;
-}
-
-.ex-align-center {
-  display: flex;
-  justify-content: center;
 }
