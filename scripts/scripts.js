@@ -10,9 +10,9 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
-} from './aem.js';
+} from './aem.js'
 
-const LCP_BLOCKS = []; // add your LCP blocks to the list
+const LCP_BLOCKS = [] // add your LCP blocks to the list
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
@@ -22,78 +22,80 @@ const LCP_BLOCKS = []; // add your LCP blocks to the list
 export function moveAttributes(from, to, attributes) {
   if (!attributes) {
     // eslint-disable-next-line no-param-reassign
-    attributes = [...from.attributes].map(({ nodeName }) => nodeName);
+    attributes = [...from.attributes].map(({ nodeName }) => nodeName)
   }
   attributes.forEach((attr) => {
-    const value = from.getAttribute(attr);
+    const value = from.getAttribute(attr)
     if (value) {
-      to.setAttribute(attr, value);
-      from.removeAttribute(attr);
+      to.setAttribute(attr, value)
+      from.removeAttribute(attr)
     }
-  });
+  })
 }
 
 export function renderHelper(data, template, callBack) {
-  var dom = document.createElement('div');
-  dom.innerHTML = template;
-  var loopEl = dom.getElementsByClassName('forName');
+  var dom = document.createElement('div')
+  dom.innerHTML = template
+  var loopEl = dom.getElementsByClassName('forName')
   Array.prototype.slice.call(loopEl).forEach(function (eachLoop) {
-    var templates = '';
-    var localtemplate = eachLoop.innerHTML;
+    var templates = ''
+    var localtemplate = eachLoop.innerHTML
     for (var key in data) {
       if (Object.hasOwnProperty.call(data, key)) {
-        var element = data[key];
+        var element = data[key]
         // data.forEach(function (element, index) {
-        var dataItem = callBack ? callBack(element, key) : element;
-        var keys = Object.keys(dataItem);
-        var copyTemplate = localtemplate;
+        var dataItem = callBack ? callBack(element, key) : element
+        var keys = Object.keys(dataItem)
+        var copyTemplate = localtemplate
         copyTemplate.split('{').forEach(function (ecahKey) {
-          var key = ecahKey.split('}')[0];
-          var keys = key.split('.');
-          var value = dataItem;
+          var key = ecahKey.split('}')[0]
+          var keys = key.split('.')
+          var value = dataItem
           keys.forEach(function (key) {
             if (value && value.hasOwnProperty(key)) {
-              value = value[key];
+              value = value[key]
             } else {
-              value = '';
+              value = ''
             }
-          });
-          copyTemplate = copyTemplate.replace('{' + key + '}', value);
-        });
-        templates += copyTemplate;
+          })
+          copyTemplate = copyTemplate.replace('{' + key + '}', value)
+        })
+        templates += copyTemplate
         // });
       }
     }
-    eachLoop.outerHTML = templates;
-  });
-  return dom.innerHTML;
+    eachLoop.outerHTML = templates
+  })
+  return dom.innerHTML
 }
 
 export function fetchAPI(method, url, data) {
   return new Promise(async function (resolve, reject) {
     try {
       if (method === 'GET') {
-        const resp = await fetch(url);
-        resolve(resp);
+        const resp = await fetch(url)
+        resolve(resp)
       } else if (method === 'POST') {
         data.headerJson = data.headerJson || {
           'Content-Type': 'application/json',
-        };
-        data.headerJson['Content-Type'] = data.headerJson['Content-Type'] ? data.headerJson['Content-Type'] : 'application/json';
+        }
+        data.headerJson['Content-Type'] = data.headerJson['Content-Type']
+          ? data.headerJson['Content-Type']
+          : 'application/json'
         const request = new Request(url, {
           method: 'POST',
           body: JSON.stringify(data.requestJson),
           headers: data.headerJson,
-        });
-        const response = await fetch(request);
-        const json = await response.json();
-        resolve({ responseJson: json });
+        })
+        const response = await fetch(request)
+        const json = await response.json()
+        resolve({ responseJson: json })
       }
     } catch (error) {
-      console.warn(error);
-      reject(error);
+      console.warn(error)
+      reject(error)
     }
-  });
+  })
 }
 
 /**
@@ -108,16 +110,16 @@ export function moveInstrumentation(from, to) {
     [...from.attributes]
       .map(({ nodeName }) => nodeName)
       .filter((attr) => attr.startsWith('data-aue-') || attr.startsWith('data-richtext-')),
-  );
+  )
 }
 
 /**
  * load fonts.css and set a session storage flag
  */
 async function loadFonts() {
-  await loadCSS(`${window.hlx.codeBasePath}/styles/fonts.css`);
+  await loadCSS(`${window.hlx.codeBasePath}/styles/fonts.css`)
   try {
-    if (!window.location.hostname.includes('localhost')) sessionStorage.setItem('fonts-loaded', 'true');
+    if (!window.location.hostname.includes('localhost')) sessionStorage.setItem('fonts-loaded', 'true')
   } catch (e) {
     // do nothing
   }
@@ -132,7 +134,7 @@ function buildAutoBlocks() {
     // TODO: add auto block, if needed
   } catch (error) {
     // eslint-disable-next-line no-console
-    console.error('Auto Blocking failed', error);
+    console.error('Auto Blocking failed', error)
   }
 }
 
@@ -143,11 +145,11 @@ function buildAutoBlocks() {
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
-  decorateButtons(main);
-  decorateIcons(main);
-  buildAutoBlocks(main);
-  decorateSections(main);
-  decorateBlocks(main);
+  decorateButtons(main)
+  decorateIcons(main)
+  buildAutoBlocks(main)
+  decorateSections(main)
+  decorateBlocks(main)
 }
 
 /**
@@ -155,19 +157,19 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  document.documentElement.lang = 'en';
-  decorateTemplateAndTheme();
-  const main = doc.querySelector('main');
+  document.documentElement.lang = 'en'
+  decorateTemplateAndTheme()
+  const main = doc.querySelector('main')
   if (main) {
-    decorateMain(main);
-    document.body.classList.add('appear');
-    await waitForLCP(LCP_BLOCKS);
+    decorateMain(main)
+    document.body.classList.add('appear')
+    await waitForLCP(LCP_BLOCKS)
   }
 
   try {
     /* if desktop (proxy for fast connection) or fonts already loaded, load fonts.css */
     if (window.innerWidth >= 900 || sessionStorage.getItem('fonts-loaded')) {
-      loadFonts();
+      loadFonts()
     }
   } catch (e) {
     // do nothing
@@ -179,22 +181,22 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
-  const main = doc.querySelector('main');
-  await loadBlocks(main);
+  const main = doc.querySelector('main')
+  await loadBlocks(main)
 
-  const { hash } = window.location;
-  const element = hash ? doc.getElementById(hash.substring(1)) : false;
-  if (hash && element) element.scrollIntoView();
+  const { hash } = window.location
+  const element = hash ? doc.getElementById(hash.substring(1)) : false
+  if (hash && element) element.scrollIntoView()
 
-  loadHeader(doc.querySelector('header'));
-  loadFooter(doc.querySelector('footer'));
+  loadHeader(doc.querySelector('header'))
+  loadFooter(doc.querySelector('footer'))
 
-  loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
-  loadFonts();
+  loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`)
+  loadFonts()
 
-  sampleRUM('lazy');
-  sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
-  sampleRUM.observe(main.querySelectorAll('picture > img'));
+  sampleRUM('lazy')
+  sampleRUM.observe(main.querySelectorAll('div[data-block-name]'))
+  sampleRUM.observe(main.querySelectorAll('picture > img'))
 }
 
 /**
@@ -203,29 +205,31 @@ async function loadLazy(doc) {
  */
 function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
-  window.setTimeout(() => import('./delayed.js'), 3000);
+  window.setTimeout(() => import('./delayed.js'), 3000)
   // load anything that can be postponed to the latest here
-  import('./sidekick.js').then(({ initSidekick }) => initSidekick());
+  import('./sidekick.js').then(({ initSidekick }) => initSidekick())
 }
 
 async function loadPage() {
-  await loadEager(document);
-  await loadLazy(document);
-  loadDelayed();
+  await loadEager(document)
+  await loadLazy(document)
+  loadDelayed()
 }
 
-loadPage();
-
+loadPage()
 
 async function loadingCustomCss() {
   // load custom css files
   var loadCssArray = [
     `${window.hlx.codeBasePath}/styles/reset.css`,
+    `${window.hlx.codeBasePath}/styles/background-colors.css`,
+    `${window.hlx.codeBasePath}/styles/margin.css`,
+    `${window.hlx.codeBasePath}/styles/aligns.css`,
+    `${window.hlx.codeBasePath}/styles/paddings.css`,
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
   ]
 
   loadCssArray.forEach(async (eachCss) => {
-    await loadCSS(eachCss);
-  });
+    await loadCSS(eachCss)
+  })
 }
-
