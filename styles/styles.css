@@ -38,7 +38,7 @@ textarea:focus {
 
   --primary-sozialstaat: #45095a;
   --primary-inverted-sozialstaat: #dad1ec;
-  --bg-sozialstaat-1: #eeebb9;
+  --bg-vanila-1: #eeebb9;
 
   --white: #ffffff;
   --black: #000000;
@@ -647,14 +647,6 @@ main .section.highlight {
 
 .custom-padding-xlarge {
   padding: 0 128px;
-}
-
-.ex-background-color--lila {
-  background-color: var(--primary-sozialstaat);
-}
-
-.ex-background-color--vanilla {
-  background-color: var(--bg-sozialstaat-1);
 }
 
 .ex-align-center {
