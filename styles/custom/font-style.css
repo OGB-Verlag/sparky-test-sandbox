@@ -1,0 +1,47 @@
+/* color*/
+
+.font-color-primary {
+  color: var(--primary-sozialstaat);
+}
+
+.font-color-secondary {
+  color: var(--secondary-sozialstaat);
+}
+
+.font-color-gray-1 {
+  color: var(--gray-1);
+}
+
+.font-color-gray-2 {
+  color: var(--gray-2);
+}
+
+.font-color-gray-3 {
+  color: var(--gray-3);
+}
+
+.font-color-gray-4 {
+  color: var(--gray-4);
+}
+
+.font-color-gray-5 {
+  color: var(--gray-5);
+}
+
+/* size*/
+
+.font-size-m {
+  font-size: var(--font-size-m);
+}
+
+.font-size-s {
+  font-size: var(--font-size-s);
+}
+
+.font-size-xs {
+  font-size: var(--font-size-xs);
+}
+
+.font-size-xxs {
+  font-size: var(--font-size-xxs);
+}

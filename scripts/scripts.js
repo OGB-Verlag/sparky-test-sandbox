@@ -225,6 +225,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/custom/bg.css`,
     `${window.hlx.codeBasePath}/styles/custom/column.css`,
     `${window.hlx.codeBasePath}/styles/custom/flexbox.css`,
+    `${window.hlx.codeBasePath}/styles/custom/font-style.css`,
     `${window.hlx.codeBasePath}/styles/custom/mobile.css`,
     `${window.hlx.codeBasePath}/styles/custom/margin.css`,
     `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
