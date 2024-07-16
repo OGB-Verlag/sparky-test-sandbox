@@ -12,13 +12,4 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
-  overrides: [
-    {
-      files: '*.tsx',
-      options: {
-        parser: 'typescript',
-      },
-    },
-  ],
-  plugins: ['prettier-plugin-tailwindcss'],
 }
