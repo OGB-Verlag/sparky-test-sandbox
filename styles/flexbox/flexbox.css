@@ -1,18 +1,4 @@
-.ex-flex-align-items-start {
-  display: flex;
-  align-items: flex-start;
-}
-
-.ex-flex-align-items-end {
-  display: flex;
-  align-items: flex-end;
-}
-
-.ex-flex-align-items-center {
-  display: flex;
-  align-items: center;
-}
-
+/* justify-content*/
 .ex-flex-justify-content-center {
   display: flex;
   justify-content: center;
@@ -38,6 +24,23 @@
   justify-content: space-around;
 }
 
+/* align-items*/
+.ex-flex-align-items-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ex-flex-align-items-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ex-flex-align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+/* more flex classes */
 .ex-flex-column {
   display: flex;
   flex-direction: column;
