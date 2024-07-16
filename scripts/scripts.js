@@ -232,6 +232,7 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/custom/padding.css`,
     `${window.hlx.codeBasePath}/styles/custom/width.css`,
     `${window.hlx.codeBasePath}/styles/reset.css`,
+    `${window.hlx.codeBasePath}/styles/rte-wrapper/rte-wrapper.css`,
   ]
 
   loadCssArray.forEach(async (eachCss) => {

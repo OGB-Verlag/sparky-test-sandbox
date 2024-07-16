@@ -1,10 +1,7 @@
 [
   {
     "id": "main",
-    "components": [
-      "section",
-      "container"
-    ]
+    "components": ["section", "container"]
   },
   {
     "id": "columns",
@@ -12,21 +9,13 @@
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "rte",
-      "embed",
-      "wrappercreation",
-      "container"
-    ]
+    "components": ["text", "textcustom", "image", "button", "title", "rte", "embed", "wrappercreation", "container"]
   },
   {
     "id": "section",
     "components": [
       "text",
+      "textcustom",
       "image",
       "button",
       "title",
@@ -41,11 +30,9 @@
   },
   {
     "id": "cards",
-    "components": [
-      "card"
-    ]
+    "components": ["card"]
   },
-    {
+  {
     "id": "text",
     "rte": {
       "format": ["bold", "italic", "underline", "strikethrough"],
@@ -59,12 +46,12 @@
       "editor": ["removeformat"]
     }
   },
-    { 
-  "id" : "div",
-  "components": null
+  {
+    "id": "div",
+    "components": null
   },
   {
-    "id":"container",
-    "components" : []
+    "id": "container",
+    "components": []
   }
 ]

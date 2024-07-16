@@ -129,11 +129,11 @@
       }
     ]
   },
-    {
+  {
     "id": "wrappercreation",
     "fields": []
   },
-    {
+  {
     "id": "container",
     "fields": [
       {
@@ -159,7 +159,7 @@
       }
     ]
   },
-    {
+  {
     "id": "rte",
     "fields": [
       {
@@ -228,21 +228,122 @@
       }
     ]
   },
-    {
-      "id": "embed",
-      "fields": [
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "videourl",
-          "label": "videourl"
-        },
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "thumbnail",
-          "label": "thumbnail"
-        }
-      ]
-    }
+  {
+    "id": "keyfeatures",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Main Href",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "innerhref",
+        "label": "Inner text",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "leftsideimage",
+        "label": "Left-Side Image"
+      },
+      {
+        "component": "richtext",
+        "name": "leftsideimagealt",
+        "label": "Left-Side Image Alt",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "rightsideimage",
+        "label": "Right-Side Image"
+      },
+      {
+        "component": "richtext",
+        "name": "rightsideimagealt",
+        "label": "Right-Side Image Alt",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "rightsideimagelink",
+        "label": "Right-Side Image Link",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "keyfeaturetitle",
+        "label": "Key Feature Title",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "keyfeatureimageplus",
+        "label": "Key Feature Image Plus"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "keyfeatureimageminus",
+        "label": "Key Feature Image Minus"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "keyfeatureimageinnerimage1",
+        "label": "Key Feature Inner Image"
+      },
+      {
+        "component": "richtext",
+        "name": "keyfeatureinnertext1",
+        "label": "Key Feature Inner Text",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "keyfeatureimageinnerimage2",
+        "label": "Key Feature Inner Image"
+      },
+      {
+        "component": "richtext",
+        "name": "keyfeatureinnertext2",
+        "label": "Key Feature Inner Text",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "keyfeatureimageinnerimage3",
+        "label": "Key Feature Inner Image"
+      },
+      {
+        "component": "richtext",
+        "name": "keyfeatureinnertext3",
+        "label": "Key Feature Inner Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videourl",
+        "label": "videourl"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "thumbnail",
+        "label": "thumbnail"
+      }
+    ]
+  }
 ]

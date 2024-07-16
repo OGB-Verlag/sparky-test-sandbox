@@ -17,6 +17,18 @@
           }
         },
         {
+          "title": "Text Custom",
+          "id": "textcustom",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
           "title": "Title",
           "id": "title",
           "plugins": {
@@ -166,7 +178,7 @@
             }
           }
         },
-                {
+        {
           "title": "Add Container",
           "id": "container",
           "plugins": {
