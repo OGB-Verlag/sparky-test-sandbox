@@ -1,3 +1,7 @@
+.bg-white {
+  background-color: var(--white);
+}
+
 .bg-sozialstaat {
   background-color: var(--primary-sozialstaat);
 }
