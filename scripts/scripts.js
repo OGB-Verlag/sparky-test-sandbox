@@ -222,9 +222,9 @@ async function loadingCustomCss() {
   // load custom css files
   var loadCssArray = [
     `${window.hlx.codeBasePath}/styles/reset.css`,
-    `${window.hlx.codeBasePath}/styles/backgrounds.css`,
+    `${window.hlx.codeBasePath}/styles/bg/bg.css`,
     `${window.hlx.codeBasePath}/styles/margins.css`,
-    `${window.hlx.codeBasePath}/styles/paddings.css`,
+    `${window.hlx.codeBasePath}/styles/padding/padding.css`,
     `${window.hlx.codeBasePath}/styles/columns.css`,
     `${window.hlx.codeBasePath}/styles/mobile-sticky-button/mobile-sticky-button.css`,
   ]
