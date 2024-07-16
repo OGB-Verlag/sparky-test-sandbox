@@ -10,13 +10,6 @@
         "label": "Text"
       },
       {
-        "component": "textcustom",
-        "valueType": "string",
-        "name": "jcr:title",
-        "value": "",
-        "label": "Text Custom"
-      },
-      {
         "component": "select",
         "name": "type",
         "value": "h1",
@@ -46,6 +39,32 @@
           {
             "name": "h6",
             "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "textcustom",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "left",
+            "value": "font-align-left"
+          },
+          {
+            "name": "right",
+            "value": "font-align-right"
+          },
+          {
+            "name": "center",
+            "value": "font-align-center"
           }
         ]
       }

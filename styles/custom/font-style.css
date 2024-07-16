@@ -1,5 +1,17 @@
-/* color*/
+/* align */
+.font-align-left {
+  text-align: left;
+}
 
+.font-align-right {
+  text-align: right;
+}
+
+.font-align-center {
+  text-align: center;
+}
+
+/* color */
 .font-color-primary {
   color: var(--primary-sozialstaat);
 }
@@ -28,8 +40,7 @@
   color: var(--gray-5);
 }
 
-/* size*/
-
+/* size */
 .font-size-m {
   font-size: var(--font-size-m);
 }
@@ -44,4 +55,58 @@
 
 .font-size-xxs {
   font-size: var(--font-size-xxs);
+}
+
+/* weight */
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+/* transform */
+.font-transform-none {
+  text-transform: none;
+}
+
+.font-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.font-transform-lowercase {
+  text-transform: lowercase;
+}
+
+.font-transform-capitalize {
+  text-transform: capitalize;
 }
