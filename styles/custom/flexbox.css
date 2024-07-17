@@ -40,6 +40,21 @@
   align-items: center;
 }
 
+.ex-flex-align-items-space-between {
+  display: flex;
+  align-items: space-between;
+}
+
+.ex-flex-align-items-space-around {
+  display: flex;
+  align-items: space-around;
+}
+
+.ex-flex-align-items-space-evenly {
+  display: flex;
+  align-items: space-evenly;
+}
+
 /* more flex classes */
 .ex-flex-column {
   display: flex;
