@@ -32,7 +32,7 @@
     "components": ["card"]
   },
   {
-    "id": "rte",
+    "id": "text",
     "rte": {
       "format": ["bold", "italic", "underline", "strikethrough"],
       "alignment": ["left", "center", "right"],
