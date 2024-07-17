@@ -25,15 +25,6 @@ const getDefaultEmbed = (
     </iframe>
     </div>`
 
-const embedVideoMP4 = (url) => {
-  const embedHTML = `<video width="${width}" controls>
-  <source src="${url.href}" type="video/mp4">
-  <source src="${url.href}" type="video/ogg">
-  Your browser does not support HTML video.
-</video>`
-  return embedHTML
-}
-
 const embedYoutube = (url, autoplay) => {
   const usp = new URLSearchParams(url.search)
   const suffix = autoplay ? '&muted=1&autoplay=1' : ''
@@ -66,6 +57,15 @@ const embedVimeo = (url, autoplay) => {
 const embedTwitter = (url) => {
   const embedHTML = `<blockquote class="twitter-tweet"><a href="${url.href}"></a></blockquote>`
   loadScript('https://platform.twitter.com/widgets.js')
+  return embedHTML
+}
+
+const embedVideoMP4 = (url, width) => {
+  const embedHTML = `<video width="${width}" controls>
+  <source src="${url.href}" type="video/mp4">
+  <source src="${url.href}" type="video/ogg">
+  Your browser does not support HTML video.
+</video>`
   return embedHTML
 }
 
