@@ -33,7 +33,7 @@
   },
   {
     "id": "text",
-    "rte": {
+    "text": {
       "format": ["bold", "italic", "underline", "strikethrough"],
       "alignment": ["left", "center", "right"],
       "indentation": ["indent", "outdent"],
