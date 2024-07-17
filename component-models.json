@@ -339,6 +339,12 @@
         "label": "videourl"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "width",
+        "label": "width"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "thumbnail",
