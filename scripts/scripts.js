@@ -1,5 +1,3 @@
-import { overlay } from '../blocks/form/forms.js'
-import { toggleAllNavSections } from '../blocks/header/header.js'
 import {
   sampleRUM,
   loadHeader,
@@ -498,12 +496,10 @@ export function decorateAnchorTag(main) {
 
           targetObject.models?.forEach(function (eachModel) {
             eachModel.classList.remove('dp-none')
-            eachModel.classList.add('overlay')
             const crossIcon = eachModel.querySelector('em')
             if (crossIcon.innerHTML.includes(':cross-icon')) {
               crossIcon.innerHTML = ''
               crossIcon.addEventListener('click', function (e) {
-                eachModel.classList.remove('overlay')
                 eachModel.classList.add('dp-none')
               })
             }
@@ -666,43 +662,3 @@ async function loadingCustomCss() {
     await loadCSS(eachCss)
   })
 }
-
-let body = document.querySelector('body')
-body?.addEventListener('click', function (e) {
-  // e.stopImmediatePropagation();
-  let loaninnerform = document.querySelector('.loan-form-sub-parent') || ''
-  if (!e.target.closest('.show') && targetObject.model && loaninnerform?.style.visibility != 'visible') {
-    targetObject.model?.querySelector('.overlayDiv').classList.remove('show')
-    document.body.style.overflow = 'scroll'
-    document.querySelector('.modal-overlay').classList.remove('overlay')
-    document.querySelector('.modal-overlay').classList.add('dp-none')
-    document.querySelector('.modal-overlay').style.zIndex = 0
-  } else if (!e.target.closest('.nav-drop')) {
-    //console.log("don't close nav");
-
-    const nav = document.getElementById('nav')
-    const navSections = nav.querySelector('.nav-sections')
-    navSections.children[0].classList.remove('active')
-    navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      toggleAllNavSections(navSections)
-      navSection.setAttribute('aria-expanded', 'false')
-    })
-  }
-  if (e.target.classList.contains('overlay')) {
-    targetObject.models?.forEach(function (eachModel) {
-      eachModel.classList.add('dp-none')
-      eachModel.classList.remove('overlay')
-    })
-  }
-  if (!e.target.closest('.stake-pop-up')) {
-    document.querySelectorAll('.stake-pop-up').forEach((ele) => {
-      ele.classList.remove('dp-block')
-      ele.classList.add('dp-none')
-      document.body.style.overflow = 'auto'
-      document.querySelector('.modal-overlay').classList.remove('overlay')
-      document.querySelector('.modal-overlay').classList.add('dp-none')
-    })
-
-    e.currentTarget.querySelector('.stake-pop-up.dp-block')?.classList.remove('dp-block')
-  }
-})
