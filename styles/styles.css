@@ -339,6 +339,11 @@ main .section.highlight {
 }
 
 /* Custom clsses */
+
+.ex-center {
+  margin: 0 auto;
+}
+
 .ex-footer {
   text-align: center;
   color: var(--gray-1);
@@ -346,8 +351,4 @@ main .section.highlight {
     color: var(--gray-2);
     text-decoration: underline;
   }
-}
-
-.ex-center {
-  margin: 0 auto;
 }
