@@ -17,21 +17,6 @@
           }
         },
         {
-          "title": "Text Custom",
-          "id": "textcustom",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/text/v1/text",
-                "template": {
-                  "name": "Text Custom",
-                  "model": "textcustom"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Title",
           "id": "title",
           "plugins": {

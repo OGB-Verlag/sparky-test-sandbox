@@ -9,13 +9,12 @@
   },
   {
     "id": "column",
-    "components": ["text", "textcustom", "image", "button", "title", "rte", "embed", "wrappercreation", "container"]
+    "components": ["text", "image", "button", "title", "rte", "embed", "wrappercreation", "container"]
   },
   {
     "id": "section",
     "components": [
       "text",
-      "textcustom",
       "image",
       "button",
       "title",
