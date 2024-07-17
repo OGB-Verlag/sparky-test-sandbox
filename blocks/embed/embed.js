@@ -60,6 +60,15 @@ const embedTwitter = (url) => {
   return embedHTML
 }
 
+const embedVideoMP4 = (url) => {
+  const embedHTML = `<video class="mp4" controls>
+  <source src="${url.href}" type="video/mp4">
+  <source src="${url.href}" type="video/ogg">
+  Your browser does not support HTML video.
+</video>`
+  return embedHTML
+}
+
 const loadEmbed = (block, link, autoplay) => {
   if (block.classList.contains('embed-is-loaded')) {
     return
@@ -77,6 +86,10 @@ const loadEmbed = (block, link, autoplay) => {
     {
       match: ['twitter'],
       embed: embedTwitter,
+    },
+    {
+      match: ['mp4'],
+      embed: embedVideoMP4,
     },
   ]
 
