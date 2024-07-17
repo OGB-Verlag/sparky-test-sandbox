@@ -641,12 +641,8 @@ async function loadingCustomCss() {
   var loadCssArray = [
     `${window.hlx.codeBasePath}/styles/reset.css`,
     `${window.hlx.codeBasePath}/styles/key-features/key-features.css`,
-    `${window.hlx.codeBasePath}/styles/articles-carousel/articles-carousel.css`,
-    `${window.hlx.codeBasePath}/styles/table/table.css`,
     `${window.hlx.codeBasePath}/styles/tab-with-cards/tab-with-cards.css`,
-    `${window.hlx.codeBasePath}/styles/list-content/list-content.css`,
     `${window.hlx.codeBasePath}/styles/rte-wrapper/rte-wrapper.css`,
-    `${window.hlx.codeBasePath}/styles/media/media.css`,
     `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/custom/bg.css`,
     `${window.hlx.codeBasePath}/styles/custom/column.css`,
