@@ -1,5 +1,3 @@
-import { overlay } from '../blocks/form/forms.js'
-import { toggleAllNavSections } from '../blocks/header/header.js'
 import {
   sampleRUM,
   loadHeader,
@@ -12,8 +10,8 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
-  fetchPlaceholders,
 } from './aem.js'
+
 const LCP_BLOCKS = [] // add your LCP blocks to the list
 
 /**
@@ -33,55 +31,6 @@ export function moveAttributes(from, to, attributes) {
       from.removeAttribute(attr)
     }
   })
-}
-
-/**
- * create an element.
- * @param {string} tagName the tag for the element
- * @param {string|Array<string>} classes classes to apply
- * @param {object} props properties to apply
- * @param {string|Element} html content to add
- * @returns the element
- */
-export function createElement(tagName, classes, props, html) {
-  const elem = document.createElement(tagName)
-  if (classes) {
-    const classesArr = typeof classes === 'string' ? [classes] : classes
-    elem.classList.add(...classesArr)
-  }
-  if (props) {
-    Object.keys(props).forEach((propName) => {
-      elem.setAttribute(propName, props[propName])
-    })
-  }
-
-  if (html) {
-    const appendEl = (el) => {
-      if (el instanceof HTMLElement || el instanceof SVGElement) {
-        elem.append(el)
-      } else {
-        elem.insertAdjacentHTML('beforeend', el)
-      }
-    }
-
-    if (Array.isArray(html)) {
-      html.forEach(appendEl)
-    } else {
-      appendEl(html)
-    }
-  }
-
-  return elem
-}
-/* helper script start */
-const pathname = location.pathname.replace('.html', '').split('/')
-export let targetObject = {
-  model: null,
-  isMobile: window.matchMedia('(max-width: 767px)').matches,
-  ctaPosition: 'Top Menu Bar',
-  ctaPosition: 'Top Menu Bar',
-  pageName: pathname[pathname.length - 1],
-  isTab: window.matchMedia('(max-width: 1024px)').matches,
 }
 
 export function renderHelper(data, template, callBack) {
@@ -149,374 +98,6 @@ export function fetchAPI(method, url, data) {
   })
 }
 
-export function getProps(block, config) {
-  return Array.from(block.children).map(function (el, index) {
-    if (config?.picture) {
-      return el.innerHTML.includes('picture') ? el.querySelector('picture') : el.innerText.trim()
-    } else if (config?.index && config?.index.includes(index)) {
-      return el
-    } else {
-      return el.innerHTML.includes('picture') ? el.querySelector('img').src.trim() : el.innerText.trim()
-    }
-  })
-}
-
-export function currenyCommaSeperation(x) {
-  if (typeof x === 'number') {
-    x = x.toString()
-  }
-
-  // Split the number into integral and decimal parts
-  const parts = x.split('.')
-  let integralPart = parts[0]
-  const decimalPart = parts[1] ? `.${parts[1]}` : ''
-
-  // Add commas after every two digits from the right in the integral part
-  integralPart = integralPart.replace(/\d(?=(\d{2})+\d$)/g, '$&,')
-
-  return integralPart + decimalPart
-}
-
-export function createCarousle(block, prevButton, nextButton) {
-  block.parentElement ? block.parentElement.append(prevButton) : block.append(prevButton)
-  block.parentElement ? block.parentElement.append(nextButton) : block.append(nextButton)
-  prevButton.addEventListener('click', function (e) {
-    targetObject.carouselButton = this
-    targetObject.carouselButton.disabled = true
-    prevSlide(e)
-  })
-  targetObject.carouselButton = prevButton
-  nextButton.addEventListener('click', function (e) {
-    targetObject.carouselButton = this
-    targetObject.carouselButton.disabled = true
-    nextSlide(e)
-  })
-  if (block.querySelectorAll('.carousel-item').length < 4 && !targetObject.isMobile) {
-    prevButton.classList.add('dp-none')
-    nextButton.classList.add('dp-none')
-  }
-  let currentSlide = 0
-  let isDragging = false
-  let startPos = 0
-  let currentTranslate = 0
-  let prevTranslate = 0
-  const carousel = block
-  const carouselInner = block.querySelector('#carouselInner')
-  const slides = block.querySelectorAll('.carousel-item')
-  const totalSlides = slides.length
-
-  let visibleSlides = getVisibleSlides() // Get initial number of visible slides
-
-  carousel.addEventListener('mousedown', dragStart)
-  carousel.addEventListener('mouseup', dragEnd)
-  carousel.addEventListener('mouseleave', dragEnd)
-  carousel.addEventListener('mousemove', drag)
-
-  carousel.addEventListener('touchstart', dragStart)
-  carousel.addEventListener('touchend', dragEnd)
-  carousel.addEventListener('touchmove', drag)
-
-  carousel.addEventListener('wheel', scrollEvent) // Add scroll event listener
-  function carouselResizeEventHandler() {
-    visibleSlides = getVisibleSlides()
-    setPositionByIndex()
-  }
-
-  window.addEventListener('resize', () => {
-    targetObject.isTab = window.matchMedia('(max-width: 1024px)').matches
-    carouselResizeEventHandler()
-  })
-
-  function dragStart(event) {
-    isDragging = true
-    startPos = getPositionX(event)
-    carouselInner.style.transition = 'none'
-  }
-
-  function dragEnd() {
-    isDragging = false
-    const movedBy = currentTranslate - prevTranslate
-
-    if (movedBy < -100) {
-      nextSlide()
-    } else if (movedBy > 100) {
-      prevSlide()
-    } else {
-      setPositionByIndex()
-    }
-    targetObject.carouselButton.disabled = false
-  }
-
-  function drag(event) {
-    if (isDragging) {
-      const currentPosition = getPositionX(event)
-      currentTranslate = prevTranslate + currentPosition - startPos
-      carouselInner.style.transform = `translateX(${currentTranslate}px)`
-    }
-  }
-
-  function getPositionX(event) {
-    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-  }
-
-  function getVisibleSlides() {
-    if (targetObject.isMobile) {
-      return 2
-    } else if (targetObject.isTab) {
-      return 3
-    }
-    return 4
-  }
-
-  function showSlide(index) {
-    if (index >= slides.length) {
-      // currentSlide = 0;
-    } else if (index < 0) {
-      // currentSlide = slides.length - 1;
-    } else {
-    }
-    currentSlide = Math.max(0, Math.min(index, totalSlides - visibleSlides))
-    setPositionByIndex()
-    console.log('targetObject.carouselButton :: ', targetObject.carouselButton)
-    targetObject.carouselButton.disabled = false
-  }
-
-  const setPositionByIndex = targetObject.isTab
-    ? function () {
-        // Tab
-        currentTranslate =
-          (currentSlide * -carouselInner.clientWidth) / (block.closest('.carousel-3pt5') ? 2 : visibleSlides)
-        console.log('currentSlide :: ', currentSlide)
-        console.log('-carouselInner.clientWidth :: ', -carouselInner.clientWidth)
-        console.log('visibleSlides :: ', visibleSlides)
-        console.log('currentTranslate :: ', currentTranslate)
-        console.log('length :: ', slides.length)
-        console.log('check length :: ', currentSlide + 4 == slides.length)
-        console.log('targetObject.isTab :: ', targetObject.isTab)
-        prevTranslate = currentTranslate
-        carouselInner.style.transition = 'transform 0.5s ease'
-        if (block.closest('.carousel-3pt5') && !targetObject.isTab && currentSlide + 4 == slides.length) {
-          // Desktop View Logic 3.5 carousel
-          // carouselInner.style.transform = `translateX(${-600}px)`
-          // carouselInner.style.transform = `translateX(${currentTranslate }px)`;
-          carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`
-        } else {
-          if (block.closest('.carousel-3pt5') && targetObject.isTab && currentSlide) {
-            // Tab View Logic 3.5 carousel
-            if (currentSlide + 4 > slides.length) {
-              // targetObject.currentTranslate = 40
-              if (currentTranslate > -2100 && targetObject.currentTranslate < 50) {
-                targetObject.currentTranslate = targetObject.currentTranslate
-                  ? (targetObject.currentTranslate += 340)
-                  : 40
-              }
-            } else {
-              targetObject.currentTranslate = 0
-            }
-            carouselInner.style.transform = `translateX(${currentTranslate - targetObject.currentTranslate}px)`
-          } else {
-            if (block.closest('.carousel-3pt5') && currentSlide) {
-              // Desktop View Logic 3.5 carousel
-              carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`
-            } else {
-              carouselInner.style.transform = `translateX(${currentTranslate}px)`
-            }
-          }
-        }
-      }
-    : function () {
-        // Desktop
-        currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides
-        currentTranslate = (currentSlide * -carouselInner.clientWidth) / visibleSlides
-        console.log('currentSlide :: ', currentSlide)
-        console.log('-carouselInner.clientWidth :: ', -carouselInner.clientWidth)
-        console.log('visibleSlides :: ', visibleSlides)
-        console.log('currentTranslate :: ', currentTranslate)
-        console.log('length :: ', slides.length)
-        console.log('check length :: ', currentSlide + 4 == slides.length)
-        prevTranslate = currentTranslate
-        carouselInner.style.transition = 'transform 0.5s ease'
-        if (block.closest('.carousel-3pt5') && currentSlide + 4 == slides.length) {
-          // carouselInner.style.transform = `translateX(${-600}px)`
-          carouselInner.style.transform = `translateX(${currentTranslate - 200}px)`
-        } else {
-          carouselInner.style.transform = `translateX(${currentTranslate}px)`
-        }
-      }
-
-  function nextSlide(e) {
-    // if (currentSlide) {
-    //   nextButton.disabled = true;
-    // }
-    // if (e && !e.target.closest('.slide-next').classList.contains('light')) {
-    showSlide(currentSlide + 1)
-    checkLastChildVisibility()
-    // }
-  }
-
-  function prevSlide() {
-    // if (currentSlide) {
-    //   prevButton.disabled = true;
-    // }
-    showSlide(currentSlide - 1)
-    checkLastChildVisibility()
-  }
-
-  function scrollEvent(event) {
-    if (event.deltaY < 0) {
-      prevSlide()
-    } else {
-      nextSlide()
-    }
-    event.preventDefault()
-  }
-
-  // Initialize the carousel
-  showSlide(currentSlide)
-
-  // Check if the last child is visible in the viewport
-  function checkLastChildVisibility() {
-    const lastChild = carouselInner.lastElementChild
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            nextButton.classList.add('light')
-            nextButton.disabled = true
-          } else {
-            nextButton.disabled = false
-            nextButton.classList.remove('light')
-          }
-        })
-      },
-      {
-        root: carousel,
-        threshold: block.closest('.carousel-3pt5') ? 1 : 0.1,
-      },
-    )
-
-    observer.observe(lastChild)
-    checkFirstChildVisibility()
-  }
-  function checkFirstChildVisibility() {
-    const firstChild = carouselInner.firstChild
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            prevButton.classList.add('light')
-          } else {
-            prevButton.classList.remove('light')
-          }
-        })
-      },
-      {
-        root: carousel,
-        threshold: block.closest('.carousel-3pt5') ? 1 : 0.1,
-      },
-    )
-
-    observer.observe(firstChild)
-  }
-
-  // Initialize the observer for the first time
-  checkLastChildVisibility()
-}
-
-window.addEventListener('resize', () => {
-  targetObject.isTab = window.matchMedia('(max-width: 1024px)').matches
-})
-export function createButton(text, picture) {
-  const button = document.createElement('button')
-  button.classList.add('carousel-control', text)
-  button.innerHTML = picture
-  return button
-}
-
-export async function decoratePlaceholder(block, path) {
-  try {
-    const resp = await fetchPlaceholders(path)
-    console.log(resp)
-    return renderHelper([resp], `<div class="forName">${block.innerHTML}</div>`)
-  } catch (error) {
-    console.warn(error)
-  }
-}
-
-export function decorateViewMore(block) {
-  const section = block.closest('.section')
-  if (!section.classList.contains('view-more-btn')) return
-
-  const displayCount = parseInt(
-    Array.from(section.classList)
-      .find((cls) => cls.endsWith('-item-display'))
-      ?.replace('-item-display', '') || '0',
-  )
-
-  const items = block.classList.contains('columns') ? block.children : block.parentElement.parentElement.children
-
-  const toggleVisibility = (showAll = false) => {
-    ;[...items].forEach((item, index) => {
-      item.classList.toggle('dp-none', !showAll && index >= displayCount)
-    })
-  }
-
-  toggleVisibility()
-
-  const viewBtn = section.querySelector('.default-content-wrapper .button-container')
-  const viewLink = viewBtn.querySelector('a')
-
-  viewBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    const isViewMore = viewLink.textContent.trim().toLowerCase() === 'view more'
-    toggleVisibility(isViewMore)
-    viewLink.textContent = isViewMore ? 'View less' : 'View more'
-  })
-}
-
-export function decorateAnchorTag(main) {
-  try {
-    main.querySelectorAll('a').forEach(function (anchor) {
-      if (anchor.innerHTML.includes('<sub>')) {
-        anchor.target = '_blank'
-      } else if (anchor.href.includes('/modal-popup/')) {
-        const paths = anchor.href.split('/')
-        const dataid = paths[paths.length - 1]
-        anchor.dataset.modelId = dataid
-        targetObject.modelId = dataid
-        anchor.dataset.href = anchor.href
-        anchor.href = 'javascript:void(0)'
-        anchor.addEventListener('click', function (e) {
-          targetObject.models = document.querySelectorAll('.' + dataid)
-          targetObject.models?.forEach(function (eachModel) {
-            eachModel.classList.add('dp-none')
-            eachModel.remove()
-            body.prepend(eachModel)
-          })
-          e.preventDefault()
-          body.style.overflow = 'hidden'
-
-          targetObject.models?.forEach(function (eachModel) {
-            eachModel.classList.remove('dp-none')
-            eachModel.classList.add('overlay')
-            const crossIcon = eachModel.querySelector('em')
-            if (crossIcon.innerHTML.includes(':cross-icon')) {
-              crossIcon.innerHTML = ''
-              crossIcon.addEventListener('click', function (e) {
-                eachModel.classList.remove('overlay')
-                eachModel.classList.add('dp-none')
-              })
-            }
-          })
-        })
-      }
-    })
-  } catch (error) {
-    console.warn(error)
-  }
-}
-/* helper script end */
-
 /**
  * Move instrumentation attributes from a given element to another given element.
  * @param {Element} from the element to copy attributes from
@@ -564,8 +145,6 @@ function buildAutoBlocks() {
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   // hopefully forward compatible button decoration
-  decorateAnchorTag(main)
-  decoratePlaceholder(main)
   decorateButtons(main)
   decorateIcons(main)
   buildAutoBlocks(main)
@@ -643,66 +222,20 @@ loadPage()
 async function loadingCustomCss() {
   // load custom css files
   var loadCssArray = [
-    `${window.hlx.codeBasePath}/styles/reset.css`,
-    `${window.hlx.codeBasePath}/styles/key-features/key-features.css`,
-    `${window.hlx.codeBasePath}/styles/articles-carousel/articles-carousel.css`,
-    `${window.hlx.codeBasePath}/styles/table/table.css`,
-    `${window.hlx.codeBasePath}/styles/tab-with-cards/tab-with-cards.css`,
-    `${window.hlx.codeBasePath}/styles/list-content/list-content.css`,
-    `${window.hlx.codeBasePath}/styles/rte-wrapper/rte-wrapper.css`,
-    `${window.hlx.codeBasePath}/styles/media/media.css`,
-    `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/custom/bg.css`,
     `${window.hlx.codeBasePath}/styles/custom/column.css`,
     `${window.hlx.codeBasePath}/styles/custom/flexbox.css`,
     `${window.hlx.codeBasePath}/styles/custom/font-style.css`,
     `${window.hlx.codeBasePath}/styles/custom/mobile.css`,
     `${window.hlx.codeBasePath}/styles/custom/margin.css`,
+    `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/custom/padding.css`,
     `${window.hlx.codeBasePath}/styles/custom/width.css`,
+    `${window.hlx.codeBasePath}/styles/reset.css`,
+    `${window.hlx.codeBasePath}/styles/rte-wrapper/rte-wrapper.css`,
   ]
 
   loadCssArray.forEach(async (eachCss) => {
     await loadCSS(eachCss)
   })
 }
-
-let body = document.querySelector('body')
-body?.addEventListener('click', function (e) {
-  // e.stopImmediatePropagation();
-  let loaninnerform = document.querySelector('.loan-form-sub-parent') || ''
-  if (!e.target.closest('.show') && targetObject.model && loaninnerform?.style.visibility != 'visible') {
-    targetObject.model?.querySelector('.overlayDiv').classList.remove('show')
-    document.body.style.overflow = 'scroll'
-    document.querySelector('.modal-overlay').classList.remove('overlay')
-    document.querySelector('.modal-overlay').classList.add('dp-none')
-    document.querySelector('.modal-overlay').style.zIndex = 0
-  } else if (!e.target.closest('.nav-drop')) {
-    //console.log("don't close nav");
-
-    const nav = document.getElementById('nav')
-    const navSections = nav.querySelector('.nav-sections')
-    navSections.children[0].classList.remove('active')
-    navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      toggleAllNavSections(navSections)
-      navSection.setAttribute('aria-expanded', 'false')
-    })
-  }
-  if (e.target.classList.contains('overlay')) {
-    targetObject.models?.forEach(function (eachModel) {
-      eachModel.classList.add('dp-none')
-      eachModel.classList.remove('overlay')
-    })
-  }
-  if (!e.target.closest('.stake-pop-up')) {
-    document.querySelectorAll('.stake-pop-up').forEach((ele) => {
-      ele.classList.remove('dp-block')
-      ele.classList.add('dp-none')
-      document.body.style.overflow = 'auto'
-      document.querySelector('.modal-overlay').classList.remove('overlay')
-      document.querySelector('.modal-overlay').classList.add('dp-none')
-    })
-
-    e.currentTarget.querySelector('.stake-pop-up.dp-block')?.classList.remove('dp-block')
-  }
-})
