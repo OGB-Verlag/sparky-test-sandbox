@@ -163,7 +163,7 @@
     "id": "rte",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text-area",
         "name": "rte",
         "label": "Rich-Text Field",
         "valueType": "string",
