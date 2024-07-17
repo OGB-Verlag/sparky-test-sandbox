@@ -32,8 +32,8 @@
     "components": ["card"]
   },
   {
-    "id": "text",
-    "text": {
+    "id": "rte",
+    "rte": {
       "format": ["bold", "italic", "underline", "strikethrough"],
       "alignment": ["left", "center", "right"],
       "indentation": ["indent", "outdent"],
