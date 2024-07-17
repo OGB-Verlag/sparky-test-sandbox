@@ -25,8 +25,8 @@ const getDefaultEmbed = (
     </iframe>
     </div>`
 
-const embedVideoMP4 = (url, width) => {
-  const embedHTML = `<video width="${width}" class="mp4" controls>
+const embedVideoMP4 = (url) => {
+  const embedHTML = `<video width="${width}" controls>
   <source src="${url.href}" type="video/mp4">
   <source src="${url.href}" type="video/ogg">
   Your browser does not support HTML video.
