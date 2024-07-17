@@ -18,3 +18,7 @@ export default async function decorate(block) {
 
   block.append(footer)
 }
+
+if (block.closest('body').querySelector('.mobile-sticky-button')) {
+  block.querySelector('.footer-last-wrapper').classList.add('padding-bottom-footer')
+}
