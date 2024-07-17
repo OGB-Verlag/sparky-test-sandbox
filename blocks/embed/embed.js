@@ -61,7 +61,7 @@ const embedTwitter = (url) => {
 }
 
 const embedVideoMP4 = (url) => {
-  const embedHTML = `<video class="mp4" controls>
+  const embedHTML = `<video width="600" class="mp4" controls>
   <source src="${url.href}" type="video/mp4">
   <source src="${url.href}" type="video/ogg">
   Your browser does not support HTML video.
