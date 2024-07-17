@@ -228,6 +228,330 @@
       }
     ]
   },
+
+  {
+    "id": "tab-container",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-container",
+        "value": "",
+        "label": "Tab Container",
+        "description": "Sets the id of the tab."
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "isactive",
+        "value": "dp-none",
+        "label": "Is Active",
+        "options": [
+          {
+            "name": "Hide",
+            "value": "dp-none"
+          },
+          {
+            "name": "Active",
+            "value": "active"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tab-link",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "tab-link-2",
+        "label": "Rich-Text Field",
+        "valueType": "string",
+        "raw": true
+      },
+      {
+        "component": "select",
+        "name": "tabshowtype",
+        "value": "normal",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "normal",
+            "value": "normal"
+          },
+          {
+            "name": "carousel",
+            "value": "carousel"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "tabpictureprev",
+        "value": "",
+        "label": "Set previous icon on tab carousel"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "tabpicturenext",
+        "value": "",
+        "label": "Set next icon on tab carousel"
+      }
+    ]
+  },
+  {
+    "id": "tab-name",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-name",
+        "value": "",
+        "label": "Tab Name",
+        "description": "Sets the name of the tab.",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-id",
+        "value": "",
+        "label": "Tab Id",
+        "description": "Sets the id of the tab.",
+        "multi": true
+      },
+      {
+        "component": "select",
+        "name": "rendertype",
+        "value": "",
+        "label": "Render Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "normal",
+            "value": "normal"
+          },
+          {
+            "name": "tab-name",
+            "value": "tab-name"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "tabshowtype",
+        "value": "normal",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "normal",
+            "value": "normal"
+          },
+          {
+            "name": "carousel",
+            "value": "carousel"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "tabpictureprev",
+        "value": "",
+        "label": "Set previous icon on tab carousel"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "tabpicturenext",
+        "value": "",
+        "label": "Set next icon on tab carousel"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "nested-tab-id",
+        "value": "",
+        "label": "Nested Tab Id",
+        "description": "Sets the id of the nested tab."
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "nested-tab-isactive",
+        "value": "dp-none",
+        "label": "Is Active",
+        "options": [
+          {
+            "name": "Hide",
+            "value": "dp-none"
+          },
+          {
+            "name": "Active",
+            "value": "active"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "tab-image-1",
+        "value": "",
+        "label": "Tab Image 1",
+        "description": "Sets the path of the image on the tab."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "tab-image-2",
+        "value": "",
+        "label": "Tab Image 2",
+        "description": "Sets the path of the image on the tab."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "tab-image-3",
+        "value": "",
+        "label": "Tab Image 3",
+        "description": "Sets the path of the image on the tab."
+      }
+    ]
+  },
+  {
+    "id": "tab-name-nested",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-name",
+        "value": "",
+        "label": "Tab Name",
+        "description": "Sets the name of the tab.",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-id",
+        "value": "",
+        "label": "Tab Id",
+        "description": "Sets the id of the tab.",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-name-child-1",
+        "value": "",
+        "label": "Tab Name Child 1",
+        "description": "Sets the name of the tab child 1.",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-name-child-1-id",
+        "value": "",
+        "label": "Tab Name Child 1 Id",
+        "description": "Sets the id of the tab child 1.",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-name-child-2",
+        "value": "",
+        "label": "Tab Name Child 2",
+        "description": "Sets the name of the tab child 2.",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tab-name-child-2-id",
+        "value": "",
+        "label": "Tab Name Child 2 Id",
+        "description": "Sets the id of the tab child 2.",
+        "multi": true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "previcon",
+        "value": "",
+        "label": "Previous Icon"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "nexticon",
+        "value": "",
+        "label": "Next Icon"
+      },
+      {
+        "component": "select",
+        "name": "child1carouselshowtype",
+        "value": "normal",
+        "label": "Child 1 Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "normal",
+            "value": "normal"
+          },
+          {
+            "name": "carousel",
+            "value": "carousel"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "child2carouselshowtype",
+        "value": "normal",
+        "label": "Child 2 Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "normal",
+            "value": "normal"
+          },
+          {
+            "name": "carousel",
+            "value": "carousel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tabs",
+    "fields": []
+  },
+  {
+    "id": "tab",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content",
+        "value": "",
+        "label": "Body"
+      }
+    ]
+  },
   {
     "id": "keyfeatures",
     "fields": [

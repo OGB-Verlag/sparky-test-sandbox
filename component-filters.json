@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section", "container"]
+    "components": ["section", "container", "tab-name", "tab-container"]
   },
   {
     "id": "columns",
@@ -9,7 +9,18 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "rte", "embed", "wrappercreation", "container"]
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "rte",
+      "embed",
+      "wrappercreation",
+      "container",
+      "tab-container",
+      "tabs"
+    ]
   },
   {
     "id": "section",
@@ -24,12 +35,33 @@
       "columns",
       "embed",
       "wrappercreation",
-      "container"
+      "container",
+      "tab-link",
+      "tab-name",
+      "tab-name-nested",
+      "tab-container",
+      "tabs"
     ]
   },
   {
     "id": "cards",
     "components": ["card"]
+  },
+  {
+    "id": "tab-container",
+    "components": ["text", "image", "button", "title", "hero", "teaser", "detailed-teaser"]
+  },
+  {
+    "id": "tab-name",
+    "components": ["tab-container"]
+  },
+  {
+    "id": "tab",
+    "components": ["tab", "tabs", "text", "image", "button", "title", "hero", "teaser", "columns", "container"]
+  },
+  {
+    "id": "tabs",
+    "components": ["tabs", "tab", "container"]
   },
   {
     "id": "text",
