@@ -244,6 +244,57 @@
     ]
   },
   {
+    "id": "imageadvanced",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Image",
+        "name": "tab1"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "tab",
+        "label": "Alt",
+        "name": "tab2"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "tab",
+        "label": "Alignment",
+        "name": "tab3"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "alignment",
+        "value": "",
+        "label": "Ausrichtung",
+        "options": [
+          {
+            "name": "center",
+            "value": "center"
+          },
+          {
+            "name": "right",
+            "value": "right"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "tab-container",
     "fields": [
       {
