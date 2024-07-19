@@ -16,8 +16,8 @@ const getPageTitle = async (url) => {
 const getAllPathsExceptCurrent = async (paths, startLevel) => {
   const result = []
   let startLevelVal = startLevel
-  // Excluding content/* in main url comming from AEM author
-  if (!window.location.host.includes('author')) {
+  // Excluding adobeaemcloud url
+  if (!window.location.host.includes('adobeaemcloud')) {
     if (startLevelVal <= 4) {
       startLevelVal = 1
     } else {
@@ -31,7 +31,7 @@ const getAllPathsExceptCurrent = async (paths, startLevel) => {
   for (let i = 0; i <= pathsList.length - 2; i += 1) {
     pathVal = `${pathVal}/${pathsList[i]}`
     let url = `${window.location.origin}${pathVal}`
-    if (window.location.host.includes('author')) {
+    if (window.location.host.includes('adobeaemcloud')) {
       url = `${window.location.origin}${pathVal}.html`
     }
 
