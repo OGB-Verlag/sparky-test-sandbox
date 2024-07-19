@@ -206,6 +206,11 @@
     "id": "hero",
     "fields": [
       {
+        "component": "tab",
+        "label": "Tab 1",
+        "name": "tab1"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
@@ -213,11 +218,21 @@
         "multi": false
       },
       {
+        "component": "tab",
+        "label": "Tab 1",
+        "name": "tab1"
+      },
+      {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt",
         "value": ""
+      },
+      {
+        "component": "tab",
+        "label": "Tab 1",
+        "name": "tab1"
       },
       {
         "component": "richtext",
