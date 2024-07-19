@@ -77,21 +77,6 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Title Extended",
-          "id": "titleextended",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/title/v1/title",
-                "template": {
-                  "aa": "aa",
-                  "bb": "bb"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Columns",
           "id": "columns",
           "plugins": {
