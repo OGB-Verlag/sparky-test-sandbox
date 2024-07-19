@@ -20,7 +20,8 @@
       "container",
       "tab-container",
       "tabs",
-      "contentfragment"
+      "contentfragment",
+      "experiencefragment"
     ]
   },
   {
@@ -43,7 +44,8 @@
       "tab-name-nested",
       "tab-container",
       "tabs",
-      "contentfragment"
+      "contentfragment",
+      "experiencefragment"
     ]
   },
   {
