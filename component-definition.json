@@ -197,21 +197,6 @@
           }
         },
         {
-          "title": "Ritch Text Editor",
-          "id": "richtexteditor",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v2/block",
-                "template": {
-                  "name": "richtexteditor",
-                  "model": "richtexteditor"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Tab Link",
           "id": "tab-link",
           "plugins": {
