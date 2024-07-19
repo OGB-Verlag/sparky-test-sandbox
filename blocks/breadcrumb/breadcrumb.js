@@ -95,7 +95,7 @@ export default async function decorate(block) {
       currentPath.innerText = currentTitle.replace(' | Pricefx', '')
       breadcrumbLinks.push(currentPath.outerHTML)
     }
-    breadcrumb.innerHTML = breadcrumbLinks.join(`<span class="breadcrumb-separator">${RIGHTARROW}</span>`)
+    breadcrumb.innerHTML = breadcrumbLinks.join(` <span class="breadcrumb-separator"> ${RIGHTARROW} </span>`)
     block.append(breadcrumb)
   }, 0)
 }
