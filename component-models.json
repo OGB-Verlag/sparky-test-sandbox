@@ -89,7 +89,7 @@
       },
       {
         "component": "select",
-        "name": "titelAlignment",
+        "name": "alignment",
         "value": "center",
         "label": "Ausrichtung",
         "valueType": "string",
