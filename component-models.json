@@ -50,7 +50,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "titleextended",
+        "name": "jcr:titleextended",
         "value": "",
         "label": "Text"
       },
