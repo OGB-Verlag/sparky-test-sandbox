@@ -20,7 +20,7 @@ const PINTEREST = `<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35
 const SEARCH = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
   <path d="M31.5 32.0005L22.5 23.0005M25.5 15.5005C25.5 21.2995 20.799 26.0005 15 26.0005C9.20101 26.0005 4.5 21.2995 4.5 15.5005C4.5 9.7015 9.20101 5.00049 15 5.00049C20.799 5.00049 25.5 9.7015 25.5 15.5005Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`
 
-const HOME = ' Home '
+const HOME = ' Startseite '
 // const HOME =
 //     '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M3 12.5L5 10.5M5 10.5L12 3.5L19 10.5M5 10.5V20.5C5 21.0523 5.44772 21.5 6 21.5H9M19 10.5L21 12.5M19 10.5V20.5C19 21.0523 18.5523 21.5 18 21.5H15M9 21.5C9.55228 21.5 10 21.0523 10 20.5V16.5C10 15.9477 10.4477 15.5 11 15.5H13C13.5523 15.5 14 15.9477 14 16.5V20.5C14 21.0523 14.4477 21.5 15 21.5M9 21.5H15" stroke="#484D56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
