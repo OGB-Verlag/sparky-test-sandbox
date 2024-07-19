@@ -14,6 +14,7 @@
       "image",
       "button",
       "title",
+      "titleextended",
       "rte",
       "embed",
       "wrappercreation",
@@ -29,6 +30,7 @@
       "image",
       "button",
       "title",
+      "titleextended",
       "rte",
       "hero",
       "cards",
@@ -50,7 +52,7 @@
   },
   {
     "id": "tab-container",
-    "components": ["text", "image", "button", "title", "hero", "teaser", "detailed-teaser"]
+    "components": ["text", "image", "button", "title", "titleextended", "hero", "teaser", "detailed-teaser"]
   },
   {
     "id": "tab-name",
@@ -58,7 +60,19 @@
   },
   {
     "id": "tab",
-    "components": ["tab", "tabs", "text", "image", "button", "title", "hero", "teaser", "columns", "container"]
+    "components": [
+      "tab",
+      "tabs",
+      "text",
+      "image",
+      "button",
+      "title",
+      "titleextended",
+      "hero",
+      "teaser",
+      "columns",
+      "container"
+    ]
   },
   {
     "id": "tabs",

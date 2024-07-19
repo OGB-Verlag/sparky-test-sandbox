@@ -29,6 +29,18 @@
           }
         },
         {
+          "title": "Title Extended",
+          "id": "titleextended",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/title/v1/title",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
           "title": "Image",
           "id": "image",
           "plugins": {
