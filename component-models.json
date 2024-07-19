@@ -207,7 +207,7 @@
     "fields": [
       {
         "component": "tab",
-        "label": "Tab 1",
+        "label": "Image",
         "name": "tab1"
       },
       {
@@ -219,8 +219,8 @@
       },
       {
         "component": "tab",
-        "label": "Tab 1",
-        "name": "tab1"
+        "label": "Alt",
+        "name": "tab2"
       },
       {
         "component": "text",
@@ -231,8 +231,8 @@
       },
       {
         "component": "tab",
-        "label": "Tab 1",
-        "name": "tab1"
+        "label": "Text",
+        "name": "tab3"
       },
       {
         "component": "richtext",
@@ -243,7 +243,6 @@
       }
     ]
   },
-
   {
     "id": "tab-container",
     "fields": [
