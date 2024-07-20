@@ -261,19 +261,6 @@
       },
       {
         "component": "tab",
-        "label": "Alt",
-        "name": "tab2"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "description": "Alternativtext für das Bild",
-        "value": ""
-      },
-      {
-        "component": "tab",
         "label": "Ausrichtung",
         "name": "tab3"
       },
@@ -302,7 +289,7 @@
       {
         "component": "tab",
         "label": "Größe",
-        "name": "tab5"
+        "name": "tab6"
       },
       {
         "component": "select",
