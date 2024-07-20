@@ -101,7 +101,7 @@
                 "template": {
                   "name": "Image Advanced",
                   "model": "imageadvanced",
-                  "classes": ["center", "right"]
+                  "classes": ["aaa", "bbb", "ccc"]
                 }
               }
             }
