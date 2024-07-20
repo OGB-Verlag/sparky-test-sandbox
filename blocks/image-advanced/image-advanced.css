@@ -1,5 +1,4 @@
 .image-advanced-wrapper {
-  padding: 5px;
 }
 
 .image-advanced-align-left {
@@ -19,6 +18,7 @@
 
 .image-advanced-max-width-25 {
   transform: scale(0.25);
+  transform-origin: 0 0;
 }
 
 .image-advanced-max-width-50 {
@@ -30,5 +30,5 @@
 }
 
 .image-advanced-max-width-100 {
-  width: 100%;
+  transform: scale(1);
 }
