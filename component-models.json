@@ -256,6 +256,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
+        "description": "Bild hinzufügen",
         "multi": false
       },
       {
@@ -268,6 +269,7 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt",
+        "description": "Alternativtext für das Bild",
         "value": ""
       },
       {
