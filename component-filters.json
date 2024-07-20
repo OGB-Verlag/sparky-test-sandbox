@@ -19,9 +19,7 @@
       "wrappercreation",
       "container",
       "tab-container",
-      "tabs",
-      "contentfragment",
-      "experiencefragment"
+      "tabs"
     ]
   },
   {
@@ -44,9 +42,7 @@
       "tab-name",
       "tab-name-nested",
       "tab-container",
-      "tabs",
-      "contentfragment",
-      "experiencefragment"
+      "tabs"
     ]
   },
   {

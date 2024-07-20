@@ -633,35 +633,5 @@
         "label": "thumbnail"
       }
     ]
-  },
-  {
-    "id": "contentfragment",
-    "fields": [
-      {
-        "component": "aem-content-fragment",
-        "name": "picker",
-        "label": "Content Fragment Picker",
-        "valueType": "string",
-        "variationName": "contentFragmentVariation"
-      }
-    ]
-  },
-  {
-    "id": "experiencefragment",
-    "fields": [
-      {
-        "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
-        "valueType": "string",
-        "variationName": "experienceFragmentVariation"
-      },
-      {
-        "component": "text",
-        "name": "Domain Name",
-        "label": "Domain Name",
-        "valueType": "string"
-      }
-    ]
   }
 ]
