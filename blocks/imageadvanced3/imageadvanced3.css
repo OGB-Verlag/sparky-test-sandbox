@@ -1,15 +1,13 @@
-.imageadvanced3 .aaa {
+.aaa {
   text-align: center;
 }
 
-.imageadvanced3 .bbb {
+.bbb {
   margin: 0 auto;
 }
 
-.imageadvanced3 .ccc {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.ccc {
+  text-align: center;
 }
 
 .imageadvanced3 {
