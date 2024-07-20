@@ -284,16 +284,20 @@
         "valueType": "string",
         "options": [
           {
-            "name": "aaa",
-            "value": "aaa"
+            "name": "Links",
+            "value": "imageadvanced-align--left"
           },
           {
-            "name": "bbb",
-            "value": "bbb"
+            "name": "Zentriert",
+            "value": "imageadvanced-align--center"
           },
           {
-            "name": "ccc",
-            "value": "ccc"
+            "name": "Rechts",
+            "value": "imageadvanced-align--right"
+          },
+          {
+            "name": "Justify",
+            "value": "imageadvanced-align--justify"
           }
         ]
       }

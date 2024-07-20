@@ -92,7 +92,7 @@
           }
         },
         {
-          "title": "imageadvanced3",
+          "title": "Image Advanced",
           "id": "imageadvanced3",
           "plugins": {
             "xwalk": {

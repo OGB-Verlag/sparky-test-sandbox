@@ -1,15 +1,23 @@
-.aaa {
-  text-align: center;
+.imageadvanced-align--left {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.bbb {
-  margin: 0 auto;
+.imageadvanced-align--center {
+  display: flex;
+  justify-content: center;
 }
 
-.ccc {
-  text-align: center;
+.imageadvanced-align--right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imageadvanced-align--justify {
+  display: flex;
+  justify-content: space-between;
 }
 
 .imageadvanced3 {
-  background-color: blueviolet;
+  padding: 5px;
 }
