@@ -100,8 +100,7 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Image Advanced",
-                  "model": "imageadvanced",
-                  "classes": ["aaa", "bbb", "ccc"]
+                  "model": "imageadvanced"
                 }
               }
             }
