@@ -298,6 +298,32 @@
             "value": "imageadvanced-align--center"
           }
         ]
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Bild Grösse",
+        "description": "Bild Grösse: 25%, 50%, 75% oder 100%",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "25%",
+            "value": "imageadvanced-max-width--25"
+          },
+          {
+            "name": "50%",
+            "value": "imageadvanced-max-width--50"
+          },
+          {
+            "name": "75%",
+            "value": "imageadvanced-max-width--75"
+          },
+          {
+            "name": "100%",
+            "value": "imageadvanced-max-width--100"
+          }
+        ]
       }
     ]
   },

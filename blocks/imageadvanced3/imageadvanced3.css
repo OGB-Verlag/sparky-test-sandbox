@@ -16,3 +16,19 @@
 .imageadvanced3 {
   padding: 5px;
 }
+
+.imageadvanced-max-width--25 {
+  max-width: 25%;
+}
+
+.imageadvanced-max-width--50 {
+  max-width: 50%;
+}
+
+.imageadvanced-max-width--75 {
+  max-width: 75%;
+}
+
+.imageadvanced-max-width--100 {
+  max-width: 100%;
+}
