@@ -283,12 +283,16 @@
         "value": "",
         "options": [
           {
-            "name": "center",
-            "value": "center"
+            "name": "aaa",
+            "value": "aaa"
           },
           {
-            "name": "right",
-            "value": "right"
+            "name": "bbb",
+            "value": "bbb"
+          },
+          {
+            "name": "ccc",
+            "value": "ccc"
           }
         ]
       }

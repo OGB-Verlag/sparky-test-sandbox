@@ -1,0 +1,13 @@
+.image-advanced .aaa {
+  text-align: center;
+}
+
+.image-advanced .bbb {
+  margin: 0 auto;
+}
+
+.image-advanced .ccc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
