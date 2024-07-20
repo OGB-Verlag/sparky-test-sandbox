@@ -13,8 +13,7 @@ export default function decorate(block) {
           // picture is only content in column
           picWrapper.classList.add('columns-img-col')
         }
-      }
-      if (video) {
+      } else if (video) {
         const videoWrapper = video.closest('div')
         if (videoWrapper && videoWrapper.children.length === 1) {
           // video is only content in column
