@@ -279,7 +279,7 @@
       },
       {
         "component": "select",
-        "name": "groesse",
+        "name": "imgalign",
         "value": "image-advanced-align--left",
         "label": "Ausrichtung",
         "description": "Bildausrichtung: Links, Rechts oder Zentriert",
@@ -306,7 +306,7 @@
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "imgwidth",
         "value": "image-advanced-max-width--50",
         "label": "Breite",
         "description": "Bildgröße: 25%, 50%, 75% oder 100%",
