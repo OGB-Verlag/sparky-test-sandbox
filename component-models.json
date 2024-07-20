@@ -256,7 +256,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "description": "Bild hinzufügen",
+        "description": "Bild auswählen",
         "multi": false
       },
       {
@@ -270,7 +270,7 @@
         "name": "imageAlt",
         "label": "Alt",
         "description": "Alternativtext für das Bild",
-        "value": "Bild Beschreibung"
+        "value": ""
       },
       {
         "component": "tab",
