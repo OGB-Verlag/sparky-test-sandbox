@@ -451,13 +451,13 @@ export function decorateViewMore(block) {
       ?.replace('-item-display', '') || '0',
   )
 
-  const items = block.classList.contains('columns') ? block.children : block.parentElement.parentElement.children
+  // const items = block.classList.contains('columns') ? block.children : block.parentElement.parentElement.children
 
-  const toggleVisibility = (showAll = false) => {
-    ;[...items].forEach((item, index) => {
-      item.classList.toggle('dp-none', !showAll && index >= displayCount)
-    })
-  }
+  // const toggleVisibility = (showAll = false) => {
+  //   ;[...items].forEach((item, index) => {
+  //     item.classList.toggle('dp-none', !showAll && index >= displayCount)
+  //   })
+  // }
 
   toggleVisibility()
 
