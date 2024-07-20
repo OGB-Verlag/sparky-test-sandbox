@@ -273,16 +273,10 @@
         "value": ""
       },
       {
-        "component": "tab",
-        "label": "Style",
-        "name": "tab3"
-      },
-      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
         "valueType": "string",
-        "required": true,
         "maxSize": 2,
         "options": [
           {
