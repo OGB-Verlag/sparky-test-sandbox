@@ -261,12 +261,25 @@
       },
       {
         "component": "tab",
+        "label": "Alt",
+        "name": "tab2"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "description": "Alternativtext für das Bild",
+        "value": ""
+      },
+      {
+        "component": "tab",
         "label": "Ausrichtung",
         "name": "tab3"
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "groesse",
         "value": "image-advanced-align--left",
         "label": "Ausrichtung",
         "description": "Bildausrichtung: Links, Rechts oder Zentriert",
@@ -289,7 +302,7 @@
       {
         "component": "tab",
         "label": "Größe",
-        "name": "tab6"
+        "name": "tab5"
       },
       {
         "component": "select",
