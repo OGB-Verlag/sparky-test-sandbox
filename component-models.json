@@ -272,15 +272,15 @@
       },
       {
         "component": "tab",
-        "label": "Alignment",
+        "label": "Ausrichtung",
         "name": "tab3"
       },
       {
         "component": "select",
         "valueType": "string",
-        "name": "alignment",
-        "value": "",
+        "name": "imageAlignment",
         "label": "Ausrichtung",
+        "value": "",
         "options": [
           {
             "name": "center",
