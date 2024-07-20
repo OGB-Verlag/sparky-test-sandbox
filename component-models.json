@@ -313,19 +313,19 @@
         "valueType": "string",
         "options": [
           {
-            "name": "25%",
+            "name": "25",
             "value": "imageadvanced-max-width--25"
           },
           {
-            "name": "50%",
+            "name": "50",
             "value": "imageadvanced-max-width--50"
           },
           {
-            "name": "75%",
+            "name": "75",
             "value": "imageadvanced-max-width--75"
           },
           {
-            "name": "100%",
+            "name": "100",
             "value": "imageadvanced-max-width--100"
           }
         ]
