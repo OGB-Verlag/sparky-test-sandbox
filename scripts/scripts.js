@@ -459,7 +459,7 @@ export function decorateViewMore(block) {
   //   })
   // }
 
-  toggleVisibility()
+  // toggleVisibility()
 
   const viewBtn = section.querySelector('.default-content-wrapper .button-container')
   const viewLink = viewBtn.querySelector('a')
