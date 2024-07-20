@@ -270,7 +270,7 @@
         "name": "imageAlt",
         "label": "Alt",
         "description": "Alternativtext für das Bild",
-        "value": ""
+        "value": "Bild Beschreibung"
       },
       {
         "component": "tab",
@@ -280,7 +280,7 @@
       {
         "component": "select",
         "name": "classes",
-        "value": "",
+        "value": "image-advanced-align--left",
         "label": "Ausrichtung",
         "description": "Bildausrichtung: Links, Rechts oder Zentriert",
         "valueType": "string",
@@ -301,31 +301,31 @@
       },
       {
         "component": "tab",
-        "label": "Breite",
+        "label": "Größe",
         "name": "tab4"
       },
       {
         "component": "select",
         "name": "classes",
-        "value": "",
+        "value": "image-advanced-max-width--50",
         "label": "Breite",
         "description": "Bildgröße: 25%, 50%, 75% oder 100%",
         "valueType": "string",
         "options": [
           {
-            "name": "25",
+            "name": "Größe 25%",
             "value": "image-advanced-max-width--25"
           },
           {
-            "name": "50",
+            "name": "Größe 50%",
             "value": "image-advanced-max-width--50"
           },
           {
-            "name": "75",
+            "name": "Größe 75%",
             "value": "image-advanced-max-width--75"
           },
           {
-            "name": "100",
+            "name": "Größe 100%",
             "value": "image-advanced-max-width--100"
           }
         ]
