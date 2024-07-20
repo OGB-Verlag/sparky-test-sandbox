@@ -287,15 +287,15 @@
         "options": [
           {
             "name": "Links",
-            "value": "image-advanced-align--left"
+            "value": "image-advanced-align-left"
           },
           {
             "name": "Rechts",
-            "value": "image-advanced-align--right"
+            "value": "image-advanced-align-right"
           },
           {
             "name": "Zentriert",
-            "value": "image-advanced-align--center"
+            "value": "image-advanced-align-center"
           }
         ]
       },
@@ -314,19 +314,19 @@
         "options": [
           {
             "name": "aaaa",
-            "value": "image-advanced-max-width--25"
+            "value": "image-advanced-max-width-25"
           },
           {
             "name": "bbbb",
-            "value": "image-advanced-max-width--50"
+            "value": "image-advanced-max-width-50"
           },
           {
             "name": "cccc",
-            "value": "image-advanced-max-width--75"
+            "value": "image-advanced-max-width-75"
           },
           {
             "name": "dddd",
-            "value": "image-advanced-max-width--100"
+            "value": "image-advanced-max-width-100"
           }
         ]
       }
