@@ -274,59 +274,54 @@
       },
       {
         "component": "tab",
-        "label": "Ausrichtung",
+        "label": "Style",
         "name": "tab3"
       },
       {
-        "component": "select",
-        "name": "class",
-        "value": "image-advanced-align--left",
-        "label": "Ausrichtung",
-        "description": "Bildausrichtung: Links, Rechts oder Zentriert",
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
         "valueType": "string",
+        "required": true,
+        "maxSize": 2,
         "options": [
           {
-            "name": "Links",
-            "value": "image-advanced-align-left"
+            "name": "Bildgröße",
+            "children": [
+              {
+                "name": "aaaa",
+                "value": "image-advanced-max-width-25"
+              },
+              {
+                "name": "bbbb",
+                "value": "image-advanced-max-width-50"
+              },
+              {
+                "name": "cccc",
+                "value": "image-advanced-max-width-75"
+              },
+              {
+                "name": "dddd",
+                "value": "image-advanced-max-width-100"
+              }
+            ]
           },
           {
-            "name": "Rechts",
-            "value": "image-advanced-align-right"
-          },
-          {
-            "name": "Zentriert",
-            "value": "image-advanced-align-center"
-          }
-        ]
-      },
-      {
-        "component": "tab",
-        "label": "Größe",
-        "name": "tab5"
-      },
-      {
-        "component": "select",
-        "name": "class",
-        "value": "image-advanced-max-width--50",
-        "label": "Breite",
-        "description": "Bildgröße: 25%, 50%, 75% oder 100%",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "aaaa",
-            "value": "image-advanced-max-width-25"
-          },
-          {
-            "name": "bbbb",
-            "value": "image-advanced-max-width-50"
-          },
-          {
-            "name": "cccc",
-            "value": "image-advanced-max-width-75"
-          },
-          {
-            "name": "dddd",
-            "value": "image-advanced-max-width-100"
+            "name": "Ausrichtung",
+            "children": [
+              {
+                "name": "Links",
+                "value": "image-advanced-align-left"
+              },
+              {
+                "name": "Rechts",
+                "value": "image-advanced-align-right"
+              },
+              {
+                "name": "Zentriert",
+                "value": "image-advanced-align-center"
+              }
+            ]
           }
         ]
       }
