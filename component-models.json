@@ -301,15 +301,15 @@
       },
       {
         "component": "tab",
-        "label": "Grösse",
+        "label": "Breite",
         "name": "tab4"
       },
       {
         "component": "select",
         "name": "classes",
         "value": "",
-        "label": "Bild Grösse",
-        "description": "Bild Grösse: 25%, 50%, 75% oder 100%",
+        "label": "Breite",
+        "description": "Breite: 25%, 50%, 75% oder 100%",
         "valueType": "string",
         "options": [
           {
