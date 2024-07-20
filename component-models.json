@@ -300,6 +300,11 @@
         ]
       },
       {
+        "component": "tab",
+        "label": "Größe",
+        "name": "tab5"
+      },
+      {
         "component": "select",
         "name": "classes",
         "value": "image-advanced-max-width--50",
@@ -308,19 +313,19 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Größe 25%",
+            "name": "aaaa",
             "value": "image-advanced-max-width--25"
           },
           {
-            "name": "Größe 50%",
+            "name": "bbbb",
             "value": "image-advanced-max-width--50"
           },
           {
-            "name": "Größe 75%",
+            "name": "cccc",
             "value": "image-advanced-max-width--75"
           },
           {
-            "name": "Größe 100%",
+            "name": "dddd",
             "value": "image-advanced-max-width--100"
           }
         ]
