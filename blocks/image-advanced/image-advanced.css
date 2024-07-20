@@ -24,12 +24,15 @@
 
 .image-advanced-max-width-50 {
   transform: scale(0.5);
+  transform-origin: 0 0;
 }
 
 .image-advanced-max-width-75 {
   transform: scale(0.75);
+  transform-origin: 0 0;
 }
 
 .image-advanced-max-width-100 {
   transform: scale(1);
+  transform-origin: 0 0;
 }
