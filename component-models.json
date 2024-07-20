@@ -300,6 +300,11 @@
         ]
       },
       {
+        "component": "tab",
+        "label": "Grösse",
+        "name": "tab4"
+      },
+      {
         "component": "select",
         "name": "classes",
         "value": "",
