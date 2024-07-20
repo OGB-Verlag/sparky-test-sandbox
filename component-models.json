@@ -300,11 +300,6 @@
         ]
       },
       {
-        "component": "tab",
-        "label": "Größe",
-        "name": "tab4"
-      },
-      {
         "component": "select",
         "name": "classes",
         "value": "image-advanced-max-width--50",
