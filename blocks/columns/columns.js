@@ -6,6 +6,7 @@ export default function decorate(block) {
   ;[...block.children].forEach((row) => {
     ;[...row.children].forEach((col) => {
       const pic = col.querySelector('picture')
+      const video = col.querySelector('video')
       if (pic) {
         const picWrapper = pic.closest('div')
         if (picWrapper && picWrapper.children.length === 1) {
@@ -13,13 +14,6 @@ export default function decorate(block) {
           picWrapper.classList.add('columns-img-col')
         }
       }
-    })
-  })
-
-  // setup video columns
-  ;[...block.children].forEach((row) => {
-    ;[...row.children].forEach((col) => {
-      const video = col.querySelector('video')
       if (video) {
         const videoWrapper = video.closest('div')
         if (videoWrapper && videoWrapper.children.length === 1) {
