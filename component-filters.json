@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section", "container", "tab-name", "tab-container"]
+    "components": ["section"]
   },
   {
     "id": "columns",
@@ -9,86 +9,14 @@
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "rte",
-      "embed",
-      "wrappercreation",
-      "container",
-      "tab-container",
-      "tabs",
-      "contentfragment",
-      "experiencefragment"
-    ]
+    "components": ["text", "image", "button", "title"]
   },
   {
     "id": "section",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "rte",
-      "hero",
-      "imageadvanced",
-      "cards",
-      "columns",
-      "embed",
-      "breadcrumb",
-      "wrappercreation",
-      "container",
-      "tab-link",
-      "tab-name",
-      "tab-name-nested",
-      "tab-container",
-      "tabs",
-      "contentfragment",
-      "experiencefragment"
-    ]
+    "components": ["text", "image", "button", "title", "hero", "cards", "columns"]
   },
   {
     "id": "cards",
     "components": ["card"]
-  },
-  {
-    "id": "tab-container",
-    "components": ["text", "image", "button", "title", "hero", "teaser", "detailed-teaser"]
-  },
-  {
-    "id": "tab-name",
-    "components": ["tab-container"]
-  },
-  {
-    "id": "tab",
-    "components": ["tab", "tabs", "text", "image", "button", "title", "hero", "teaser", "columns", "container"]
-  },
-  {
-    "id": "tabs",
-    "components": ["tabs", "tab", "container"]
-  },
-  {
-    "id": "text",
-    "rte": {
-      "format": ["bold", "italic", "underline", "strikethrough"],
-      "alignment": ["left", "center", "right"],
-      "indentation": ["indent", "outdent"],
-      "sr_script": ["superscript", "subscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link", "image", "table"],
-      "advanced": [],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "div",
-    "components": null
-  },
-  {
-    "id": "container",
-    "components": []
   }
 ]
