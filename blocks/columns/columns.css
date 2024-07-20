@@ -19,6 +19,15 @@
   display: block;
 }
 
+.columns > div > .columns-video-col {
+  order: 0;
+}
+
+.columns > div > .columns-video-col video {
+  display: block;
+  width: 100%;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
