@@ -92,15 +92,15 @@
           }
         },
         {
-          "title": "Image Advanced2",
-          "id": "imageadvanced2",
+          "title": "Image Advanced3",
+          "id": "imageadvanced3",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Image Advanced2",
-                  "model": "imageadvanced2"
+                  "name": "Image Advanced3",
+                  "model": "imageadvanced3"
                 }
               }
             }

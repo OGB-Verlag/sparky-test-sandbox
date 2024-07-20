@@ -244,7 +244,7 @@
     ]
   },
   {
-    "id": "imageadvanced2",
+    "id": "imageadvanced3",
     "fields": [
       {
         "component": "tab",
@@ -277,10 +277,11 @@
       },
       {
         "component": "select",
-        "valueType": "string",
-        "name": "imageAlignment",
-        "label": "Ausrichtung",
+        "name": "classes",
         "value": "",
+        "label": "Ausrichtung",
+        "description": "Bildausrichtung",
+        "valueType": "string",
         "options": [
           {
             "name": "aaa",
