@@ -280,7 +280,7 @@
         "name": "classes",
         "value": "",
         "label": "Ausrichtung",
-        "description": "Bildausrichtung",
+        "description": "Bildausrichtung: Links, Rechts oder Zentriert",
         "valueType": "string",
         "options": [
           {
@@ -288,16 +288,12 @@
             "value": "imageadvanced-align--left"
           },
           {
-            "name": "Zentriert",
-            "value": "imageadvanced-align--center"
-          },
-          {
             "name": "Rechts",
             "value": "imageadvanced-align--right"
           },
           {
-            "name": "Justify",
-            "value": "imageadvanced-align--justify"
+            "name": "Zentriert",
+            "value": "imageadvanced-align--center"
           }
         ]
       }

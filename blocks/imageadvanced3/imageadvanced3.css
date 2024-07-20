@@ -13,11 +13,6 @@
   justify-content: flex-end;
 }
 
-.imageadvanced-align--justify {
-  display: flex;
-  justify-content: space-between;
-}
-
 .imageadvanced3 {
   padding: 5px;
 }
