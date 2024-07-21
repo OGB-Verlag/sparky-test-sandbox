@@ -245,7 +245,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "jcr:title",
+        "name": "jcr:title-advanced",
         "value": "",
         "label": "Text"
       },
@@ -297,6 +297,7 @@
         "name": "classes",
         "label": "Style",
         "valueType": "string",
+        "value": "Wählen Sie eine Option",
         "maxSize": 3,
         "options": [
           {
@@ -376,6 +377,7 @@
         "name": "classes",
         "label": "Style",
         "valueType": "string",
+        "value": "Wählen Sie eine Option",
         "maxSize": 3,
         "options": [
           {
