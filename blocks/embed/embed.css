@@ -1,27 +1,27 @@
-.video-embed {
+.embed {
   width: unset;
   text-align: center;
   max-width: 800px;
   margin: 32px auto;
 }
 
-.video-embed > div {
+.embed > div {
   display: flex;
   justify-content: center;
 }
 
-.video-embed.video-embed-twitter .twitter-tweet-rendered {
+.embed.embed-twitter .twitter-tweet-rendered {
   margin-left: auto;
   margin-right: auto;
 }
 
-.video-embed .video-embed-placeholder {
+.embed .embed-placeholder {
   width: 100%;
   aspect-ratio: 16 / 9;
   position: relative;
 }
 
-.video-embed .video-embed-placeholder > * {
+.embed .embed-placeholder > * {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,13 +29,13 @@
   inset: 0;
 }
 
-.video-embed .video-embed-placeholder picture img {
+.embed .embed-placeholder picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.video-embed .video-embed-placeholder-play button {
+.embed .embed-placeholder-play button {
   box-sizing: border-box;
   position: relative;
   display: block;
@@ -47,7 +47,7 @@
   padding: 0;
 }
 
-.video-embed .video-embed-placeholder-play button::before {
+.embed .embed-placeholder-play button::before {
   content: '';
   display: block;
   box-sizing: border-box;

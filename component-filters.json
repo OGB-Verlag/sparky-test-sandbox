@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "rte", "video-embed", "container", "tabs"]
+    "components": ["text", "image", "button", "title", "rte", "embed", "container", "tabs"]
   },
   {
     "id": "section",
@@ -23,7 +23,7 @@
       "image-advanced",
       "cards",
       "columns",
-      "video-embed",
+      "embed",
       "breadcrumb",
       "container",
       "tabs"
