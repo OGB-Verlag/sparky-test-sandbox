@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section", "container"]
+    "components": ["section"]
   },
   {
     "id": "columns",
@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "rte", "embed", "container", "tabs"]
+    "components": ["text", "image", "button", "title", "rte", "embed", "tabs"]
   },
   {
     "id": "section",
@@ -26,7 +26,6 @@
       "columns",
       "embed",
       "breadcrumb",
-      "container",
       "tabs"
     ]
   },
@@ -36,32 +35,10 @@
   },
   {
     "id": "tab",
-    "components": ["tab", "tabs", "text", "image", "button", "title", "hero", "teaser", "columns", "container"]
+    "components": ["tab", "tabs", "text", "image", "button", "title", "hero", "teaser", "columns"]
   },
   {
     "id": "tabs",
-    "components": ["tabs", "tab", "container"]
-  },
-  {
-    "id": "text",
-    "rte": {
-      "format": ["bold", "italic", "underline", "strikethrough"],
-      "alignment": ["left", "center", "right"],
-      "indentation": ["indent", "outdent"],
-      "sr_script": ["superscript", "subscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link", "image", "table"],
-      "advanced": [],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "div",
-    "components": null
-  },
-  {
-    "id": "container",
-    "components": []
+    "components": ["tabs", "tab"]
   }
 ]
