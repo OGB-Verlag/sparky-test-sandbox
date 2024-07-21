@@ -16,12 +16,11 @@ export default function decorate(block) {
       wrapperDiv.classList.add('image-advanced-align-center')
     }
 
-    if (block.classList.contains('image-advanced-align-role-presentation')) {
-      wrapperDiv.setAttribute('role', 'presentation')
-    }
-
     if (block.classList.contains('image-advanced-align-role-none')) {
-      wrapperDiv.removeAttribute('role')
+      block.classList.remove('image-advanced-align-role-none')
+      wrapperDiv.setAttribute('role', 'none')
+    } else {
+      wrapperDiv.setAttribute('role', 'presentation')
     }
   }
 }
