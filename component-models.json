@@ -297,7 +297,6 @@
         "name": "classes",
         "label": "Style",
         "valueType": "string",
-        "value": "Wählen Sie eine Option",
         "maxSize": 2,
         "options": [
           {
@@ -377,7 +376,6 @@
         "name": "classes",
         "label": "Style",
         "valueType": "string",
-        "value": "Wählen Sie eine Option",
         "maxSize": 3,
         "options": [
           {
