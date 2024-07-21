@@ -1,8 +1,10 @@
 .block.quote {
-  background-color: #ccc;
+  background-color: whitesmoke;
   padding: 0 0 24px;
   display: flex;
   flex-direction: column;
+  font-size: larger;
+  font-style: italic;
   margin: 1rem 0;
 }
 
@@ -26,5 +28,5 @@
   bottom: -8px;
   height: 5px;
   width: 30px;
-  background-color: darkgray;
+  background-color: gray;
 }
