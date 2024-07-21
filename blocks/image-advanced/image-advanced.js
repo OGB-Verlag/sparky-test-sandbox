@@ -16,12 +16,15 @@ export default function decorate(block) {
       wrapperDiv.classList.add('image-advanced-align-center')
     }
 
-    if (block.classList.contains('image-advanced-role-none')) {
-      block.classList.remove('image-advanced-role-none')
-      block.classList.remove('image-advanced-role-presentation')
-      wrapperDiv.setAttribute('role', 'none')
-    } else {
-      wrapperDiv.setAttribute('role', 'presentation')
+    const pictureElement = wrapperDiv.querySelector('picture')
+    if (pictureElement) {
+      if (block.classList.contains('image-advanced-role-none')) {
+        block.classList.remove('image-advanced-role-none')
+        pictureElement.setAttribute('role', 'none')
+      } else {
+        block.classList.remove('image-advanced-role-presentation')
+        pictureElement.setAttribute('role', 'presentation')
+      }
     }
   }
 }
