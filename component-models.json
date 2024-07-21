@@ -339,11 +339,11 @@
             "name": "Barrierefreiheit",
             "children": [
               {
-                "name": "Aktivieren",
+                "name": "Aktiv",
                 "value": "image-advanced-role-presentation"
               },
               {
-                "name": "Desaktiviern",
+                "name": "Inaktiv",
                 "value": "image-advanced-role-none"
               }
             ]
