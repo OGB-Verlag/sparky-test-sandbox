@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section", "container", "tab-name", "tab-container"]
+    "components": ["section", "container"]
   },
   {
     "id": "columns",
@@ -9,18 +9,7 @@
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "rte",
-      "embed",
-      "wrappercreation",
-      "container",
-      "tab-container",
-      "tabs"
-    ]
+    "components": ["text", "image", "button", "title", "rte", "embed", "wrappercreation", "container", "tabs"]
   },
   {
     "id": "section",
@@ -38,24 +27,12 @@
       "breadcrumb",
       "wrappercreation",
       "container",
-      "tab-link",
-      "tab-name",
-      "tab-name-nested",
-      "tab-container",
       "tabs"
     ]
   },
   {
     "id": "cards",
     "components": ["card"]
-  },
-  {
-    "id": "tab-container",
-    "components": ["text", "image", "button", "title", "hero", "teaser", "detailed-teaser"]
-  },
-  {
-    "id": "tab-name",
-    "components": ["tab-container"]
   },
   {
     "id": "tab",
