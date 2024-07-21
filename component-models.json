@@ -243,16 +243,16 @@
     "id": "title-advanced",
     "fields": [
       {
+        "component": "tab",
+        "label": "Type",
+        "name": "tab1"
+      },
+      {
         "component": "text",
         "valueType": "string",
         "name": "jcr:title",
         "value": "",
         "label": "Text"
-      },
-      {
-        "component": "tab",
-        "label": "Type",
-        "name": "tab1"
       },
       {
         "component": "select",
