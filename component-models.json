@@ -130,10 +130,6 @@
     ]
   },
   {
-    "id": "wrappercreation",
-    "fields": []
-  },
-  {
     "id": "container",
     "fields": [
       {

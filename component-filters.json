@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "rte", "embed", "wrappercreation", "container", "tabs"]
+    "components": ["text", "image", "button", "title", "rte", "embed", "container", "tabs"]
   },
   {
     "id": "section",
@@ -25,7 +25,6 @@
       "columns",
       "embed",
       "breadcrumb",
-      "wrappercreation",
       "container",
       "tabs"
     ]
