@@ -426,7 +426,7 @@ body.overlay-active {
   background-color: var(--coralred);
   color: var(--white);
   padding: 10px 20px;
-  border: 2px solid var(--primary-sozialstaat);
+  border: 1px solid var(--primary-sozialstaat);
 }
 
 .ex-footer {
