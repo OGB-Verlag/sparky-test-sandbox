@@ -243,11 +243,6 @@
     "id": "title-advanced",
     "fields": [
       {
-        "component": "tab",
-        "label": "Type",
-        "name": "tab1"
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "jcr:title-advanced",
@@ -288,17 +283,12 @@
         ]
       },
       {
-        "component": "tab",
-        "label": "Style",
-        "name": "tab2"
-      },
-      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
         "valueType": "string",
-        "value": "Wählen Sie eine Option",
-        "maxSize": 3,
+
+        "maxSize": 2,
         "options": [
           {
             "name": "Ausrichtung",
@@ -318,7 +308,7 @@
             ]
           },
           {
-            "name": "Style",
+            "name": "Styles",
             "children": [
               {
                 "name": "Style 1",
