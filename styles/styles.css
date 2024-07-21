@@ -410,21 +410,21 @@ body.overlay-active {
   justify-content: center;
 }
 
-.style-1 {
+.style1 {
   background-color: var(--primary-sozialstaat);
   color: var(--white);
   padding: 10px 20px;
 }
 
-.style-2 {
+.style2 {
   background-color: var(--white);
   color: var(--primary-sozialstaat);
   padding: 10px 20px;
 }
 
-.style-3 {
-  background-color: var(--white);
-  color: var(--primary-sozialstaat);
+.style3 {
+  background-color: var(--coralred);
+  color: var(--white);
   padding: 10px 20px;
   border: 2px solid var(--primary-sozialstaat);
 }
