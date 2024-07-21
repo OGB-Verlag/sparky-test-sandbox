@@ -395,6 +395,40 @@ body.overlay-active {
   margin: 0 auto;
 }
 
+.links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rechts {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.zentriert {
+  display: flex;
+  justify-content: center;
+}
+
+.style-1 {
+  background-color: var(--primary-sozialstaat);
+  color: var(--white);
+  padding: 10px 20px;
+}
+
+.style-2 {
+  background-color: var(--white);
+  color: var(--primary-sozialstaat);
+  padding: 10px 20px;
+}
+
+.style-3 {
+  background-color: var(--white);
+  color: var(--primary-sozialstaat);
+  padding: 10px 20px;
+  border: 2px solid var(--primary-sozialstaat);
+}
+
 .ex-footer {
   text-align: center;
   color: var(--gray-1);
