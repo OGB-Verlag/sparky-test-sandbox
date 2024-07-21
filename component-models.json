@@ -292,13 +292,11 @@
         "label": "Style",
         "name": "tab2"
       },
-
       {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
         "valueType": "string",
-        "value": "Wählen Sie eine Option",
         "maxSize": 3,
         "options": [
           {
@@ -378,7 +376,6 @@
         "name": "classes",
         "label": "Style",
         "valueType": "string",
-        "value": "Wählen Sie eine Option",
         "maxSize": 3,
         "options": [
           {
