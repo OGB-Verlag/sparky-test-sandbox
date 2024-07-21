@@ -18,12 +18,16 @@ export default function decorate(block) {
 
     const pictureElement = wrapperDiv.querySelector('picture')
     if (pictureElement) {
+      const imgElement = pictureElement.querySelector('img')
       if (block.classList.contains('image-advanced-role-none')) {
         block.classList.remove('image-advanced-role-none')
         pictureElement.setAttribute('role', 'none')
       } else {
         block.classList.remove('image-advanced-role-presentation')
         pictureElement.setAttribute('role', 'presentation')
+        if (imgElement) {
+          imgElement.removeAttribute('alt')
+        }
       }
     }
   }
