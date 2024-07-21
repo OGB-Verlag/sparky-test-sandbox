@@ -37,7 +37,7 @@ textarea:focus {
   --primary-inverted: #ffdddd;
 
   --primary-sozialstaat: #45095a;
-  --primary-inverted-sozialstaat: #dad1ec;
+  --primary-inverted-sozialstaat: #ffdddd;
   --vanila-1: #eeebb9;
 
   --white: #ffffff;
@@ -206,27 +206,27 @@ h6 {
 }
 
 h1 {
-  font-size: var(--heading-font-size-xxl);
+  font-size: var(--heading-font-size-xxl) !important;
 }
 
 h2 {
-  font-size: var(--heading-font-size-xl);
+  font-size: var(--heading-font-size-xl) !important;
 }
 
 h3 {
-  font-size: var(--heading-font-size-l);
+  font-size: var(--heading-font-size-l) !important;
 }
 
 h4 {
-  font-size: var(--heading-font-size-m);
+  font-size: var(--heading-font-size-m) !important;
 }
 
 h5 {
-  font-size: var(--heading-font-size-s);
+  font-size: var(--heading-font-size-s) !important;
 }
 
 h6 {
-  font-size: var(--heading-font-size-xs);
+  font-size: var(--heading-font-size-xs) !important;
 }
 
 p,
@@ -332,10 +332,61 @@ main img {
   width: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding-top: 71px !important;
+  }
+}
+
+@media (width >=900px) {
+  .section.page-container > div {
+    max-width: 1240px !important;
+    margin: 0 auto !important;
+  }
+}
+
 /* section metadata */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+.dp-none {
+  display: none !important;
+}
+.dp-block {
+  display: block;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1111;
+}
+@media screen and (max-width: 1400px) {
+  .section.page-container > div {
+    max-width: 76.1% !important;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .section.page-container > div {
+    max-width: 81.25% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section.page-container > div {
+    max-width: 100% !important;
+    padding: 0 16px;
+  }
+}
+
+body.overlay-active {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1111;
 }
 
 /* Custom clsses */
