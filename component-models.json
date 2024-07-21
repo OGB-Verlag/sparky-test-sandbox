@@ -288,20 +288,33 @@
             "name": "Bildgröße",
             "children": [
               {
-                "name": "25%",
-                "value": "image-advanced-max-width-25"
-              },
-              {
-                "name": "50%",
-                "value": "image-advanced-max-width-50"
-              },
-              {
-                "name": "75%",
-                "value": "image-advanced-max-width-75"
-              },
-              {
-                "name": "100%",
+                "name": "100px",
                 "value": "image-advanced-max-width-100"
+              },
+              {
+                "name": "200px",
+                "value": "image-advanced-max-width-200"
+              },
+              {
+                "name": "400px",
+                "value": "image-advanced-max-width-400"
+              },
+              {
+                "name": "600px",
+                "value": "image-advanced-max-width-600"
+              },
+              {
+                "name": "800px",
+                "value": "image-advanced-max-width-800"
+              },
+
+              {
+                "name": "1000px",
+                "value": "image-advanced-max-width-1000"
+              },
+              {
+                "name": "Full",
+                "value": "image-advanced-max-width-full"
               }
             ]
           },
