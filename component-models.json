@@ -269,7 +269,7 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt",
-        "description": "Alternativtext für das Bild",
+        "description": "",
         "value": ""
       },
       {
@@ -332,6 +332,19 @@
               {
                 "name": "Zentriert",
                 "value": "image-advanced-align-center"
+              }
+            ]
+          },
+          {
+            "name": "Barrierefreiheit",
+            "children": [
+              {
+                "name": "Aktivieren",
+                "value": "image-advanced-role-presentation"
+              },
+              {
+                "name": "Desaktiviern",
+                "value": "image-advanced-role-none"
               }
             ]
           }

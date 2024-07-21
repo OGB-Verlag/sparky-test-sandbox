@@ -1,7 +1,9 @@
+/** Wrapper class */
 .image-advanced-wrapper {
   padding: 15px;
 }
 
+/** Alignment */
 .image-advanced-align-left {
   display: flex;
   justify-content: flex-start;
@@ -17,6 +19,7 @@
   justify-content: center;
 }
 
+/** Size */
 .image-advanced-max-width-100 {
   max-width: 100px;
   width: auto;
@@ -49,4 +52,13 @@
 .image-advanced-max-width-full {
   max-width: 100%;
   width: auto;
+}
+
+/** JS flag class */
+.image-advanced-role-presentation {
+  all: initial; /* No-op property to avoid warnings */
+}
+/** JS flag class */
+.image-advanced-role-none {
+  all: initial; /* No-op property to avoid warnings */
 }

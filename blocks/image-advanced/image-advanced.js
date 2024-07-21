@@ -6,11 +6,6 @@ export default function decorate(block) {
       wrapperDiv.classList.add('image-advanced-align-left')
     }
 
-    if (block.classList.contains('image-advanced-align-left')) {
-      block.classList.remove('image-advanced-align-left')
-      wrapperDiv.classList.add('image-advanced-align-left')
-    }
-
     if (block.classList.contains('image-advanced-align-right')) {
       block.classList.remove('image-advanced-align-right')
       wrapperDiv.classList.add('image-advanced-align-right')
@@ -19,6 +14,14 @@ export default function decorate(block) {
     if (block.classList.contains('image-advanced-align-center')) {
       block.classList.remove('image-advanced-align-center')
       wrapperDiv.classList.add('image-advanced-align-center')
+    }
+
+    if (block.classList.contains('image-advanced-align-role-presentation')) {
+      wrapperDiv.setAttribute('role', 'presentation')
+    }
+
+    if (block.classList.contains('image-advanced-align-role-none')) {
+      wrapperDiv.removeAttribute('role')
     }
   }
 }
