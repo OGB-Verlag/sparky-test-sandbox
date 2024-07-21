@@ -672,7 +672,7 @@
     ]
   },
   {
-    "id": "embed",
+    "id": "video-embed",
     "fields": [
       {
         "component": "text",
