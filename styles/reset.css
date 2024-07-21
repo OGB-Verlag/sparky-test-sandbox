@@ -1,5 +1,5 @@
-/* html {
-    scroll-behavior: smooth
+html {
+  scroll-behavior: smooth;
 }
 
 abbr,
@@ -71,40 +71,40 @@ tr,
 ul,
 var,
 video {
-    background: transparent;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: Nunito-Light, sans-serif;
-    font-size: 100%;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline
+  background: transparent;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Nunito-Light, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
 
 a {
-    background: transparent;
-    color: unset;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    vertical-align: baseline
+  background: transparent;
+  color: unset;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 input,
 select {
-    vertical-align: middle
+  vertical-align: middle;
 }
 
 ul {
-    list-style: none
+  list-style: none;
 }
 
 input,
@@ -113,5 +113,5 @@ select,
 select:focus,
 textarea,
 textarea:focus {
-    outline: 0
-} */
+  outline: 0;
+}
