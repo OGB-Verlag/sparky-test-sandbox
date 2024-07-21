@@ -287,7 +287,6 @@
         "name": "classes",
         "label": "Style",
         "valueType": "string",
-
         "maxSize": 2,
         "options": [
           {
