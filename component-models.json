@@ -245,7 +245,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "jcr:title-advanced",
+        "name": "jcr:title",
         "value": "",
         "label": "Text"
       },
