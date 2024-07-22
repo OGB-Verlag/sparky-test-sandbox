@@ -39,6 +39,7 @@ textarea:focus {
   --primary-sozialstaat: #45095a;
   --primary-inverted-sozialstaat: #ffdddd;
   --vanila-1: #eeebb9;
+  --green-gpa-1: #A7CD76
 
   --white: #ffffff;
   --black: #000000;
@@ -436,4 +437,8 @@ body.overlay-active {
     color: var(--gray-2);
     text-decoration: underline;
   }
+}
+
+.bg-gpa-green-1 {
+  background-color: var(--green-gpa-1);
 }
