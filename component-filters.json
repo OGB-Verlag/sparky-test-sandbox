@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "rte", "embed", "tabs"]
+    "components": ["text", "image", "button", "title", "image-advanced", "rte", "embed", "tabs"]
   },
   {
     "id": "section",
@@ -20,6 +20,7 @@
       "title",
       "rte",
       "hero",
+      "life-stage",
       "image-advanced",
       "title-advanced",
       "cards",
