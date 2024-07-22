@@ -9,3 +9,7 @@
 .bg-vanila-1 {
   background-color: var(--vanila-1);
 }
+
+.bg-gpa-green-1 {
+  background-color: var(--green-gpa-1);
+}
