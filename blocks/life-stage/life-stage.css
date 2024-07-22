@@ -1,0 +1,33 @@
+.life-stage > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.life-stage img {
+  width: 100%;
+}
+
+.life-stage > div > div {
+  order: 1;
+}
+
+.life-stage > div > .life-stage-img-col {
+  order: 0;
+}
+
+.life-stage > div > .life-stage-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .life-stage > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .life-stage > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
