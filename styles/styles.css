@@ -130,7 +130,7 @@ textarea:focus {
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
+  --heading-font-family: 'Work Sans' , sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -430,11 +430,3 @@ body.overlay-active {
   border: 1px solid var(--primary-sozialstaat);
 }
 
-.ex-footer {
-  text-align: center;
-  color: var(--gray-1);
-  a:any-link {
-    color: var(--gray-2);
-    text-decoration: underline;
-  }
-}
