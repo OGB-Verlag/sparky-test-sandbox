@@ -9,21 +9,30 @@ main .hero-container {
 .hero {
   position: relative;
   padding: 32px;
-  min-height: 400px;
+  min-height: 398px;
 }
 
 .hero h1,
 .hero h2,
 .hero h3,
-.hero h4,
-.hero h5,
-.hero h6 {
+.hero h4 {
   font-family: var(--heading-font-family);
-  font-weight: 100;
+  font-weight: 800;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--rosewhite);
+  color: white;
+}
+
+.hero h5,
+.hero h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  color: white;
 }
 
 .hero h1 {
@@ -66,6 +75,6 @@ main .hero-container {
 
 @media (width >= 900px) {
   .hero {
-    min-height: 340px;
+    min-height: 398px;
   }
 }
