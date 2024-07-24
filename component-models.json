@@ -284,11 +284,6 @@
     "id": "title-advanced",
     "fields": [
       {
-        "component": "tab",
-        "label": "Type",
-        "name": "tab-title-advanced-1"
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "jcr:title",
@@ -327,11 +322,6 @@
             "value": "h6"
           }
         ]
-      },
-      {
-        "component": "tab",
-        "label": "Style",
-        "name": "tab-title-advanced-2"
       },
       {
         "component": "multiselect",
