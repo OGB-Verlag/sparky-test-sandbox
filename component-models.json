@@ -243,11 +243,6 @@
     "id": "life-stage",
     "fields": [
       {
-        "component": "tab",
-        "label": "Image",
-        "name": "tab1"
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
@@ -255,21 +250,11 @@
         "multi": false
       },
       {
-        "component": "tab",
-        "label": "Alt",
-        "name": "tab2"
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt",
         "value": ""
-      },
-      {
-        "component": "tab",
-        "label": "Text",
-        "name": "tab3"
       },
       {
         "component": "richtext",
