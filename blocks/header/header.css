@@ -5,18 +5,19 @@ header .nav-wrapper {
   z-index: 2;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid var(--primary-inverted-sozialstaat);
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0px 1px 14px #e8e8e8;
 }
 
 header nav {
   box-sizing: border-box;
   display: grid;
   grid-template:
-    'brand sections sections hamburger' var(--nav-height)
-    'sections sections sections sections' 1fr / auto 1fr auto auto;
+    'brand gpa2 hamburger' var(--nav-height)
+    'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 2em;
-  margin: 0 auto;
+  margin: auto;
   max-width: 1264px;
   height: var(--nav-height);
   padding: 0 1rem;
@@ -25,9 +26,9 @@ header nav {
 
 header nav[aria-expanded='true'] {
   grid-template:
-    'brand hamburger' var(--nav-height)
+    'hamburger brand' var(--nav-height)
     'sections sections' 1fr
-    'sections sections' var(--nav-height) / 1fr auto;
+    'gpa2 gpa2' var(--nav-height) / auto 1fr;
   overflow-y: auto;
   min-height: 100vh;
 }
@@ -65,7 +66,6 @@ header nav .nav-hamburger {
   height: 22px;
   display: flex;
   align-items: center;
-  justify-self: end;
 }
 
 header nav .nav-hamburger button {
@@ -145,13 +145,13 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 header .nav-brand {
   grid-area: brand;
   flex-basis: 128px;
-  font-size: var(--heading-font-size-m);
+  font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
 }
 
 header nav .nav-brand img {
-  width: 160px;
+  width: 128px;
   height: auto;
 }
 
@@ -173,7 +173,7 @@ header nav[aria-expanded='true'] .nav-sections {
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   font-weight: 500;
 }
 
@@ -230,7 +230,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 2em;
     margin: 0;
-    font-size: var(--body-font-size-s);
+    font-size: var(--body-font-size-xs);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -272,7 +272,7 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
-/* tools */
-/* header nav .nav-tools {
-  grid-area: tools;
-} */
+/* gpa2 */
+header nav .nav-gpa2 {
+  grid-area: gpa2;
+}
