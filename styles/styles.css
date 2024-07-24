@@ -134,6 +134,9 @@ textarea:focus {
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
+  --body-font-size-xxl: 32px;
+  --body-font-size-xl: 28px;
+  --body-font-size-l: 24px;
   --body-font-size-m: 22px;
   --body-font-size-s: 18px;
   --body-font-size-xs: 16px;
@@ -428,5 +431,5 @@ body.overlay-active {
   color: var(--white);
   padding: 10px 20px;
   border: 1px solid var(--primary-sozialstaat);
-}
+} 
 
