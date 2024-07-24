@@ -175,6 +175,11 @@ header nav .nav-sections ul {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  font-size: var(--body-font-size-xs);
 }
 
 header nav .nav-sections ul > li {
@@ -187,6 +192,15 @@ header nav .nav-sections ul > li > ul {
 
 header nav .nav-sections ul > li > ul > li {
   font-weight: 500;
+}
+
+header nav .nav-sections ul > li > a::before {
+  content: '▼';
+  display: inline-block;
+  margin-right: 0.55em;
+  font-size: 0.6em;
+  vertical-align: middle;
+  color: var(--gray-4);
 }
 
 @media (width >= 900px) {
