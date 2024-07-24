@@ -283,6 +283,20 @@
     "id": "life-stage2",
     "fields": [
       {
+        "component": "aem-content",
+        "name": "content_cta2",
+        "value": "",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "content_cta2Text",
+        "value": "",
+        "label": "Link Text",
+        "valueType": "string"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
