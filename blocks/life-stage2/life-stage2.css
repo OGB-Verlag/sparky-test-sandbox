@@ -1,0 +1,86 @@
+.life-stage2.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* Column styles */
+.column-left,
+.column-right {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.column-right div {
+  margin-bottom: 10px;
+  padding-left: 0px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .life-stage2.block {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .column-left,
+  .column-right {
+    max-width: 50%;
+  }
+
+  .column-right div {
+    padding-left: 40px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  margin: 0.2em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #007bff;
+  height: 2.3em;
+  align-content: center;
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  height: 2.3em;
+  align-content: center;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+  height: 2.3em;
+  align-content: center;
+}
+
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+  height: 2.3em;
+  align-content: center;
+}
+
+/* .button-container {
+  a.button:any-link,
+  button {
+    color: #d50f35;
+    background-color: transparent;
+  }
+} */
