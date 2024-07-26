@@ -574,7 +574,7 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Image alternative description",
+        "label": "Image Alternative Description",
         "description": "",
         "value": ""
       },
@@ -582,7 +582,7 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "A single paragraph text below the image.",
+        "label": "A Paragraph Text below the image.",
         "description": "",
         "valueType": "string"
       }
