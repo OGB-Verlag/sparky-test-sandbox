@@ -65,7 +65,7 @@ main .hero-container {
   transform: translateX(-50%);
   width: 24px;
   height: 24px;
-  background-image: url('/content/dam/universal-editor-content-dam/arrows.svg');
+  background: url('/content/dam/universal-editor-content-dam/arrows.svg');
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
