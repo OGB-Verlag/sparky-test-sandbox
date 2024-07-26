@@ -1,5 +1,6 @@
 main .hero-container > div {
   max-width: unset;
+  background: rgba(33, 115, 238, 0.1);
 }
 
 /*TODO move to header*/
@@ -13,42 +14,28 @@ main .hero-container {
   min-height: 398px;
 }
 
-.hero h1 {
-  /* font-family: var(--heading-font-family); */
+.hero h2 {
+  font-family: var(--heading-font-family);
+  /* TODO: font-family:  font-family: 'Work Sans'; */
   font-weight: 800;
-  max-width: 1440;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 100%; /* 50px */
+  max-width: 800;
+  margin-left: 120px;
+  margin-top: 55px;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'Work Sans';
   font-style: normal;
 }
 
-.hero h5,
 .hero h6 {
   font-family: var(--heading-font-family);
+  /* TODO: font-family:  font-family: 'Work Sans'; */
   font-weight: 400;
-  max-width: 1440;
+  max-width: 600;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-left: 120px;
+  margin-top: 40px;
   color: white;
-}
-
-.hero h1 {
-  font-size: 50px;
-  /* font-family: var(--heading-font-family); */
-  font-weight: 800;
-  max-width: 1440;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 100%; /* 50px */
-  text-transform: uppercase;
-  color: #fff;
-  font-family: 'Work Sans';
-  font-style: normal;
 }
 
 .hero picture {
@@ -68,5 +55,25 @@ main .hero-container {
 @media (width >= 900px) {
   .hero {
     min-height: 398px;
+  }
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+a:any-link {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    font-size: 45px;
   }
 }
