@@ -130,7 +130,7 @@ textarea:focus {
 
   /* fonts */
   --body-font-family: Wigrum, roboto, roboto-fallback;
-  --heading-font-family: 'Work Sans' , sans-serif;
+  --heading-font-family: 'Work Sans', sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -333,12 +333,14 @@ main img {
   width: 100%;
 }
 
+/*TODO 768px*/
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     padding-top: 71px !important;
   }
 }
 
+/*TODO*/
 @media (width >=900px) {
   .section.page-container > div {
     max-width: 1240px !important;

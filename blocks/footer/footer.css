@@ -29,7 +29,7 @@ footer .footer p {
   line-height: 180%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   footer .footer p {
     display: flex;
     align-items: center;

@@ -20,7 +20,7 @@
   width: 84%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .life-stage3.block {
     flex-direction: row;
     align-items: flex-start;
