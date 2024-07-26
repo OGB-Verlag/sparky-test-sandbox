@@ -581,7 +581,7 @@
       {
         "component": "richtext",
         "name": "text",
-        "value": "Hier wird eine Illustration mit Hover-Animation eingefügt. Das sind Gustav, Paula und Anton. Sie sind eine glückliche Familie mit einem durchschnittlichen Leben. Begleitet werden sie vom Sozialstaat, der auf alle schaut.",
+        "value": "",
         "label": "A single paragraph text below the image.",
         "description": "",
         "valueType": "string"
