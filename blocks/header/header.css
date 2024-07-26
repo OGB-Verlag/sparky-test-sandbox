@@ -1,12 +1,12 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--gray-5);
+  background-color: #fafafa;
   width: 100%;
   z-index: 2;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #e8e8e8;
-  box-shadow: 0px 1px 14px #e8e8e8;
+  border-bottom: 1px solid #cccaca;
+  box-shadow: 0px 1px 14px #cccaca;
 }
 
 header nav {
@@ -279,7 +279,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-brand img {
     width: auto;
-    height: 67px;
+    height: 67.01px;
     padding-left: 10px;
   }
 }
