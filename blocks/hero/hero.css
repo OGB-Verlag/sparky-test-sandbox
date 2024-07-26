@@ -63,9 +63,9 @@ main .hero-container {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 24px;
-  height: 24px;
-  background: url('/content/dam/universal-editor-content-dam/arrows.svg');
+  width: 44px;
+  height: 44px;
+  background: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/arrow-down.svg');
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
