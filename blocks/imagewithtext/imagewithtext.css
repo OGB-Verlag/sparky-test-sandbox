@@ -1,24 +1,24 @@
-.iwt-wrapper {
+.imagewithtext-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.iwt block {
+.imagewithtext block {
   max-width: 800px;
   width: 100%;
   text-align: center;
 }
 
 /* Set the maximum width for the image */
-.iwt-wrapper img {
+.imagewithtext-wrapper img {
   max-width: 700px;
   width: 100%;
   height: auto;
 }
 
 /* Set the maximum width for the text */
-.iwt-wrapper p {
+.imagewithtext-wrapper p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;

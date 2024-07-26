@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "image-advanced", "rte", "embed", "iwt"]
+    "components": ["text", "image", "button", "title", "image-advanced", "rte", "embed", "imagewithtext"]
   },
   {
     "id": "section",
@@ -29,7 +29,7 @@
       "embed",
       "breadcrumb",
       "quote",
-      "iwt"
+      "imagewithtext"
     ]
   },
   {

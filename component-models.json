@@ -560,7 +560,7 @@
     ]
   },
   {
-    "id": "iwt",
+    "id": "imagewithtext",
     "fields": [
       {
         "component": "reference",
