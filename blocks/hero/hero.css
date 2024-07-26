@@ -60,11 +60,14 @@ main .hero-container {
 
 .arrow-container {
   position: absolute;
-  bottom: 1px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 40px;
-  color: white;
+  width: 24px;
+  height: 24px;
+  background-image: url('/content/dam/universal-editor-content-dam/arrows.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
