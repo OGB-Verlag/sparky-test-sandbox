@@ -430,3 +430,21 @@ body.overlay-active {
   border: 1px solid var(--primary-sozialstaat);
 } 
 
+
+
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+

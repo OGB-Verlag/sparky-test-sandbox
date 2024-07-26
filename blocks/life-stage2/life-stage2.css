@@ -3,25 +3,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  max-height: 652px;
-  overflow: hidden;
-}
-
-.top-element {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  max-height: calc(652px / 3);
-  overflow: hidden;
-}
-
-.columns-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  max-height: calc(652px * 2 / 3);
   overflow: hidden;
 }
 
@@ -31,7 +12,6 @@
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
-  max-height: 100%;
   overflow: hidden;
 }
 
@@ -39,28 +19,12 @@
   margin-bottom: 10px;
   padding-left: 0px;
   max-width: 100%;
-  max-height: 100%;
-}
-
-.column-right picture,
-.column-right img {
-  max-height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.column-left p strong {
-  display: block;
-  margin: 32px 0px 6px 0px;
 }
 
 @media (min-width: 768px) {
   .life-stage2.block {
-    flex-direction: column;
-  }
-
-  .columns-wrapper {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .column-left,
@@ -70,6 +34,38 @@
 
   .column-right div {
     padding-left: 40px;
+  }
+
+  /**/
+
+  .top-element {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    max-height: calc(652px / 3);
+    overflow: hidden;
+  }
+
+  .columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-height: calc(652px * 2 / 3);
+    overflow: hidden;
+  }
+
+  .column-right picture,
+  .column-right img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .column-left p strong {
+    display: block;
+    margin: 32px 0px 6px 0px;
   }
 }
 
@@ -99,7 +95,7 @@
   text-decoration: none;
   border-radius: 0.25rem;
   display: inline-block;
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0px 15px 0px;
 }
 
 .second-button:hover {

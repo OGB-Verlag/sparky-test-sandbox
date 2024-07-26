@@ -11,14 +11,13 @@
   flex: 1;
   padding: 10px;
   box-sizing: border-box;
-  width: 100%;
   overflow: hidden;
 }
 
 .column-right div {
   margin-bottom: 10px;
   padding-left: 0px;
-  max-width: 100%;
+  width: 84%;
 }
 
 @media (min-width: 768px) {
@@ -29,7 +28,7 @@
 
   .column-left,
   .column-right {
-    max-width: 50%;
+    width: 50%;
   }
 
   .column-right div {
@@ -39,11 +38,9 @@
   /**/
 
   .top-element {
-    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    max-height: calc(652px / 3);
     overflow: hidden;
   }
 
@@ -51,14 +48,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
-    max-height: calc(652px * 2 / 3);
     overflow: hidden;
   }
 
   .column-right picture,
   .column-right img {
-    max-height: 100%;
     width: 100%;
     object-fit: contain;
   }
