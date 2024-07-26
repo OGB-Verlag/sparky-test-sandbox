@@ -2,23 +2,31 @@ footer {
   padding: 2rem;
   background-color: var(--gray-5);
   font-size: var(--body-font-size-xs);
-  color: var(--gray-1);
+
   display: flex;
+
   justify-content: center;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
 }
 
 footer a:any-link {
-  color: var(--gray-2);
+  color: #141414;
   text-decoration: underline;
 }
 
 footer .footer {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
 }
 
 footer .footer p {
   margin: 0;
+  text-align: center;
+  line-height: 180%;
 }
 
 @media (min-width: 768px) {

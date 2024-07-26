@@ -129,7 +129,7 @@ textarea:focus {
   --skyblue: #def3fd;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: Wigrum, roboto, roboto-fallback;
   --heading-font-family: 'Work Sans' , sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
