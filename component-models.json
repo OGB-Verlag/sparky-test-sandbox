@@ -130,44 +130,6 @@
     ]
   },
   {
-    "id": "container",
-    "fields": [
-      {
-        "component": "container",
-        "label": "Container",
-        "name": "container",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "Simple Text 1",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "Simple Text 2",
-            "name": "text2",
-            "valueType": "string"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "rte",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "rte",
-        "label": "Rich-Text Field",
-        "valueType": "string",
-        "raw": true
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
@@ -202,11 +164,6 @@
     "id": "hero",
     "fields": [
       {
-        "component": "tab",
-        "label": "Image",
-        "name": "tab1"
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
@@ -214,21 +171,11 @@
         "multi": false
       },
       {
-        "component": "tab",
-        "label": "Alt",
-        "name": "tab2"
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt",
         "value": ""
-      },
-      {
-        "component": "tab",
-        "label": "Text",
-        "name": "tab3"
       },
       {
         "component": "richtext",
@@ -486,11 +433,6 @@
     "id": "image-advanced",
     "fields": [
       {
-        "component": "tab",
-        "label": "Image",
-        "name": "tab1"
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
@@ -499,22 +441,12 @@
         "multi": false
       },
       {
-        "component": "tab",
-        "label": "Alt",
-        "name": "tab2"
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt",
         "description": "",
         "value": ""
-      },
-      {
-        "component": "tab",
-        "label": "Style",
-        "name": "tab3"
       },
       {
         "component": "multiselect",
@@ -592,29 +524,6 @@
     ]
   },
   {
-    "id": "tabs",
-    "fields": []
-  },
-  {
-    "id": "tab",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "value": "",
-        "label": "Heading"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "content",
-        "value": "",
-        "label": "Body"
-      }
-    ]
-  },
-  {
     "id": "embed",
     "fields": [
       {
@@ -647,6 +556,102 @@
         "name": "author",
         "label": "Author",
         "value": ""
+      }
+    ]
+  },
+  {
+    "id": "imagewithtext",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "description": "The image on top of the text",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alternative description",
+        "description": "A descriptive text of the image.",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "Hier wird eine Illustration mit Hover-Animation eingefügt. Das sind Gustav, Paula und Anton. Sie sind eine glückliche Familie mit einem durchschnittlichen Leben. Begleitet werden sie vom Sozialstaat, der auf alle schaut.",
+        "label": "Text below the image",
+        "description": "A single paragraph text below the image.",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "maxSize": 2,
+        "value": ["center", "image-advanced-max-width-600"],
+        "options": [
+          {
+            "name": "Theme",
+            "children": [
+              {
+                "name": "100px",
+                "value": "image-advanced-max-width-100"
+              },
+              {
+                "name": "200px",
+                "value": "image-advanced-max-width-200"
+              },
+              {
+                "name": "400px",
+                "value": "image-advanced-max-width-400"
+              },
+              {
+                "name": "600px",
+                "value": "image-advanced-max-width-600"
+              },
+
+              {
+                "name": "700px",
+                "value": "image-advanced-max-width-700"
+              },
+
+              {
+                "name": "800px",
+                "value": "image-advanced-max-width-800"
+              },
+
+              {
+                "name": "1000px",
+                "value": "image-advanced-max-width-1000"
+              },
+              {
+                "name": "Full",
+                "value": "image-advanced-max-width-full"
+              }
+            ]
+          },
+          {
+            "name": "Alignment",
+            "children": [
+              {
+                "name": "Left",
+                "value": "left"
+              },
+              {
+                "name": "Right",
+                "value": "right"
+              },
+              {
+                "name": "Center",
+                "value": "center"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

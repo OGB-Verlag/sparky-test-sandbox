@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "image-advanced", "rte", "embed", "tabs"]
+    "components": ["text", "image", "button", "title", "image-advanced", "rte", "embed", "imagewithtext"]
   },
   {
     "id": "section",
@@ -18,7 +18,6 @@
       "image",
       "button",
       "title",
-      "rte",
       "hero",
       "life-stage",
       "life-stage2",
@@ -29,20 +28,12 @@
       "columns",
       "embed",
       "breadcrumb",
-      "tabs",
-      "quote"
+      "quote",
+      "imagewithtext"
     ]
   },
   {
     "id": "cards",
     "components": ["card"]
-  },
-  {
-    "id": "tab",
-    "components": ["tab", "tabs", "text", "image", "button", "title", "hero", "teaser", "columns"]
-  },
-  {
-    "id": "tabs",
-    "components": ["tabs", "tab"]
   }
 ]
