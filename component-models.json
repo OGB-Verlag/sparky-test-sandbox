@@ -560,14 +560,14 @@
     ]
   },
   {
-    "id": "imagewithtext",
+    "id": "iwt",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "description": "The image on top of the text",
+        "description": "",
         "multi": false
       },
       {
@@ -575,83 +575,16 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Image alternative description",
-        "description": "A descriptive text of the image.",
+        "description": "",
         "value": ""
       },
       {
         "component": "richtext",
         "name": "text",
         "value": "Hier wird eine Illustration mit Hover-Animation eingefügt. Das sind Gustav, Paula und Anton. Sie sind eine glückliche Familie mit einem durchschnittlichen Leben. Begleitet werden sie vom Sozialstaat, der auf alle schaut.",
-        "label": "Text below the image",
-        "description": "A single paragraph text below the image.",
+        "label": "A single paragraph text below the image.",
+        "description": "",
         "valueType": "string"
-      },
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
-        "valueType": "string",
-        "maxSize": 2,
-        "value": ["center", "image-advanced-max-width-600"],
-        "options": [
-          {
-            "name": "Theme",
-            "children": [
-              {
-                "name": "100px",
-                "value": "image-advanced-max-width-100"
-              },
-              {
-                "name": "200px",
-                "value": "image-advanced-max-width-200"
-              },
-              {
-                "name": "400px",
-                "value": "image-advanced-max-width-400"
-              },
-              {
-                "name": "600px",
-                "value": "image-advanced-max-width-600"
-              },
-
-              {
-                "name": "700px",
-                "value": "image-advanced-max-width-700"
-              },
-
-              {
-                "name": "800px",
-                "value": "image-advanced-max-width-800"
-              },
-
-              {
-                "name": "1000px",
-                "value": "image-advanced-max-width-1000"
-              },
-              {
-                "name": "Full",
-                "value": "image-advanced-max-width-full"
-              }
-            ]
-          },
-          {
-            "name": "Alignment",
-            "children": [
-              {
-                "name": "Left",
-                "value": "left"
-              },
-              {
-                "name": "Right",
-                "value": "right"
-              },
-              {
-                "name": "Center",
-                "value": "center"
-              }
-            ]
-          }
-        ]
       }
     ]
   }
