@@ -60,14 +60,11 @@ main .hero-container {
 
 .arrow-container {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 44px;
-  height: 44px;
-  background: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/arrow-down.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  font-size: 40px;
+  color: white;
   cursor: pointer;
 }
 
@@ -77,6 +74,6 @@ a:any-link {
 
   &:hover {
     text-decoration: none;
-    font-size: 45px;
+    font-size: 41px;
   }
 }

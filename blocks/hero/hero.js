@@ -5,6 +5,10 @@ export default function decorate(block) {
   const arrowLink = document.createElement('a')
   arrowLink.href = '#'
 
+  const arrowSpan = document.createElement('span')
+  arrowSpan.innerHTML = '&#x25BC;'
+
+  arrowLink.appendChild(arrowSpan)
   arrowContainer.appendChild(arrowLink)
 
   block.appendChild(arrowContainer)
