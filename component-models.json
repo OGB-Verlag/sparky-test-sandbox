@@ -342,7 +342,7 @@
     ]
   },
   {
-    "id": "title-advanced",
+    "id": "title-advanced2",
     "fields": [
       {
         "component": "text",
@@ -352,78 +352,22 @@
         "label": "Text"
       },
       {
-        "component": "select",
-        "name": "type",
-        "value": "h2",
-        "label": "Type",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "h1",
-            "value": "h1"
-          },
-          {
-            "name": "h2",
-            "value": "h2"
-          },
-          {
-            "name": "h3",
-            "value": "h3"
-          },
-          {
-            "name": "h4",
-            "value": "h4"
-          },
-          {
-            "name": "h5",
-            "value": "h5"
-          },
-          {
-            "name": "h6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
         "component": "multiselect",
         "name": "classes",
-        "label": "Style",
+        "label": "Alignment",
         "valueType": "string",
-        "maxSize": 2,
         "options": [
           {
-            "name": "Ausrichtung",
-            "children": [
-              {
-                "name": "Links",
-                "value": "title-advanced-align-left"
-              },
-              {
-                "name": "Rechts",
-                "value": "title-advanced-align-right"
-              },
-              {
-                "name": "Zentriert",
-                "value": "title-advanced-align-center"
-              }
-            ]
+            "name": "Links",
+            "value": "title-advanced2-align-left"
           },
           {
-            "name": "Style",
-            "children": [
-              {
-                "name": "Style 1",
-                "value": "title-advanced-style-1"
-              },
-              {
-                "name": "Style 2",
-                "value": "title-advanced-style-2"
-              },
-              {
-                "name": "Style 3",
-                "value": "title-advanced-style-3"
-              }
-            ]
+            "name": "Rechts",
+            "value": "title-advanced2-align-right"
+          },
+          {
+            "name": "Zentriert",
+            "value": "title-advanced2-align-center"
           }
         ]
       }

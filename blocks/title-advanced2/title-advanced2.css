@@ -1,33 +1,33 @@
 /** Wrapper class */
-.title-advanced-wrapper {
+.title-advanced2-wrapper {
   padding: 15px;
 }
 
 /** Alignment */
-.title-advanced-align-left {
+.title-advanced2-align-left {
   display: flex;
   justify-content: flex-start;
 }
 
-.title-advanced-align-right {
+.title-advanced2-align-right {
   display: flex;
   justify-content: flex-end;
 }
 
-.title-advanced-align-center {
+.title-advanced2-align-center {
   display: flex;
   justify-content: center;
 }
 
 /** Styles */
-.title-advanced-style-1 {
+.title-advanced2-style-1 {
   background-color: azure;
 }
 
-.title-advanced-style-2 {
+.title-advanced2-style-2 {
   background-color: darksalmon;
 }
 
-.title-advanced-style-3 {
+.title-advanced2-style-3 {
   background-color: darkseagreen;
 }
