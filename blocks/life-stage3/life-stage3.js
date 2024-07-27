@@ -3,12 +3,10 @@ const badgeClass = 'badge-primary'
 export default function decorate(block) {
   const [left, right] = block.children
 
-  // Create and append the new top element
   const topElement = document.createElement('div')
   topElement.classList.add('top-element')
   block.insertBefore(topElement, left)
 
-  // Move the first button to the top element
   const firstButtonContainer = left.querySelector('.button-container')
   if (firstButtonContainer) {
     topElement.appendChild(firstButtonContainer)
@@ -38,11 +36,4 @@ export default function decorate(block) {
       secondButton.classList.add('second-button')
     }
   }
-
-  // Set block styles
-  block.style.display = 'flex'
-  block.style.flexDirection = 'column'
-  block.style.justifyContent = 'flex-start'
-  block.style.alignItems = 'stretch'
-  block.style.maxHeight = '652px'
 }

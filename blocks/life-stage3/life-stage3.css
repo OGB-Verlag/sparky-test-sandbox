@@ -1,59 +1,66 @@
 .life-stage3.block {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  overflow: hidden;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
 }
 
-.column-left,
-.column-right {
-  flex: 1;
-  padding: 10px;
-  box-sizing: border-box;
-  overflow: hidden;
+.top-element {
+  display: flex;
+  justify-content: center;
 }
 
-.column-right div {
-  margin-bottom: 10px;
-  padding-left: 0px;
-  width: 84%;
+.column-right picture,
+.column-right img {
+  max-height: 240px;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.column-left p strong {
+  display: block;
+  margin: 32px 0px 6px 0px;
 }
 
 @media (min-width: 900px) {
   .life-stage3.block {
-    flex-direction: row;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    height: auto;
+    margin: 0 auto;
   }
-
-  .column-left,
-  .column-right {
-    width: 50%;
-  }
-
-  .column-right div {
-    padding-left: 40px;
-  }
-
-  /**/
 
   .top-element {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     overflow: hidden;
   }
 
+  .column-left,
+  .column-right {
+    max-width: 50%;
+  }
+
+  .column-right div {
+    padding-left: 40px;
+  }
+
   .columns-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: hidden;
   }
 
   .column-right picture,
   .column-right img {
-    width: 100%;
+    max-height: 240px;
+    width: auto;
     object-fit: contain;
   }
 
@@ -61,23 +68,6 @@
     display: block;
     margin: 32px 0px 6px 0px;
   }
-}
-
-.badge {
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  margin: 0.2em;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
-  color: #352f59;
-  background-color: #fafafa;
-  height: 2.3em;
-  align-content: center;
 }
 
 .second-button {
