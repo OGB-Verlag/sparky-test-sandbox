@@ -3,15 +3,15 @@ main .hero-container > div {
   background: rgba(33, 115, 238, 0.1);
 }
 
-/*TODO move to header*/
+/*TODO move the distance to the header*/
 main .hero-container {
-  padding: 12px 0 0 0;
+  padding: 6px 0 0 0;
 }
 
 .hero {
   position: relative;
   padding: 32px;
-  min-height: 398px;
+  min-height: 477px;
 }
 
 .hero h2 {
@@ -19,8 +19,8 @@ main .hero-container {
   /* TODO: font-family:  font-family: 'Work Sans'; */
   font-weight: 800;
   max-width: 800;
-  margin-left: 120px;
-  margin-top: 55px;
+  margin-left: auto;
+  margin-top: 25px;
   text-transform: uppercase;
   color: #fff;
   font-style: normal;
@@ -33,7 +33,7 @@ main .hero-container {
   max-width: 600;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 120px;
+  margin-left: auto;
   margin-top: 40px;
   color: white;
 }
@@ -53,27 +53,58 @@ main .hero-container {
 }
 
 @media (width >= 900px) {
+  .hero h2 {
+    font-family: var(--heading-font-family);
+    /* TODO: font-family:  font-family: 'Work Sans'; */
+    font-weight: 800;
+    max-width: 800;
+    margin-left: 120px;
+    margin-top: 55px;
+    text-transform: uppercase;
+    color: #fff;
+    font-style: normal;
+  }
+
+  .hero h6 {
+    font-family: var(--heading-font-family);
+    /* TODO: font-family:  font-family: 'Work Sans'; */
+    font-weight: 400;
+    max-width: 600;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 120px;
+    margin-top: 40px;
+    color: white;
+  }
+
   .hero {
     min-height: 398px;
+  }
+
+  main .hero-container {
+    padding: 12px 0 0 0;
   }
 }
 
 .arrow-container {
+  background-image: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/arrow-down.svg');
+  background-repeat: no-repeat;
   position: absolute;
-  bottom: 10px;
+  top: 88%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 40px;
-  color: white;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
+  animation: jump 3s infinite;
 }
 
-a:any-link {
-  color: white;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-    font-size: 41px;
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-7px);
   }
 }
