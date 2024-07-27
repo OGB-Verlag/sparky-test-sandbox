@@ -347,7 +347,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "jcr:title",
+        "name": "title",
         "value": "",
         "label": "Text"
       },
