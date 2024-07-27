@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-.top-element {
+.top-div {
   display: flex;
   justify-content: center;
 }
@@ -50,6 +50,38 @@
   top: 2px;
 }
 
+.second-button {
+  color: #ffffff;
+  background-color: transparent !important;
+  max-width: fit-content;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 30px 16px 0 0;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.second-button:hover {
+  background-color: #5a6268;
+  text-decoration: none;
+}
+
+a.button:any-link,
+button {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  min-width: 400px;
+  max-height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 900px) {
   .life-stage3.block {
     display: flex;
@@ -59,7 +91,7 @@
     margin: 0 auto;
   }
 
-  .top-element {
+  .top-div {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -95,32 +127,33 @@
     color: #000d77;
     font-family: Wigrum;
   }
-}
 
-.second-button {
-  color: #ffffff;
-  background-color: transparent;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 30px 16px 0 0;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  display: inline-block;
-  display: flex;
-  justify-content: flex-end;
-}
+  .second-button {
+    color: #ffffff;
+    background-color: transparent;
+    max-width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 16px 0 0;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-.second-button:hover {
-  background-color: #5a6268;
-  text-decoration: none;
-}
-
-a.button:any-link,
-button {
-  min-width: 400px;
-  max-height: 30px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  a.button:any-link,
+  button {
+    min-width: 400px;
+    max-height: 40px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 500;
+    min-width: fit-content;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
 }
