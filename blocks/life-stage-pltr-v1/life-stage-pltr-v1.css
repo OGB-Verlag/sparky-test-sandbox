@@ -1,0 +1,163 @@
+/* 
+ * Live Stage Picture left Text right 
+*/
+
+.life-stage-pltr-v1.block {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.top-div {
+  display: flex;
+  justify-content: center;
+}
+
+.column-right picture,
+.column-right img {
+  max-height: 240px;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.column-left p strong {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 16px 0px;
+  color: #000d77;
+  font-size: 16px;
+}
+
+.column-left p strong::before {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/PiggyBank.svg');
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.second-button::before {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/herz.svg');
+  margin-right: 2px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.second-button::after {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
+  margin-left: 8px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.second-button {
+  color: #ffffff;
+  background-color: transparent !important;
+  max-width: fit-content;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 30px 16px 0 0;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.second-button:hover {
+  background-color: #5a6268;
+  text-decoration: none;
+}
+
+a.button:any-link,
+button {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  min-width: 400px;
+  max-height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .life-stage-pltr-v1.block {
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .top-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .column-left,
+  .column-right {
+    max-width: 50%;
+  }
+
+  .column-right div {
+    padding-left: 40px;
+  }
+
+  .columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .column-right picture,
+  .column-right img {
+    max-height: 240px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .column-left p strong {
+    margin: 32px 0px 6px 0px;
+    /* TODO: font-family:  font-family: 'Work Sans'; */
+    color: #000d77;
+    font-family: Wigrum;
+  }
+
+  .second-button {
+    color: #ffffff;
+    background-color: transparent;
+    max-width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 16px 0 0;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  a.button:any-link,
+  button {
+    min-width: 400px;
+    max-height: 40px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 500;
+    min-width: fit-content;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+}
