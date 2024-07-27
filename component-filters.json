@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "image-advanced", "rte", "embed", "imagewithtext"]
+    "components": ["text", "title", "image", "button", "image-advanced", "embed", "imagewithtext"]
   },
   {
     "id": "section",
@@ -19,16 +19,15 @@
       "button",
       "title",
       "hero",
+      "imagewithtext",
       "life-stage",
       "life-stage2",
       "life-stage3",
-      "imagewithtext",
       "image-advanced",
-      "title-advanced2",
       "columns",
       "embed",
-      "breadcrumb",
-      "quote"
+      "quote",
+      "breadcrumb"
     ]
   },
   {
