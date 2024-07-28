@@ -441,13 +441,6 @@
         "valueType": "string"
       },
       {
-        "component": "richtext",
-        "name": "content_bages",
-        "value": "",
-        "label": "Bages",
-        "valueType": "string"
-      },
-      {
         "component": "multiselect",
         "name": "content_bages",
         "label": "BagesLabel",
