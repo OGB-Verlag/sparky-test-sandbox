@@ -17,7 +17,7 @@ export default function decorate(block) {
   block.appendChild(columnsWrapper)
 
   // Add badges to the Text column
-  rightDiv?.querySelectorAll('ul').forEach((ul) => {
+  leftDiv?.querySelectorAll('ul').forEach((ul) => {
     ul.classList.add('badges')
     ul.querySelectorAll('li').forEach((li) => {
       li.classList.add('badge')
