@@ -75,12 +75,12 @@ main .cta1-container > div {
   }
 }
 
-.findeherauswie-button {
+.button {
   background-color: white;
   color: #000d77;
 }
 
-.findeherauswie-button::after {
+.button::after {
   content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
   margin-left: 8px;
   display: inline-block;
