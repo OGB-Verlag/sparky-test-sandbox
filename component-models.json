@@ -635,7 +635,7 @@
         "component": "text",
         "name": "content_cta1Text",
         "value": "",
-        "label": "Vertikale Text hinzufügen",
+        "label": "Button Text hinzufügen",
         "valueType": "string"
       }
     ]
