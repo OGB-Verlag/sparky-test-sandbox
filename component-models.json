@@ -450,25 +450,30 @@
       {
         "component": "multiselect",
         "name": "content_bages",
-        "label": "Bages",
+        "label": "BagesLabel",
         "valueType": "string",
         "required": false,
         "options": [
           {
-            "name": "Lohnsteuer",
-            "value": "Lohnsteuer"
-          },
-          {
-            "name": "Krankenversicherung",
-            "value": "Krankenversicherung"
-          },
-          {
-            "name": "Unfallversicherung",
-            "value": "Unfallversicherung"
-          },
-          {
-            "name": "Arbeitslosenversicherung",
-            "value": "Arbeitslosenversicherung"
+            "name": "BagesName",
+            "children": [
+              {
+                "name": "Lohnsteuer",
+                "value": "Lohnsteuer"
+              },
+              {
+                "name": "Krankenversicherung",
+                "value": "Krankenversicherung"
+              },
+              {
+                "name": "Unfallversicherung",
+                "value": "Unfallversicherung"
+              },
+              {
+                "name": "Arbeitslosenversicherung",
+                "value": "Arbeitslosenversicherung"
+              }
+            ]
           }
         ]
       },
