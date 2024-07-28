@@ -152,7 +152,7 @@
           }
         },
         {
-          "title": "Image with Text",
+          "title": "Bild mit Text",
           "id": "imagewithtext",
           "plugins": {
             "xwalk": {
