@@ -403,6 +403,92 @@
     ]
   },
   {
+    "id": "life-stage-pltr-v2",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "content_cta2",
+        "value": "",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "content_cta2Text",
+        "value": "",
+        "label": "Link Text",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "content_text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "content_bages",
+        "value": "",
+        "label": "Bages",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "content_bages",
+        "label": "Bages",
+        "valueType": "string",
+        "required": false,
+        "options": [
+          {
+            "name": "Lohnsteuer",
+            "value": "Lohnsteuer"
+          },
+          {
+            "name": "Krankenversicherung",
+            "value": "Krankenversicherung"
+          },
+          {
+            "name": "Unfallversicherung",
+            "value": "Unfallversicherung"
+          },
+          {
+            "name": "Arbeitslosenversicherung",
+            "value": "Arbeitslosenversicherung"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "content_cta",
+        "value": "",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "content_ctaText",
+        "value": "",
+        "label": "Link Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "image-advanced",
     "fields": [
       {
