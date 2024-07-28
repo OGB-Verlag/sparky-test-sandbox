@@ -1,0 +1,223 @@
+/* 
+ * Live Stage Version 3
+ * - Text-Left Picture-Right 
+ * - "Finanziert durch", use badges on the buttom of the paragraph.
+ * 
+*/
+
+/* TODO: Ajust font-family, font-size, paddings/margins, & unit of measurement */
+
+.life-stage-pltr-v2.block {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.top-div {
+  display: flex;
+  justify-content: center;
+}
+
+.column-left,
+.column-right {
+  padding: 8px 16px 12px 16px;
+}
+
+.column-right picture,
+.column-right img {
+  max-height: 130px;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.column-left p {
+  font-size: 15px;
+}
+.column-left p strong {
+  display: flex;
+  justify-content: flex-start;
+  color: #000d77;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px 0px 6px 0px;
+}
+
+.column-left p strong::before {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/PiggyBank.svg');
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.second-button::before {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/herz.svg');
+  margin-right: 2px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.second-button::after {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
+  margin-left: 8px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.second-button {
+  background-color: transparent !important;
+  max-width: fit-content;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 14px;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.second-button:hover {
+  background-color: #5a6268;
+  text-decoration: none;
+}
+
+a.button:any-link,
+button {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  min-width: 353px;
+  max-height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 0.2em;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 8px;
+  color: #00063b;
+  background-color: #eeedf1;
+  height: 30px;
+  align-content: center;
+}
+
+@media (min-width: 900px) {
+  .life-stage-pltr-v2-wrapper {
+    margin-bottom: 120px;
+  }
+  .life-stage-pltr-v2.block {
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .top-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+  }
+
+  .column-left,
+  .column-right {
+    max-width: 50%;
+    padding: 0px 16px 0px 16px;
+  }
+
+  .column-right div {
+    padding-left: 40px;
+  }
+
+  .columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .column-right picture,
+  .column-right img {
+    max-height: 240px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .column-left p {
+    font-size: 17px;
+  }
+
+  .column-left p strong {
+    margin: 16px 0px 0px 0px;
+    /* TODO: font-family:  font-family: 'Wigrum;'; */
+    color: #352f59;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .second-button {
+    color: #ffffff;
+    background-color: transparent;
+    max-width: fit-content;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 30px 16px 0 0;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  a.button:any-link,
+  button {
+    min-width: 400px;
+    max-height: 40px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 500;
+    min-width: fit-content;
+    max-width: fit-content;
+    padding-left: 46px;
+    padding-right: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0.2em;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 8px;
+    color: #00063b;
+    background-color: #eeedf1;
+    height: 30px;
+    align-content: center;
+  }
+}
