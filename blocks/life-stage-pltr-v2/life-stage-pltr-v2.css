@@ -49,6 +49,8 @@
   content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/PiggyBank.svg');
   margin-right: 8px;
   display: inline-block;
+  position: relative;
+  bottom: 6px;
 }
 
 .second-button::before {

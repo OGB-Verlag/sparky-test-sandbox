@@ -77,7 +77,7 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Life Stage v1.<br> Bild-Links Text-Rechts",
+          "title": "Life Stage v1. Bild-Links Text-Rechts",
           "id": "life-stage-pltr-v1",
           "plugins": {
             "xwalk": {
@@ -92,7 +92,7 @@
           }
         },
         {
-          "title": "Life Stage v2.<br> Bild-Links Text-Rechts",
+          "title": "Life Stage v2. Bild-Links Text-Rechts",
           "id": "life-stage-pltr-v2",
           "plugins": {
             "xwalk": {
@@ -107,7 +107,7 @@
           }
         },
         {
-          "title": "Life Stage v3.<br> Text-Links Bild-Rechts",
+          "title": "Life Stage v3. Text-Links Bild-Rechts",
           "id": "life-stage-tlpr-v3",
           "plugins": {
             "xwalk": {
