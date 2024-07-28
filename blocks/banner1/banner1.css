@@ -58,3 +58,19 @@ main .banner1-container > div {
   background-color: white;
   color: #000d77;
 }
+
+.unser-fazit::before {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/BlaueHerz.svg');
+  margin-right: 2px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.unser-fazit::after {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/BlaueHerz.svg');
+  margin-left: 2px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}

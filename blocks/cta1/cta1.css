@@ -1,0 +1,89 @@
+main .cta1-container > div {
+  max-width: unset;
+  background-color: #fce9ef;
+  margin-top: 48px;
+  margin-bottom: 52px;
+}
+
+.cta1 {
+  position: relative;
+  padding: 40px 40px 40px 40px;
+  min-width: 393px;
+  max-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.cta1 h1 {
+  /* TODO: font-family:  font-family: 'Wigrum'; */
+  font-family: var(--heading-font-family);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 120%;
+  margin-top: 40px;
+  color: #e60040;
+}
+
+.cta1 h6 {
+  /* TODO: font-family:  font-family: 'Wigrum'; */
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+
+  margin-top: 40px;
+  color: #e60040;
+}
+
+@media (width >= 900px) {
+  .cta1 h1 {
+    /* TODO: font-family:  font-family: 'Wigrum'; */
+    font-family: var(--heading-font-family);
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 120%;
+    margin-top: 40px;
+    color: #e60040;
+    transform: uppercase;
+  }
+
+  .cta1 h6 {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+
+    margin-top: 40px;
+    color: #e60040;
+  }
+
+  .cta1 {
+    position: relative;
+    padding: 60px 98px 60px 98px;
+    max-width: 1152;
+    min-height: 465px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  main .cta1-container {
+    padding: 12px 0 0 0;
+  }
+}
+
+.findeherauswie-button {
+  background-color: white;
+  color: #000d77;
+}
+
+.findeherauswie-button::after {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
+  margin-left: 8px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}

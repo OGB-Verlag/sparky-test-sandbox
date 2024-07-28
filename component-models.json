@@ -606,5 +606,38 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "cta1",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text1",
+        "value": "",
+        "label": "Text 1 hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text2",
+        "value": "",
+        "label": "Text 2 hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "content_cta1",
+        "value": "",
+        "label": "Button-Link hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "content_cta1Text",
+        "value": "",
+        "label": "Vertikale Text hinzufügen",
+        "valueType": "string"
+      }
+    ]
   }
 ]
