@@ -1,11 +1,13 @@
 /* 
- * Live Stage, Picture-Left Text-Right 
+ * Live Stage :: Picture-Left Text-Right 
 */
+
+/* TODO: Ajust font-family, font-size & paddings/margins */
 
 .life-stage-pltr-v1.block {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 400px;
   height: auto;
   margin: 0 auto;
 }
@@ -22,19 +24,23 @@
 
 .column-right picture,
 .column-right img {
-  max-height: 240px;
+  max-height: 130px;
   width: auto;
   object-fit: contain;
   display: flex;
   justify-content: center;
 }
 
+.column-left p {
+  font-size: 15px;
+}
 .column-left p strong {
   display: flex;
   justify-content: center;
-  padding: 0px 0px 0px 0px;
   color: #000d77;
   font-size: 16px;
+  font-weight: 500;
+  padding: 0px 0px 6px 0px;
 }
 
 .column-left p strong::before {
@@ -60,12 +66,11 @@
 }
 
 .second-button {
-  color: #ffffff;
   background-color: transparent !important;
   max-width: fit-content;
-  font-size: 18px;
-  font-weight: 500;
-  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 14px;
   text-decoration: none;
   display: inline-block;
   display: flex;
@@ -79,10 +84,10 @@
 
 a.button:any-link,
 button {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
-  min-width: 400px;
+  min-width: 353px;
   max-height: 30px;
   border-radius: 4px;
   display: flex;
@@ -164,12 +169,14 @@ button {
   a.button:any-link,
   button {
     min-width: 400px;
-    max-height: 40px;
+    max-height: 41px;
     border-radius: 4px;
     font-size: 22px;
     font-weight: 500;
     min-width: fit-content;
     max-width: fit-content;
+    padding-left: 46px;
+    padding-right: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
