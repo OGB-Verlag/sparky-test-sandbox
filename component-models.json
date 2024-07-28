@@ -573,5 +573,24 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "banner1",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text1",
+        "value": "",
+        "label": "Text 1 hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text2",
+        "value": "",
+        "label": "Text 2 hinzufügen",
+        "valueType": "string"
+      }
+    ]
   }
 ]

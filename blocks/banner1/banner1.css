@@ -1,0 +1,51 @@
+main .banner1-container > div {
+  max-width: unset;
+  background-color: #000d77;
+}
+
+.banner1 {
+  position: relative;
+  padding: 56px 178px 56px 178px;
+  max-width: 1440px;
+  min-height: 400px;
+}
+
+.banner1 h6 {
+  /* TODO: font-family:  font-family: 'Wigrum'; */
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  color: #fafafa;
+}
+
+@media (width >= 900px) {
+  .banner1 h6 {
+    font-family: var(--heading-font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    color: #fafafa;
+  }
+
+  .banner1 {
+    min-height: 398px;
+  }
+
+  main .banner1-container {
+    padding: 12px 0 0 0;
+  }
+}
+
+.unser-fazit {
+  background-color: white;
+  color: #000d77;
+}
