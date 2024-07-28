@@ -116,7 +116,7 @@ button {
 
 @media (min-width: 900px) {
   .life-stage-pltr-v2-wrapper {
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
   .life-stage-pltr-v2.block {
     display: flex;

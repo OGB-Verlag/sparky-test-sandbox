@@ -7,7 +7,7 @@
 
 /* TODO: Ajust font-family, font-size, paddings/margins, & unit of measurement */
 
-.life-stage-pltr-v2.block {
+.life-stage-tlpr-v3.block {
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -18,6 +18,7 @@
 .top-div {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .column-left,
@@ -71,7 +72,7 @@
 .second-button {
   background-color: transparent !important;
   max-width: fit-content;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   padding-top: 14px;
   text-decoration: none;
@@ -116,10 +117,10 @@ button {
 }
 
 @media (min-width: 900px) {
-  .life-stage-pltr-v2-wrapper {
-    margin-bottom: 120px;
+  .life-stage-tlpr-v3-wrapper {
+    margin-bottom: 50px;
   }
-  .life-stage-pltr-v2.block {
+  .life-stage-tlpr-v3.block {
     display: flex;
     flex-direction: column;
     max-width: 1040px;
