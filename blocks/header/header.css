@@ -5,8 +5,7 @@ header .nav-wrapper {
   z-index: 2;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #cccaca;
-  box-shadow: 0px 1px 2px #cccaca;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
 header nav {
@@ -74,7 +73,7 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: var(--background-color);
+  background-color: #fafafa;
   color: inherit;
   overflow: initial;
   text-overflow: initial;

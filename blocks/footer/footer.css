@@ -1,10 +1,8 @@
 footer {
   padding: 2rem;
-  background-color: var(--gray-5);
-  font-size: var(--body-font-size-xs);
-
+  background-color: #f2f2f2;
+  color: #141414;
   display: flex;
-
   justify-content: center;
   font-family: var(--body-font-family);
   font-size: 16px;
@@ -20,6 +18,7 @@ footer a:any-link {
 
 footer .footer {
   max-width: 1440px;
+  height: 160px;
   margin: auto;
 }
 
@@ -30,6 +29,12 @@ footer .footer p {
 }
 
 @media (min-width: 900px) {
+  footer .footer {
+    max-width: 1440px;
+    height: 30px;
+    margin: auto;
+  }
+
   footer .footer p {
     display: flex;
     align-items: center;
