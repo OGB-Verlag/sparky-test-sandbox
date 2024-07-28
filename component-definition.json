@@ -182,7 +182,7 @@
           }
         },
         {
-          "title": "Life Stage Bild-links Text-rechts v2",
+          "title": "Life Stage v2.<br> Bild-Links Text-Rechts",
           "id": "life-stage-pltr-v2",
           "plugins": {
             "xwalk": {
@@ -197,7 +197,7 @@
           }
         },
         {
-          "title": "Life Stage Text-links Bild-rechts v3",
+          "title": "Life Stage v3.<br> Text-Links Bild-Rechts",
           "id": "life-stage-tlpr-v3",
           "plugins": {
             "xwalk": {
