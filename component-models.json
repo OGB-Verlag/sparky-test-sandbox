@@ -590,6 +590,20 @@
         "value": "",
         "label": "Text 2 hinzufügen",
         "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "content_vertical",
+        "value": "",
+        "label": "",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "content_verticalText",
+        "value": "",
+        "label": "Vertikale Text hinzufügen",
+        "valueType": "string"
       }
     ]
   }

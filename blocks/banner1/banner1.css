@@ -1,13 +1,19 @@
 main .banner1-container > div {
   max-width: unset;
   background-color: #000d77;
+  margin-top: 48px;
+  margin-bottom: 52px;
 }
 
 .banner1 {
   position: relative;
-  padding: 56px 178px 56px 178px;
-  max-width: 1440px;
-  min-height: 400px;
+  padding: 24px 24px 24px 32px;
+  min-width: 393px;
+  max-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .banner1 h6 {
@@ -16,9 +22,7 @@ main .banner1-container > div {
   font-weight: 500;
   font-size: 18px;
   line-height: 120%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
+
   margin-top: 40px;
   color: #fafafa;
 }
@@ -29,15 +33,20 @@ main .banner1-container > div {
     font-weight: 500;
     font-size: 24px;
     line-height: 120%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: auto;
+
     margin-top: 40px;
     color: #fafafa;
   }
 
   .banner1 {
-    min-height: 398px;
+    position: relative;
+    padding: 56px 178px 56px 178px;
+    max-width: 1440px;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 
   main .banner1-container {
