@@ -78,10 +78,6 @@
   flex-wrap: nowrap;
 }
 
-.ex-flex-wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
-
 .ex-flex-nowrap {
   flex-wrap: nowrap;
 }
