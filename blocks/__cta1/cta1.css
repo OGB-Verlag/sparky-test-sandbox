@@ -24,6 +24,7 @@ main .cta1-container > div {
   line-height: 120%;
   margin-top: 40px;
   color: #e60040;
+  transform: uppercase;
 }
 
 .cta1 h6 {
@@ -62,7 +63,7 @@ main .cta1-container > div {
   .cta1 {
     position: relative;
     padding: 60px 98px 60px 98px;
-    max-width: 1152;
+    width: 1152;
     min-height: 465px;
 
     display: flex;
@@ -73,11 +74,18 @@ main .cta1-container > div {
   main .cta1-container {
     padding: 12px 0 0 0;
   }
-}
 
-.button {
-  background-color: white;
-  color: #000d77;
+  a.button:any-link,
+  button {
+    font-size: 17px;
+    font-weight: 500;
+    min-width: 900px;
+    max-height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .button::after {
@@ -86,4 +94,19 @@ main .cta1-container > div {
   display: inline-block;
   position: relative;
   top: 2px;
+}
+
+.cta1 a.button:any-link,
+button {
+  background-color: white;
+  color: #e60040;
+  font-size: 17px;
+  font-weight: 500;
+  min-width: 900;
+  max-height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
 }
