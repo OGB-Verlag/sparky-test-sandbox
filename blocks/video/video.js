@@ -1,7 +1,7 @@
 /*
- * Embed Block
+ * Video Block
  * Show videos and social posts directly on your page
- * https://www.hlx.live/developer/block-collection/embed
+ * https://www.hlx.live/developer/block-collection/video
  */
 
 const loadScript = (url, callback, type) => {
@@ -16,7 +16,7 @@ const loadScript = (url, callback, type) => {
   return script
 }
 
-const getDefaultEmbed = (
+const getDefaultVideo = (
   url,
 ) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
       <iframe src="${url.href}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" allow="autoplay"
@@ -24,90 +24,90 @@ const getDefaultEmbed = (
       </iframe>
     </div>`
 
-const embedYoutube = (url, autoplay) => {
+const videoYoutube = (url, autoplay) => {
   const usp = new URLSearchParams(url.search)
   const suffix = autoplay ? '&muted=1&autoplay=1' : ''
   let vid = usp.get('v') ? encodeURIComponent(usp.get('v')) : ''
-  const embed = url.pathname
+  const video = url.pathname
   if (url.origin.includes('youtu.be')) {
     ;[, vid] = url.pathname.split('/')
   }
 
-  /*  const embedHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
-        <iframe src="https://www.youtube.com${vid ? `/embed/${vid}?rel=0&v=${vid}${suffix}` : embed}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
+  /*  const videoHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+        <iframe src="https://www.youtube.com${vid ? `/video/${vid}?rel=0&v=${vid}${suffix}` : video}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
         allow="autoplay; fullscreen; picture-in-picture; encrypted-media; accelerometer; gyroscope; picture-in-picture" allowfullscreen="" scrolling="no" title="Content from Youtube" loading="lazy"></iframe>
         </div>`; 
     */
 
-  const embedHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
-        <iframe src="https://www.youtube.com/${embed}?rel=0${suffix}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
+  const videoHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+        <iframe src="https://www.youtube.com/${video}?rel=0${suffix}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
         allow="autoplay; fullscreen; picture-in-picture; encrypted-media; accelerometer; gyroscope; picture-in-picture" allowfullscreen="" scrolling="no" title="Content from Youtube" loading="lazy"></iframe>
       </div>`
 
-  return embedHTML
+  return videoHTML
 }
 
-const embedVimeo = (url, autoplay) => {
+const videoVimeo = (url, autoplay) => {
   const [, video] = url.pathname.split('/')
   const suffix = autoplay ? '?muted=1&autoplay=1' : ''
-  const embedHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+  const videoHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
         <iframe src="https://player.vimeo.com/video/${video}${suffix}" 
         style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  
         title="Content from Vimeo" loading="lazy"></iframe>
       </div>`
-  return embedHTML
+  return videoHTML
 }
 
-const embedTwitter = (url) => {
-  const embedHTML = `<blockquote class="twitter-tweet"><a href="${url.href}"></a></blockquote>`
+const videoTwitter = (url) => {
+  const videoHTML = `<blockquote class="twitter-tweet"><a href="${url.href}"></a></blockquote>`
   loadScript('https://platform.twitter.com/widgets.js')
-  return embedHTML
+  return videoHTML
 }
 
-const embedVideoMP4 = (url) => {
-  const embedHTML = `<video width="800" controls>
+const videoVideoMP4 = (url) => {
+  const videoHTML = `<video width="800" controls>
   <source src="${url.href}" type="video/mp4">
   <source src="${url.href}" type="video/ogg">
   Your browser does not support HTML video.
 </video>`
-  return embedHTML
+  return videoHTML
 }
 
-const loadEmbed = (block, link, autoplay) => {
-  if (block.classList.contains('embed-is-loaded')) {
+const loadVideo = (block, link, autoplay) => {
+  if (block.classList.contains('video-is-loaded')) {
     return
   }
 
-  const EMBEDS_CONFIG = [
+  const VIDEO_CONFIG = [
     {
       match: ['youtube', 'youtu.be'],
-      embed: embedYoutube,
+      video: videoYoutube,
     },
     {
       match: ['vimeo'],
-      embed: embedVimeo,
+      video: videoVimeo,
     },
     {
       match: ['twitter'],
-      embed: embedTwitter,
+      video: videoTwitter,
     },
     {
       match: ['mp4'],
-      embed: embedVideoMP4,
+      video: videoVideoMP4,
     },
   ]
 
-  const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)))
+  const config = VIDEO_CONFIG.find((e) => e.match.some((match) => link.includes(match)))
   const url = new URL(link)
   if (config) {
-    block.innerHTML = config.embed(url, autoplay)
-    block.classList = `block embed embed-${config.match[0]}`
+    block.innerHTML = config.video(url, autoplay)
+    block.classList = `block video video-${config.match[0]}`
   } else {
-    block.innerHTML = getDefaultEmbed(url)
-    block.classList = 'block embed'
+    block.innerHTML = getDefaultVideo(url)
+    block.classList = 'block video'
   }
-  block.classList.add('embed-is-loaded')
+  block.classList.add('video-is-loaded')
 }
 
 export default function decorate(block) {
@@ -117,11 +117,11 @@ export default function decorate(block) {
 
   if (placeholder) {
     const wrapper = document.createElement('div')
-    wrapper.className = 'embed-placeholder'
-    wrapper.innerHTML = '<div class="embed-placeholder-play"><button type="button" title="Play"></button></div>'
+    wrapper.className = 'video-placeholder'
+    wrapper.innerHTML = '<div class="video-placeholder-play"><button type="button" title="Play"></button></div>'
     wrapper.prepend(placeholder)
     wrapper.addEventListener('click', () => {
-      loadEmbed(block, link, true)
+      loadVideo(block, link, true)
       block.querySelector('video').play()
     })
     block.append(wrapper)
@@ -129,7 +129,7 @@ export default function decorate(block) {
     const observer = new IntersectionObserver((entries) => {
       if (entries.some((e) => e.isIntersecting)) {
         observer.disconnect()
-        loadEmbed(block, link)
+        loadVideo(block, link)
       }
     })
     observer.observe(block)
