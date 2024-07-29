@@ -593,14 +593,14 @@
       },
       {
         "component": "aem-content",
-        "name": "content_vertical",
-        "value": "",
-        "label": "",
+        "name": "content_banner1",
+        "value": "#",
+        "label": "Bitte nur der # hinzufügen",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_verticalText",
+        "name": "content_banner1Text",
         "value": "",
         "label": "Vertikale Text hinzufügen",
         "valueType": "string"
