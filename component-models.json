@@ -594,8 +594,8 @@
       {
         "component": "aem-content",
         "name": "content_banner1",
-        "value": "#",
-        "label": "Bitte nur der # hinzufügen",
+        "value": "",
+        "label": "Bitte nur ein # Zeichen hinzufügen",
         "valueType": "string"
       },
       {

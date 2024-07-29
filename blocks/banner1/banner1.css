@@ -1,16 +1,13 @@
-main .banner1-container > div {
-  max-width: 393px; /* Set max-width for smaller screens */
-  background-color: #fce9ef;
+main .banner1-container {
+  width: 100%;
+  background-color: #000d77;
   margin-top: 48px;
   margin-bottom: 52px;
-  margin-left: auto; /* Center align horizontally */
-  margin-right: auto; /* Center align horizontally */
 }
 
 .banner1 {
   position: relative;
   padding: 40px;
-  max-width: 393px;
   max-height: 400px;
   display: flex;
   flex-direction: column;
@@ -19,23 +16,12 @@ main .banner1-container > div {
   margin: 0 auto;
 }
 
-.banner1 h1 {
-  font-family: var(--heading-font-family);
-  font-weight: 900;
-  font-size: 32px !important;
-  line-height: 120%;
-  margin-top: 40px;
-  color: #e60040;
-  text-transform: uppercase;
-  text-align: left;
-}
-
 .banner1 h6 {
   font-family: Wigrum-Regular;
   font-weight: 600;
   font-size: 18px !important;
   line-height: 120%;
-  color: #e60040;
+  color: #fafafa;
   text-align: left;
   margin-top: 18px;
 }
@@ -43,13 +29,13 @@ main .banner1-container > div {
 .banner1 a.button:any-link,
 .banner1 button {
   background-color: white;
-  color: #e60040;
+  color: #000d77;
   font-size: 18px !important;
   font-weight: 500;
   min-width: 313px;
   max-height: 44px;
   border-radius: 4px;
-  border: 1px solid var(--HFS-rot-400, #e60040);
+  border: 1px solid var(--HFS-rot-400, #000d77);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,15 +43,11 @@ main .banner1-container > div {
 }
 
 @media (min-width: 900px) {
-  main .banner1-container > div {
-    max-width: 1152px; /* Set max-width for larger screens */
-  }
-
   .banner1 {
     position: relative;
     padding: 60px 98px;
-    min-width: 1152px;
-    min-height: 465px;
+    min-width: 100%;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,23 +55,12 @@ main .banner1-container > div {
     margin: 0 auto;
   }
 
-  .banner1 h1 {
-    font-family: Wigrum-bold;
-    font-weight: 900;
-    font-size: 50px !important;
-    line-height: 120%;
-    margin-top: 40px;
-    color: #e60040;
-    text-transform: uppercase;
-    text-align: left;
-  }
-
   .banner1 h6 {
     font-family: Wigrum-Regular;
     font-weight: 500;
     font-size: 24px !important;
     line-height: 120%;
-    color: #e60040;
+    color: #fafafa;
     text-align: left;
     margin-top: 13px;
   }
@@ -101,13 +72,13 @@ main .banner1-container > div {
   .banner1 a.button:any-link,
   .banner1 button {
     background-color: white;
-    color: #e60040;
+    color: #000d77;
     font-size: 17px;
     font-weight: 500;
     min-width: 956px;
     max-height: 44px;
     border-radius: 4px;
-    border: 1px solid var(--HFS-rot-400, #e60040);
+    border: 1px solid var(--HFS-rot-400, #000d77);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,8 +86,16 @@ main .banner1-container > div {
   }
 }
 
+.banner1 .button::before {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/BlaueHerz.svg');
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
 .banner1 .button::after {
-  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/BlaueHerz.svg');
   margin-left: 8px;
   display: inline-block;
   position: relative;
