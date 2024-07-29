@@ -554,7 +554,7 @@
         "name": "image",
         "label": "Image",
         "description": "",
-        "multi": false
+        "multi": true
       },
       {
         "component": "text",
