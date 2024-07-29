@@ -75,8 +75,8 @@ main .cta1-container > div {
     padding: 12px 0 0 0;
   }
 
-  a.button:any-link,
-  button {
+  .cta1 a.button:any-link,
+  .cta1 button {
     font-size: 17px;
     font-weight: 500;
     min-width: 900px;
@@ -88,7 +88,7 @@ main .cta1-container > div {
   }
 }
 
-.button::after {
+.cta1 .button::after {
   content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
   margin-left: 8px;
   display: inline-block;
@@ -97,7 +97,7 @@ main .cta1-container > div {
 }
 
 .cta1 a.button:any-link,
-button {
+.cta1 button {
   background-color: white;
   color: #e60040;
   font-size: 17px;
