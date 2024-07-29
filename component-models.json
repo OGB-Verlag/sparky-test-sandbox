@@ -644,17 +644,38 @@
     "id": "cta-hilfmit",
     "fields": [
       {
-        "component": "richtext",
-        "name": "text1",
-        "value": "",
-        "label": "Text 1 hinzufügen",
-        "valueType": "string"
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Bild links auswählen",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alternativtext für Bild links hinzufügen",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Bild rechts auswählen",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alternativtext für Bild rechts hinzufügen",
+        "value": ""
       },
       {
         "component": "richtext",
-        "name": "text2",
+        "name": "text1",
         "value": "",
-        "label": "Text 2 hinzufügen",
+        "label": "Text hinzufügen",
         "valueType": "string"
       },
       {
