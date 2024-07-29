@@ -424,7 +424,7 @@
         "name": "image",
         "label": "Image",
         "description": "Bild auswählen",
-        "multi": false
+        "multi": true
       },
       {
         "component": "text",
