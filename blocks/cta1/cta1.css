@@ -7,12 +7,14 @@ main .cta1-container > div {
 
 .cta1 {
   position: relative;
-  padding: 40px 40px 40px 40px;
+  padding: 40px;
   min-width: 393px;
   max-height: 400px;
 
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center the container horizontally */
+  justify-content: center; /* Center the container vertically */
   margin: 0 auto;
 }
 
@@ -24,7 +26,8 @@ main .cta1-container > div {
   line-height: 120%;
   margin-top: 40px;
   color: #e60040;
-  transform: uppercase;
+  text-transform: uppercase;
+  text-align: left; /* Align text to the left */
 }
 
 .cta1 h6 {
@@ -36,9 +39,10 @@ main .cta1-container > div {
 
   margin-top: 40px;
   color: #e60040;
+  text-align: left; /* Align text to the left */
 }
 
-@media (width >= 900px) {
+@media (min-width: 900px) {
   .cta1 h1 {
     /* TODO: font-family:  font-family: 'Wigrum'; */
     font-family: var(--heading-font-family);
@@ -47,7 +51,8 @@ main .cta1-container > div {
     line-height: 120%;
     margin-top: 40px;
     color: #e60040;
-    transform: uppercase;
+    text-transform: uppercase;
+    text-align: left; /* Align text to the left */
   }
 
   .cta1 h6 {
@@ -58,16 +63,19 @@ main .cta1-container > div {
 
     margin-top: 40px;
     color: #e60040;
+    text-align: left; /* Align text to the left */
   }
 
   .cta1 {
     position: relative;
-    padding: 60px 98px 60px 98px;
-    width: 1152;
+    padding: 60px 98px;
+    width: 1152px;
     min-height: 465px;
 
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the container horizontally */
+    justify-content: center; /* Center the container vertically */
     margin: 0 auto;
   }
 
@@ -102,8 +110,8 @@ main .cta1-container > div {
   color: #e60040;
   font-size: 17px;
   font-weight: 500;
-  min-width: 900;
-  max-height: 30px;
+  min-width: 956px;
+  max-height: 44px;
   border-radius: 4px;
   display: flex;
   align-items: center;
