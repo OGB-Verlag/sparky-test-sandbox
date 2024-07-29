@@ -9,7 +9,7 @@
   },
   {
     "id": "column",
-    "components": ["text", "title", "image", "button", "image-advanced", "embed", "imagewithtext"]
+    "components": ["text", "image", "button", "title", "imagewithtext", "image-advanced", "embed", "quote"]
   },
   {
     "id": "section",
@@ -27,7 +27,8 @@
       "quote",
       "breadcrumb",
       "banner1",
-      "cta1"
+      "cta1",
+      "columns"
     ]
   },
   {
