@@ -1,8 +1,10 @@
 main .cta1-container > div {
-  max-width: unset;
+  max-width: 393px; /* Set max-width for smaller screens */
   background-color: #fce9ef;
   margin-top: 48px;
   margin-bottom: 52px;
+  margin-left: auto; /* Center align horizontally */
+  margin-right: auto; /* Center align horizontally */
 }
 
 .cta1 {
@@ -33,9 +35,9 @@ main .cta1-container > div {
   font-weight: 600;
   font-size: 18px !important;
   line-height: 120%;
-  margin-top: 18px; /* Reduced margin-top to decrease space between h1 and h6 */
   color: #e60040;
   text-align: left;
+  margin-top: 18px;
 }
 
 .cta1 a.button:any-link,
@@ -55,6 +57,10 @@ main .cta1-container > div {
 }
 
 @media (min-width: 900px) {
+  main .cta1-container > div {
+    max-width: 1152px; /* Set max-width for larger screens */
+  }
+
   .cta1 {
     position: relative;
     padding: 60px 98px;
