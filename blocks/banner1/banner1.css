@@ -1,8 +1,7 @@
 main .banner1-container {
   width: 100%;
   background-color: #000d77;
-  margin-top: 48px;
-  margin-bottom: 52px;
+  margin-top: 80px;
 }
 
 .banner1 {
@@ -42,7 +41,7 @@ main .banner1-container {
   justify-content: center;
   text-transform: uppercase;
   position: absolute;
-  left: calc(100% + -352px); /* Position it horizontally relative to h6 */
+  left: calc(100% + -350px); /* Position horizontally relative to h6 */
   transform: translateY(-50%) rotate(-90deg);
   margin-top: -100px;
 }
