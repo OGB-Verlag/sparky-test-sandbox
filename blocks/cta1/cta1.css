@@ -117,9 +117,9 @@ main .cta1-container > div {
   top: 2px;
 }
 
-/* Adjust margin-bottom to reduce the distance between h1 and h6 by 8px */
+/* Adjust margin-bottom to reduce the distance between h1 and h6*/
 .cta1 > div:nth-child(1) > div {
-  margin-bottom: -14px;
+  margin-bottom: -8px;
 }
 
 /* Add margin-bottom to the div containing the h6 element */
