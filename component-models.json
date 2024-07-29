@@ -653,7 +653,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "imageleftAlt",
         "label": "Alternativtext für Bild links hinzufügen",
         "value": ""
       },
@@ -667,7 +667,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "imagerightAlt",
         "label": "Alternativtext für Bild rechts hinzufügen",
         "value": ""
       },

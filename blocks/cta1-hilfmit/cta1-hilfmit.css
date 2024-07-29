@@ -1,6 +1,6 @@
 main .cta-hilfmit-container > div {
   max-width: 393px; /* Set max-width for smaller screens */
-  background-color: #fce9ef;
+  background-color: white;
   margin-top: 48px;
   margin-bottom: 52px;
   margin-left: auto; /* Center align horizontally */
@@ -25,19 +25,9 @@ main .cta-hilfmit-container > div {
   font-size: 32px !important;
   line-height: 120%;
   margin-top: 40px;
-  color: #e60040;
+  color: #141414;
   text-transform: uppercase;
   text-align: left;
-}
-
-.cta-hilfmit h6 {
-  font-family: Wigrum-Regular;
-  font-weight: 600;
-  font-size: 18px !important;
-  line-height: 120%;
-  color: #e60040;
-  text-align: left;
-  margin-top: 18px;
 }
 
 .cta-hilfmit a.button:any-link,
@@ -79,19 +69,9 @@ main .cta-hilfmit-container > div {
     font-size: 50px !important;
     line-height: 120%;
     margin-top: 40px;
-    color: #e60040;
+    color: #141414;
     text-transform: uppercase;
     text-align: left;
-  }
-
-  .cta-hilfmit h6 {
-    font-family: Wigrum-Regular;
-    font-weight: 500;
-    font-size: 24px !important;
-    line-height: 120%;
-    color: #e60040;
-    text-align: left;
-    margin-top: 13px;
   }
 
   main .cta-hilfmit-container {
@@ -113,17 +93,4 @@ main .cta-hilfmit-container > div {
     justify-content: center;
     text-transform: none;
   }
-}
-
-.cta-hilfmit .button::after {
-  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
-  margin-left: 8px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-}
-
-/* Add margin-bottom to the div containing the h6 element */
-.cta-hilfmit > div:nth-child(2) > div {
-  margin-bottom: 15px;
 }
