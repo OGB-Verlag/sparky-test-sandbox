@@ -66,3 +66,27 @@
   font-display: swap;
   src: url('/fonts/NunitoExtraBold.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: 'Wigrum-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Wigrum-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Wigrum-Medium';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Wigrum-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Wigrum-Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Wigrum-Bold.woff2') format('woff2');
+}

@@ -64,7 +64,7 @@
 }
 
 .section.tabs-container .tabs-wrapper .tab-list button.tab-title {
-  font-family: Nunito-Regular, sans-serif;
+  font-family: Wigrum-Regular, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 2pc;
@@ -107,7 +107,7 @@
 
 .section.tabs-container .tabs-wrapper .tabs > .tab-content .tabpanel > ul > li {
   margin-bottom: 1pc;
-  font-family: 'Nunito-Regular', sans-serif;
+  font-family: 'Wigrum-Regular', sans-serif;
   font-size: 18px;
   line-height: 28px;
   list-style-type: disc;
