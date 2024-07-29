@@ -9,7 +9,17 @@
   },
   {
     "id": "column",
-    "components": ["text", "image", "button", "title", "imagewithtext", "image-advanced", "embed", "quote"]
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "cta-hilfmit",
+      "imagewithtext",
+      "image-advanced",
+      "embed",
+      "quote"
+    ]
   },
   {
     "id": "section",
