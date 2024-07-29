@@ -1,3 +1,7 @@
+.breadcrumb {
+  padding: 1px 10px;
+}
+
 .section.breadcrumb-handle {
   position: relative;
 }
@@ -9,7 +13,7 @@
   z-index: 1;
 }
 .section.breadcrumb-handle > .breadcrumb-wrapper > .breadcrumb.block > nav > a {
-  color: #666;
+  color: #4d4d4d;
   font-family: Wigrum-Regular, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
@@ -38,7 +42,7 @@
   align-items: center;
 }
 .section.breadcrumb-handle .breadcrumb-wrapper > .breadcrumb > nav > span svg {
-  stroke: #747272;
+  stroke: #505050;
 }
 .section.breadcrumb-handle .breadcrumb-wrapper > .breadcrumb.white > nav > span svg {
   stroke: #fff;
