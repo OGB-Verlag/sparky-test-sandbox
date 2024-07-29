@@ -8,9 +8,8 @@ main .cta1-container > div {
 .cta1 {
   position: relative;
   padding: 40px;
-  min-width: 393px;
+  max-width: 393px;
   max-height: 400px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,10 +18,9 @@ main .cta1-container > div {
 }
 
 .cta1 h1 {
-  /* TODO: font-family:  font-family: 'Wigrum'; */
   font-family: var(--heading-font-family);
   font-weight: 900;
-  font-size: 32px;
+  font-size: 32px !important;
   line-height: 120%;
   margin-top: 40px;
   color: #e60040;
@@ -31,43 +29,20 @@ main .cta1-container > div {
 }
 
 .cta1 h6 {
-  /* TODO: font-family:  font-family: 'Wigrum'; */
-  font-family: var(--heading-font-family);
+  font-family: Wigrum-Medium;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 18px !important;
   line-height: 120%;
-
   margin-top: 40px;
   color: #e60040;
   text-align: left;
 }
 
 @media (min-width: 900px) {
-  .cta1 h1 {
-    font-family: var(--heading-font-family);
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 120%;
-    margin-top: 40px;
-    color: #e60040;
-    text-transform: uppercase;
-    text-align: left;
-  }
-
-  .cta1 h6 {
-    font-family: var(--heading-font-family);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 120%;
-    margin-top: 40px;
-    color: #e60040;
-    text-align: left;
-  }
-
   .cta1 {
     position: relative;
     padding: 60px 98px;
-    width: 1152px;
+    min-width: 1152px;
     min-height: 465px;
     display: flex;
     flex-direction: column;
@@ -76,20 +51,45 @@ main .cta1-container > div {
     margin: 0 auto;
   }
 
+  .cta1 h1 {
+    font-family: var(--heading-font-family);
+    font-weight: 900;
+    font-size: 50px !important;
+    line-height: 120%;
+    margin-top: 40px;
+    color: #e60040;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .cta1 h6 {
+    font-family: Wigrum-Regular;
+    font-weight: 500;
+    font-size: 24px !important;
+    line-height: 120%;
+    margin-top: 40px;
+    color: #e60040;
+    text-align: left;
+  }
+
   main .cta1-container {
     padding: 12px 0 0 0;
   }
 
   .cta1 a.button:any-link,
   .cta1 button {
+    background-color: white;
+    color: #e60040;
     font-size: 17px;
     font-weight: 500;
-    min-width: 900px;
-    max-height: 30px;
+    min-width: 956px;
+    max-height: 44px;
     border-radius: 4px;
+    border: 1px solid var(--HFS-rot-400, #e60040);
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: none;
   }
 }
 
@@ -107,9 +107,10 @@ main .cta1-container > div {
   color: #e60040;
   font-size: 17px;
   font-weight: 500;
-  min-width: 956px;
+  min-width: 313px;
   max-height: 44px;
   border-radius: 4px;
+  border: 1px solid var(--HFS-rot-400, #e60040);
   display: flex;
   align-items: center;
   justify-content: center;
