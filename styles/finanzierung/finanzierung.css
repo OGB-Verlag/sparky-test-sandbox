@@ -41,11 +41,10 @@ main .finanzierung-css > div {
 }
 
 .section.finanzierung-css .default-content-wrapper p > strong {
-  color: #333;
-  font-family: 'Wigrum-Bold', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 28px;
+  .section.finanzierung-css .default-content-wrapper p > strong {
+    font-family: 'Wigrum-Bold', sans-serif;
+    font-weight: 700;
+  }
 }
 
 .section.finanzierung-css .default-content-wrapper p picture {
