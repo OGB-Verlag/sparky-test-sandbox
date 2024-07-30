@@ -552,7 +552,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image",
+        "label": "Bild auswählen",
         "description": "",
         "multi": true
       },
@@ -560,7 +560,7 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Image Alternative Description",
+        "label": "Alternativtext für Bild links hinzufügen",
         "description": "",
         "value": ""
       },
@@ -568,7 +568,36 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "A Paragraph Text below the image.",
+        "label": "Text unter dem Bild",
+        "description": "",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "imagewithtext-width774",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Bild auswählen",
+        "description": "",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alternativtext für Bild links hinzufügen",
+        "description": "",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text unter dem Bild",
         "description": "",
         "valueType": "string"
       }
