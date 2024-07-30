@@ -1,10 +1,10 @@
 main .cta-hilfmit-container > div {
-  max-width: 393px; /* Set max-width for smaller screens */
+  max-width: 393px;
   background-color: white;
   margin-top: 48px;
   margin-bottom: 52px;
-  margin-left: auto; /* Center align horizontally */
-  margin-right: auto; /* Center align horizontally */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-hilfmit {
@@ -48,7 +48,7 @@ main .cta-hilfmit-container > div {
 
 @media (min-width: 900px) {
   main .cta-hilfmit-container > div {
-    max-width: 1152px; /* Set max-width for larger screens */
+    max-width: 1152px;
   }
 
   .cta-hilfmit {
