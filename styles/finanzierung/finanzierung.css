@@ -1,0 +1,74 @@
+main .finanzierung-css > div {
+  max-width: 393px;
+  margin-top: 48px;
+  margin-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.section.finanzierung-css .default-content-wrapper h2 {
+  color: #000959;
+  display: block;
+  font-family: 'Wigrum-Extrabold', sans-serif;
+  line-height: 2.5rem;
+  padding-bottom: 8px;
+  margin: 0;
+  font-size: 32px !important;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.section.finanzierung-css .default-content-wrapper p {
+  margin-bottom: 24px;
+  color: #141414;
+  display: block;
+  font-family: 'Wigrum-Regular', sans-serif;
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+.section.finanzierung-css .default-content-wrapper p > strong {
+  color: #333;
+  font-family: 'Wigrum-Bold', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .section.finanzierung-css .default-content-wrapper h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding-bottom: 4px;
+  }
+
+  .section.finanzierung-css .rte-wrapper .rte div > div {
+    margin-bottom: 20px;
+  }
+
+  .section.finanzierung-css .default-content-wrapper h2 {
+    font-size: 1.25rem;
+  }
+
+  .section.finanzierung-css .default-content-wrapper p > strong {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .section.finanzierung-css .default-content-wrapper p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  main .finanzierung-css > div {
+    max-width: 1152px;
+  }
+}

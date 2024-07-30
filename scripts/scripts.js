@@ -394,6 +394,7 @@ async function loadingCustomCss() {
   // load custom css files
   var loadCssArray = [
     `${window.hlx.codeBasePath}/styles/reset.css`,
+    `${window.hlx.codeBasePath}/styles/finanzierung/finanzierung.css`,
     `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/custom/bg.css`,
     `${window.hlx.codeBasePath}/styles/custom/column.css`,
