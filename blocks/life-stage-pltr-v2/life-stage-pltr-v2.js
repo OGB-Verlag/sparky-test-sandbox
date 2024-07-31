@@ -42,5 +42,5 @@ export default function decorate(block) {
     }
   }
 
-  setupFadeInObserver([rightDiv], 2600, true) // `true` to allow multiple times observation
+  setupFadeInObserver([rightDiv], 2800, true) // `true` to allow multiple times observation
 }
