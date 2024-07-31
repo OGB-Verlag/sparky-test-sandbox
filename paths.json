@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/sparky-sandbox-content/:/",
-    "/content/sparky-sandbox-content/configuration:/.helix/config.json"
+    "/content/sparky-sandbox-content/configuration:/.helix/config.json",
+    "/content/sparky-sandbox-content/metadata:/metadata.json"
   ]
 }
