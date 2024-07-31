@@ -640,29 +640,34 @@
     "id": "cta1",
     "fields": [
       {
-        "component": "richtext",
-        "name": "text1",
-        "value": "",
-        "label": "Text 1 hinzufügen",
-        "valueType": "string"
+        "component": "text",
+        "name": "cta_heading",
+        "label": "Heading"
+      },
+      {
+        "component": "text",
+        "name": "cta_headingType",
+        "value": "h3",
+        "label": "Heading Type",
+        "hidden": true
       },
       {
         "component": "richtext",
-        "name": "text2",
+        "name": "cta_text",
         "value": "",
-        "label": "Text 2 hinzufügen",
+        "label": "Text hinzufügen",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "content_cta1",
+        "name": "cta_link",
         "value": "",
         "label": "Button-Link hinzufügen",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_cta1Text",
+        "name": "cta_linkText",
         "value": "",
         "label": "Button Text hinzufügen",
         "valueType": "string"
