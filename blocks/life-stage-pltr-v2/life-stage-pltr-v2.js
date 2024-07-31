@@ -10,6 +10,9 @@ export default function decorate(block) {
   leftDiv?.classList.add('column-left')
   rightDiv?.classList.add('column-right')
 
+  // AOS add Styling
+  leftDiv?.setAttribute('data-aos', 'fade-left');
+
   const columnsWrapper = document.createElement('div')
   columnsWrapper.classList.add('columns-wrapper')
 
