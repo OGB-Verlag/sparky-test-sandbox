@@ -1,5 +1,3 @@
-import { setupFadeInObserver } from '../../utils/animations/fadeIn.js'
-
 export default function decorate(block) {
   const [leftDiv, rightDiv] = block.children
 
@@ -42,5 +40,5 @@ export default function decorate(block) {
     }
   }
 
-  setupFadeInObserver([rightDiv], 2800, true) // `true` to allow multiple times observation
+  rightDiv.dataset.aos = 'fade-in';
 }
