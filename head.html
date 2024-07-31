@@ -14,4 +14,13 @@
 
 <script src="/scripts/aem.js" type="module"></script>
 <script src="/scripts/scripts.js" type="module"></script>
+
+<script src="/libs/aos/aos.js"></script>
+<link rel="stylesheet" href="/libs/aos/aos.css">
+<script>
+// Load AOS only when its DOMLoaded
+document.addEventListener('DOMContentLoaded', function () {
+    AOS.init()
+});
+</script>
 <link rel="stylesheet" href="/styles/styles.css" />
