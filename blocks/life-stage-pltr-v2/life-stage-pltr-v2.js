@@ -1,3 +1,5 @@
+import { setupFadeInObserver } from '../../utils/animations/fadeIn.js'
+
 export default function decorate(block) {
   const [leftDiv, rightDiv] = block.children
 
@@ -39,4 +41,6 @@ export default function decorate(block) {
       secondButton.classList.add('second-button')
     }
   }
+
+  setupFadeInObserver([rightDiv], 2600, true) // `true` to allow multiple times observation
 }

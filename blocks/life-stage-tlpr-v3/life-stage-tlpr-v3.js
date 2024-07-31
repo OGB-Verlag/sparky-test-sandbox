@@ -1,3 +1,5 @@
+import { setupFadeInObserver } from '../../utils/animations/fadeIn.js'
+
 export default function decorate(block) {
   const [leftDiv, rightDiv] = block.children
 
@@ -30,7 +32,7 @@ export default function decorate(block) {
     topDiv.appendChild(firstButtonContainer)
   }
 
-  // Replace first 'button'  with 'second-button'
+  // Replace first 'button' with 'second-button'
   const secondButtonContainer = leftDiv.querySelectorAll('.button-container')[0]
   if (secondButtonContainer) {
     const secondButton = secondButtonContainer.querySelector('.button')
@@ -39,4 +41,6 @@ export default function decorate(block) {
       secondButton.classList.add('second-button')
     }
   }
+
+  setupFadeInObserver([rightDiv], 2600, true) // `true` to allow multiple times observation
 }
