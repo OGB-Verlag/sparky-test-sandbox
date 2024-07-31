@@ -46,6 +46,7 @@
       }
     </style>
     <link rel="stylesheet" href="/styles/lazy-styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -55,12 +56,17 @@
         <svg viewBox="1 0 38 18" class="error-number">
           <text x="0" y="17">404</text>
         </svg>
-        <h2 class="error-message">Page Not Found</h2>
+        <h2 class="error-message" data-aos="fade-oup" data-aos-duration="3000">Page Not Found</h2>
         <p class="button-container">
           <a href="/" class="button secondary error-button-home">Go home</a>
         </p>
       </div>
     </main>
     <footer></footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
