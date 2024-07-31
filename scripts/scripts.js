@@ -11,6 +11,7 @@ import {
   loadBlocks,
   loadCSS,
   fetchPlaceholders,
+  loadScript,
 } from './aem.js'
 const LCP_BLOCKS = [] // add your LCP blocks to the list
 
@@ -381,18 +382,9 @@ function loadDelayed() {
   import('./sidekick.js').then(({ initSidekick }) => initSidekick())
 }
 
-async function loadPage() {
-  await loadingCustomCss()
-  await loadEager(document)
-  await loadLazy(document)
-  loadDelayed()
-}
-
-loadPage()
-
-async function loadingCustomCss() {
+async function loadingStylesAndScripts() {
   // load custom css files
-  var loadCssArray = [
+  const customCss = [
     `${window.hlx.codeBasePath}/styles/reset.css`,
     `${window.hlx.codeBasePath}/styles/finanzierung/finanzierung.css`,
     `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
@@ -404,9 +396,35 @@ async function loadingCustomCss() {
     `${window.hlx.codeBasePath}/styles/custom/margin.css`,
     `${window.hlx.codeBasePath}/styles/custom/padding.css`,
     `${window.hlx.codeBasePath}/styles/custom/width.css`,
-  ]
+  ];
+  const customScripts = [];
 
-  loadCssArray.forEach(async (eachCss) => {
-    await loadCSS(eachCss)
-  })
+  if (document.body.matches('.aos')) {
+    customCss.push(`${window.hlx.codeBasePath}/styles/vendor/aos.css`);
+    customScripts.push(`${window.hlx.codeBasePath}/scripts/vendor/aos.js`);
+  }
+
+  await Promise.all([
+    ...customCss.map(loadCSS),
+    ...customScripts.map(loadScript),
+  ]);
+
+  if (document.body.matches('.aos')) {
+    // eslint-disable-next-line no-undef
+    AOS?.init();
+  }
 }
+
+async function loadPage() {
+  await loadEager(document)
+  await loadingStylesAndScripts()
+  await loadLazy(document)
+  loadDelayed()
+
+  if (document.body.matches('.aos')) {
+    // eslint-disable-next-line no-undef
+    AOS.refresh();
+  }
+}
+
+loadPage()
