@@ -41,5 +41,6 @@ export default function decorate(block) {
   }
 
   // animations
-  rightDiv.dataset.aos = 'fade-in';
+  rightDiv.dataset.aos = 'fade-right'
+  //leftDiv.dataset.aos = 'fade-left'
 }
