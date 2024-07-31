@@ -1,3 +1,12 @@
+main .imagewithtext-width774 > div {
+  max-width: 774;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .imagewithtext-width774-wrapper {
   display: block;
   max-width: 774px;
@@ -24,6 +33,7 @@
 @media (max-width: 900px) {
   .imagewithtext-width774-wrapper p {
     max-width: 361;
+    height: auto;
     color: #141414;
     display: block;
     font-family: 'Wigrum-Regular', sans-serif;
@@ -31,5 +41,14 @@
     font-weight: 400;
     line-height: 150%;
     margin-top: 8px;
+  }
+
+  main .imagewithtext-width774 > div {
+    max-width: 393px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

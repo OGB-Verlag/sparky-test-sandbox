@@ -1,5 +1,6 @@
 main .finanzierung-css > div {
   max-width: 393px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -33,10 +34,10 @@ main .finanzierung-css > div {
 .section.finanzierung-css .default-content-wrapper h6 {
   color: #141414;
   display: block;
-  font-family: 'Wigrum-Regular', sans-serif;
-  margin-top: 55px;
+  font-family: 'Wigrum-Bold', sans-serif;
+  margin-top: 8px;
   margin-bottom: 10px;
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 150%;
 }
