@@ -11,7 +11,7 @@ export default function decorate(block) {
   rightDiv?.classList.add('column-right')
 
   // AOS add Styling
-  leftDiv?.setAttribute('data-aos', 'test');
+  leftDiv?.setAttribute('data-aos', 'fade-left');
 
   const columnsWrapper = document.createElement('div')
   columnsWrapper.classList.add('columns-wrapper')
