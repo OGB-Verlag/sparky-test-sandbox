@@ -65,8 +65,9 @@ const videoTwitter = (url) => {
   return videoHTML
 }
 
-const videoVideoMP4 = (url) => {
-  const videoHTML = `<video width="800" controls>
+const videoMP4 = (url, autoplay) => {
+  const autoplayAttr = autoplay ? 'autoplay loop muted' : ''
+  const videoHTML = `<video width="800" controls ${autoplayAttr}>
   <source src="${url.href}" type="video/mp4">
   <source src="${url.href}" type="video/ogg">
   Your browser does not support HTML video.
@@ -94,7 +95,7 @@ const loadVideo = (block, link, autoplay) => {
     },
     {
       match: ['mp4'],
-      video: videoVideoMP4,
+      video: videoMP4,
     },
   ]
 
