@@ -11,7 +11,7 @@ main .base-style > div {
   color: #000959;
   display: block;
   font-family: 'Wigrum-Bold', sans-serif;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 30px;
   font-size: 32px !important;
   font-weight: 900;
@@ -20,43 +20,25 @@ main .base-style > div {
   text-transform: uppercase;
 }
 
-.section.base-style .default-content-wrapper h4 {
-  color: #141414;
-  display: block;
-  font-family: 'Wigrum-Regular', sans-serif;
-  margin-top: 55px;
-  margin-bottom: 10px;
-  font-size: 24px !important;
-  font-weight: 500;
-  line-height: 120%;
-}
-
-.section.base-style .default-content-wrapper h6 {
-  color: #141414;
-  display: block;
-  font-family: 'Wigrum-Bold', sans-serif;
-  margin-top: 8px;
-  margin-bottom: 10px;
-  font-size: 20px !important;
-  font-weight: 400;
-  line-height: 150%;
-}
-
 .section.base-style .default-content-wrapper p {
   color: #141414;
   display: block;
   font-family: 'Wigrum-Regular', sans-serif;
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 150%;
+  font-style: normal;
   margin-top: 8px;
 }
 
 .section.base-style .default-content-wrapper p > strong {
-  .section.base-style .default-content-wrapper p > strong {
-    font-family: 'Wigrum-Bold', sans-serif;
-    font-weight: 700;
-  }
+  color: #141414;
+  display: block;
+  font-family: 'Wigrum-Regular', sans-serif;
+  font-size: 17px !important;
+  font-weight: 600;
+  line-height: 150%;
+  font-style: normal;
 }
 
 .section.base-style .default-content-wrapper p picture {
@@ -65,31 +47,40 @@ main .base-style > div {
 }
 
 .section.base-style .default-content-wrapper p picture img {
-  max-width: 774px;
+  max-width: 361px;
   height: auto;
-}
-
-.section.base-style .default-content-wrapper h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  padding-bottom: 4px;
-}
-
-.section.base-style .rte-wrapper .rte div > div {
-  margin-bottom: 20px;
-}
-
-.section.base-style .default-content-wrapper h2 {
-  font-size: 1.25rem;
-}
-
-.section.base-style .default-content-wrapper p > strong {
-  font-size: 0.875rem;
-  line-height: 20px;
+  margin-bottom: 6px;
+  margin-top: 10px;
 }
 
 @media (min-width: 900px) {
   main .base-style > div {
     max-width: 1152px;
+  }
+
+  .section.base-style .default-content-wrapper p picture img {
+    max-width: 770px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .section.base-style .default-content-wrapper p {
+    color: #141414;
+    display: block;
+    font-family: 'Wigrum-Regular', sans-serif;
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: 150%;
+    font-style: normal;
+    margin-top: 8px;
+  }
+
+  .section.base-style .default-content-wrapper p > strong {
+    color: #141414;
+    display: block;
+    font-family: 'Wigrum-Regular', sans-serif;
+    font-size: 19px !important;
+    font-weight: 600;
+    line-height: 150%;
   }
 }
