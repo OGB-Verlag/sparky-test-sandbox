@@ -11,8 +11,8 @@ main .base-style > div {
   color: #000959;
   display: block;
   font-family: 'Wigrum-Bold', sans-serif;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 32px !important;
   font-weight: 900;
   line-height: 110%;
@@ -58,10 +58,15 @@ main .base-style > div {
     max-width: 1152px;
   }
 
+  .section.base-style .default-content-wrapper h2 {
+    margin-top: 60px;
+  }
+
   .section.base-style .default-content-wrapper p picture img {
     max-width: 770px;
     height: auto;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .section.base-style .default-content-wrapper p {
