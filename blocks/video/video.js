@@ -65,9 +65,9 @@ const videoTwitter = (url) => {
   return videoHTML
 }
 
-const videoMP4 = (url, autoplay) => {
-  const autoplayAttr = autoplay ? 'autoplay loop muted' : ''
-  const videoHTML = `<video width="800" controls ${autoplayAttr}>
+// TODO: refine
+const videoMP4 = (url) => {
+  const videoHTML = `<video width="800" controls loop autoplay muted playsinline}>
   <source src="${url.href}" type="video/mp4">
   <source src="${url.href}" type="video/ogg">
   Your browser does not support HTML video.
