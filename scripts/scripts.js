@@ -396,22 +396,22 @@ async function loadingStylesAndScripts() {
     `${window.hlx.codeBasePath}/styles/custom/margin.css`,
     `${window.hlx.codeBasePath}/styles/custom/padding.css`,
     `${window.hlx.codeBasePath}/styles/custom/width.css`,
-  ];
-  const customScripts = [];
+  ]
 
+  // https://github.com/OGB-Verlag/sparky-test-sandbox/pull/8/files
+  const customScripts = []
+
+  // Load third party css and scripts
   if (document.body.matches('.aos')) {
-    customCss.push(`${window.hlx.codeBasePath}/styles/vendor/aos.css`);
-    customScripts.push(`${window.hlx.codeBasePath}/scripts/vendor/aos.js`);
+    customCss.push(`${window.hlx.codeBasePath}/styles/vendor/aos.css`)
+    customScripts.push(`${window.hlx.codeBasePath}/scripts/vendor/aos.js`)
   }
 
-  await Promise.all([
-    ...customCss.map(loadCSS),
-    ...customScripts.map(loadScript),
-  ]);
+  await Promise.all([...customCss.map(loadCSS), ...customScripts.map(loadScript)])
 
   if (document.body.matches('.aos')) {
     // eslint-disable-next-line no-undef
-    AOS?.init();
+    AOS?.init()
   }
 }
 
@@ -423,7 +423,7 @@ async function loadPage() {
 
   if (document.body.matches('.aos')) {
     // eslint-disable-next-line no-undef
-    AOS.refresh();
+    AOS.refresh()
   }
 }
 
