@@ -387,6 +387,7 @@ async function loadingStylesAndScripts() {
   const customCss = [
     `${window.hlx.codeBasePath}/styles/reset.css`,
     `${window.hlx.codeBasePath}/styles/finanzierung/finanzierung.css`,
+    `${window.hlx.codeBasePath}/styles/base-style/base-style.css`,
     `${window.hlx.codeBasePath}/styles/custom/mobile-sticky-button.css`,
     `${window.hlx.codeBasePath}/styles/custom/bg.css`,
     `${window.hlx.codeBasePath}/styles/custom/column.css`,
