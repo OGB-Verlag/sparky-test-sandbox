@@ -490,7 +490,7 @@
     "id": "video",
     "fields": [
       {
-        "component": "reference",
+        "component": "aem-content",
         "valueType": "string",
         "name": "videodamresource",
         "label": "Video DAM resource",
