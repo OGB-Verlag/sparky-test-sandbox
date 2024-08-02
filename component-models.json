@@ -498,8 +498,10 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "thumbnail",
-        "label": "Vorschaubild auswählen"
+        "name": "videodamresource",
+        "label": "Video DAM resource",
+        "description": "Video auswählen",
+        "multi": false
       }
     ]
   },
