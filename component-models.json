@@ -490,12 +490,6 @@
     "id": "video",
     "fields": [
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "videourl",
-        "label": "Video URL enfügen"
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "videodamresource",
