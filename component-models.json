@@ -491,11 +491,10 @@
     "fields": [
       {
         "component": "aem-content",
-        "valueType": "string",
-        "name": "videodamresource",
-        "label": "Video DAM resource",
-        "description": "Video auswählen",
-        "multi": false
+        "name": "videocontent",
+        "value": "",
+        "label": "Video DAM Content",
+        "description": "Video auswählen"
       }
     ]
   },
