@@ -31,9 +31,11 @@
 @media (max-width: 900px) {
   .imagewithtext-wrapper img {
     padding: 4em 2em 0em 2em;
+    max-width: 361px;
   }
   .imagewithtext-wrapper p {
     padding: 0.25em 1em 3em 1em;
     font-size: 18px;
+    max-width: 361px;
   }
 }
