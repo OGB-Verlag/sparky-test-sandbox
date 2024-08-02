@@ -1,20 +1,21 @@
+/*
+ * Base Style for All Pages
+ */
+
 /* TODO: Remove everything and make this to a base style for all pages */
 
 main .base-style > div {
   max-width: 393px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .section.base-style .default-content-wrapper h2 {
   color: #000959;
   display: block;
   font-family: 'Wigrum-Bold', sans-serif;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px 0 10px;
   font-size: 32px !important;
   font-weight: 900;
   line-height: 110%;
@@ -29,7 +30,6 @@ main .base-style > div {
   font-size: 16px !important;
   font-weight: 400;
   line-height: 150%;
-  font-style: normal;
   margin-top: 8px;
 }
 
@@ -40,7 +40,6 @@ main .base-style > div {
   font-size: 17px !important;
   font-weight: 600;
   line-height: 150%;
-  font-style: normal;
 }
 
 .section.base-style .default-content-wrapper p picture {
@@ -51,8 +50,7 @@ main .base-style > div {
 .section.base-style .default-content-wrapper p picture img {
   max-width: 361px;
   height: auto;
-  margin-bottom: 6px;
-  margin-top: 10px;
+  margin: 10px 0 6px;
 }
 
 @media (min-width: 900px) {

@@ -197,21 +197,6 @@
           }
         },
         {
-          "title": "Call-to-Action HILF MIT",
-          "id": "cta-hilfmit",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "cta-hilfmit",
-                  "model": "cta-hilfmit"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Bild mit Text",
           "id": "imagewithtext",
           "plugins": {

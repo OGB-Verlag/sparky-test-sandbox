@@ -1,3 +1,8 @@
+/*
+ * Banner1 Container Styles
+ */
+
+/* Base Styles */
 main .banner1-container {
   width: 100%;
   background-color: #000d77;
@@ -17,7 +22,7 @@ main .banner1-container {
 }
 
 .banner1 h6 {
-  font-family: Wigrum-Regular;
+  font-family: 'Wigrum-Regular', sans-serif;
   font-weight: 500;
   font-size: 18px !important;
   line-height: 120%;
@@ -30,7 +35,7 @@ main .banner1-container {
 .banner1 button {
   background-color: white;
   color: #000d77;
-  font-family: Wigrum-Regular;
+  font-family: 'Wigrum-Regular', sans-serif;
   font-size: 24px !important;
   font-weight: 500;
   min-width: 290px;
@@ -41,7 +46,7 @@ main .banner1-container {
   justify-content: center;
   text-transform: uppercase;
   position: absolute;
-  left: calc(100% + -350px); /* Position horizontally relative to h6 */
+  left: calc(100% - 350px); /* Position horizontally relative to h6 */
   transform: translateY(-50%) rotate(-90deg);
   margin-top: -100px;
 }
@@ -58,75 +63,32 @@ main .banner1-container {
 }
 
 .banner1 > div:nth-of-type(1) h6 {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 20px 0 30px;
 }
 
 .banner1 > div:nth-of-type(2) h6 {
   text-transform: uppercase;
 }
 
+/* Media Queries */
 @media (min-width: 900px) {
   .banner1 {
-    position: relative;
     padding: 56px 178px;
     min-width: 100%;
     min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 auto;
   }
 
   .banner1 h6 {
-    font-family: Wigrum-Regular;
-    font-weight: 500;
     font-size: 24px !important;
-    line-height: 120%;
-    color: #fafafa;
-    text-align: left;
-    max-width: 954px;
   }
 
   .banner1 a.button:any-link,
   .banner1 button {
-    background-color: white;
-    color: #000d77;
-    font-family: Wigrum-Regular;
-    font-size: 24px !important;
-    font-weight: 500;
-    min-width: 290px;
-    max-height: 42px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    position: absolute;
-    left: calc(100% + -670px); /* Position it horizontally relative to h6 */
-    transform: translateY(-50%) rotate(-90deg);
-    margin-top: -100px;
-  }
-
-  .banner1 .button::before,
-  .banner1 .button::after {
-    transform: rotate(90deg);
-  }
-
-  .banner1 > div {
-    display: flex;
-    align-items: flex-start; /* Vertically center the content */
-    position: relative;
+    left: calc(100% - 670px); /* Position it horizontally relative to h6 */
   }
 
   .banner1 > div:nth-of-type(1) h6 {
-    margin-top: 50px;
-    margin-bottom: 25px;
-  }
-
-  .banner1 > div:nth-of-type(2) h6 {
-    text-transform: uppercase;
+    margin: 50px 0 25px;
   }
 }
 

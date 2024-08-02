@@ -645,59 +645,5 @@
         "valueType": "string"
       }
     ]
-  },
-  {
-    "id": "cta-hilfmit",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "imageleft",
-        "label": "Bild links auswählen",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageleftAlt",
-        "label": "Alternativtext für Bild links hinzufügen",
-        "value": ""
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "imageright",
-        "label": "Bild rechts auswählen",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imagerightAlt",
-        "label": "Alternativtext für Bild rechts hinzufügen",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "text1",
-        "value": "",
-        "label": "Text hinzufügen",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "content_cta-hilfmit",
-        "value": "",
-        "label": "Button-Link hinzufügen",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "content_cta-hilfmitText",
-        "value": "",
-        "label": "Button Text hinzufügen",
-        "valueType": "string"
-      }
-    ]
   }
 ]

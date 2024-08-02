@@ -8,21 +8,6 @@
     "components": []
   },
   {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "cta-hilfmit",
-      "imagewithtext",
-      "imagewithtext-width774",
-      "image-advanced",
-      "video",
-      "quote"
-    ]
-  },
-  {
     "id": "section",
     "components": [
       "text",
@@ -40,7 +25,6 @@
       "breadcrumb",
       "banner1",
       "cta1",
-      "cta-hilfmit",
       "columns"
     ]
   },
