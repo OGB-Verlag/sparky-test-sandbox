@@ -30,17 +30,44 @@ export default function decorate(block) {
     topDiv.appendChild(firstButtonContainer)
   }
 
-  // Replace first 'button'  with 'second-button'
+  // Replace first 'button' with 'second-button' and insert SVG icon
   const secondButtonContainer = leftDiv.querySelectorAll('.button-container')[0]
   if (secondButtonContainer) {
     const secondButton = secondButtonContainer.querySelector('.button')
     if (secondButton) {
       secondButton.classList.remove('button')
       secondButton.classList.add('second-button')
+
+      // Insert the Herz icon before the button text
+      const herzSVG = document.createElement('img')
+      herzSVG.src = '/icons/herz.svg'
+      herzSVG.alt = 'Herz Icon'
+      herzSVG.style.marginRight = '8px'
+      herzSVG.style.position = 'relative'
+      herzSVG.style.top = '-1px'
+      secondButton.insertBefore(herzSVG, secondButton.firstChild)
+
+      // Insert the Link Forward icon after the button text
+      const arrowSVG = document.createElement('img')
+      arrowSVG.src = '/icons/link_forward.svg'
+      arrowSVG.style.marginLeft = '8px'
+      arrowSVG.style.position = 'relative'
+      arrowSVG.style.top = '2px'
+      secondButton.appendChild(arrowSVG)
     }
   }
 
-  // animations
+  // // Add PiggySVG before strong text
+  // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
+  //   const piggySVG = document.createElement('img')
+  //   piggySVG.src = '/icons/PiggySVG.svg'
+  //   piggySVG.alt = 'Piggy Bank Icon'
+  //   piggySVG.style.marginRight = '8px'
+  //   piggySVG.style.position = 'relative'
+  //   piggySVG.style.bottom = '6px'
+  //   strong.insertBefore(piggySVG, strong.firstChild)
+  // })
+
+  // AOS animation
   rightDiv.dataset.aos = 'fade-right'
-  //leftDiv.dataset.aos = 'fade-left'
 }

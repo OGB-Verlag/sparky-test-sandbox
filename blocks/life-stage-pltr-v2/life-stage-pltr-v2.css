@@ -1,6 +1,5 @@
 /*
- * Live Stage :: Picture-Left Text-Right v2
- * v2 mean: "Finanziert durch", use badges on the bottom of the paragraph.
+ * Picture-Left Text-Right
  */
 
 /* TODO: Ajust font-family, font-size, paddings/margins, & unit of measurement */
@@ -45,14 +44,6 @@
   padding: 20px 0 6px;
 }
 
-.column-left p strong::before {
-  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/PiggyBank.svg');
-  margin-right: 8px;
-  display: inline-block;
-  position: relative;
-  bottom: 6px;
-}
-
 .second-button {
   background-color: transparent !important;
   max-width: fit-content;
@@ -62,22 +53,6 @@
   text-decoration: none;
   display: flex;
   justify-content: flex-end;
-}
-
-.second-button::before {
-  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/Herz.png');
-  margin-right: 2px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-}
-
-.second-button::after {
-  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
-  margin-left: 8px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
 }
 
 .second-button:hover {
