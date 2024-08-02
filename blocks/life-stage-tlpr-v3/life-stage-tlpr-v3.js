@@ -12,8 +12,8 @@ export default function decorate(block) {
   columnsWrapper.classList.add('columns-wrapper')
 
   // Reverse the order of columns
-  columnsWrapper.appendChild(rightDiv)
   columnsWrapper.appendChild(leftDiv)
+  columnsWrapper.appendChild(rightDiv)
   block.appendChild(columnsWrapper)
 
   // Add badges to the Text column

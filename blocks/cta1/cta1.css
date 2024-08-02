@@ -1,14 +1,14 @@
 main .cta1-container > div {
-  max-width: 393px;
+  max-width: 24.5625rem; /* 393px */
   background-color: #fce9ef;
-  margin: 48px auto 52px auto;
+  margin: 3rem auto 3.25rem auto; /* 48px 52px */
 }
 
 .cta1 {
   position: relative;
-  padding: 40px;
-  max-width: 393px;
-  max-height: 400px;
+  padding: 2.5rem; /* 40px */
+  max-width: 24.5625rem; /* 393px */
+  max-height: 25rem; /* 400px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,9 +19,9 @@ main .cta1-container > div {
 .cta1 h1 {
   font-family: var(--heading-font-family);
   font-weight: 900;
-  font-size: 32px !important;
+  font-size: 2rem !important; /* 32px */
   line-height: 120%;
-  margin-top: 40px;
+  margin-top: 2.5rem; /* 40px */
   color: #e60040;
   text-transform: uppercase;
   text-align: left;
@@ -30,22 +30,22 @@ main .cta1-container > div {
 .cta1 h6 {
   font-family: Wigrum-Regular;
   font-weight: 600;
-  font-size: 18px !important;
+  font-size: 1.125rem !important; /* 18px */
   line-height: 120%;
   color: #e60040;
   text-align: left;
-  margin-top: 18px;
+  margin-top: 1.125rem; /* 18px */
 }
 
 .cta1 a.button:any-link,
 .cta1 button {
   background-color: white;
   color: #e60040;
-  font-size: 18px !important;
+  font-size: 1.125rem !important; /* 18px */
   font-weight: 500;
-  min-width: 313px;
-  max-height: 44px;
-  border-radius: 4px;
+  min-width: 19.5625rem; /* 313px */
+  max-height: 2.75rem; /* 44px */
+  border-radius: 0.25rem;
   border: 1px solid var(--HFS-rot-400, #e60040);
   display: flex;
   align-items: center;
@@ -53,47 +53,41 @@ main .cta1-container > div {
   text-transform: none;
 }
 
-.cta1 .button::after {
-  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
-  margin-left: 8px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-}
-
 .cta1 > div:nth-child(2) > div {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; /* 15px */
 }
 
-@media (min-width: 900px) {
+/* 900px */
+@media (min-width: 56.25rem) {
   main .cta1-container > div {
-    max-width: 1152px;
+    max-width: 72rem; /* 1152px */
   }
 
   .cta1 {
-    padding: 60px 98px;
-    min-width: 1152px;
-    min-height: 465px;
+    padding: 3.75rem 6.125rem; /* 60px 98px */
+    min-width: 72rem; /* 1152px */
+    min-height: 29.0625rem; /* 465px */
     justify-content: flex-start;
   }
 
   .cta1 h1 {
     font-family: Wigrum-bold;
-    font-size: 50px !important;
+    font-size: 3.125rem !important; /* 50px */
   }
 
   .cta1 h6 {
-    font-size: 24px !important;
-    margin-top: 13px;
+    font-size: 1.5rem !important; /* 24px */
+    margin-top: 0.8125rem; /* 13px */
   }
 
   main .cta1-container {
-    padding: 12px 0 0 0;
+    padding: 0.75rem 0 0 0; /* 12px 0 0 0 */
   }
 
   .cta1 a.button:any-link,
   .cta1 button {
-    font-size: 17px;
-    min-width: 956px;
+    font-size: 1.0625rem; /* 17px */
+    min-width: 59.75rem; /* 956px */
+    min-height: 2.75rem; /* 50px */
   }
 }

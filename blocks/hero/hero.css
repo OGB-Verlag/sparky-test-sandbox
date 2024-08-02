@@ -1,5 +1,5 @@
 main .hero-container {
-  padding: 6px 0 0 0;
+  padding: 0.375rem 0 0 0; /* 6px */
 }
 
 main .hero-container > div {
@@ -9,8 +9,8 @@ main .hero-container > div {
 
 .hero {
   position: relative;
-  padding: 32px;
-  min-height: 477px;
+  padding: 2rem; /* 32px */
+  min-height: 29.8125rem; /* 477px */
 }
 
 .hero h2,
@@ -22,14 +22,14 @@ main .hero-container > div {
 
 .hero h2 {
   font-weight: 800;
-  max-width: 800px;
-  margin: 25px auto 0 auto;
+  max-width: 50rem; /* 800px */
+  margin: 1.5625rem auto 0 auto; /* 25px */
   text-transform: uppercase;
 }
 
 .hero h6 {
   font-weight: 400;
-  margin: 40px auto 0 auto;
+  margin: 2.5rem auto 0 auto; /* 40px */
 }
 
 .hero picture {
@@ -46,22 +46,23 @@ main .hero-container > div {
   height: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) {
+  /* 900px */
   .hero {
-    min-height: 398px;
+    min-height: 24.875rem; /* 398px */
   }
 
   .hero h2 {
-    margin-left: 120px;
-    margin-top: 55px;
+    margin-left: 7.5rem; /* 120px */
+    margin-top: 3.4375rem; /* 55px */
   }
 
   .hero h6 {
-    margin-left: 120px;
+    margin-left: 7.5rem; /* 120px */
   }
 
   main .hero-container {
-    padding: 12px 0 0 0;
+    padding: 0.75rem 0 0 0; /* 12px */
   }
 }
 
@@ -74,8 +75,8 @@ main .hero-container > div {
   top: 88%;
   left: 50%;
   transform: translateX(-50%);
-  width: 44px;
-  height: 44px;
+  width: 2.75rem; /* 44px */
+  height: 2.75rem; /* 44px */
   cursor: pointer;
   animation: jump 3s infinite;
 }
@@ -86,6 +87,6 @@ main .hero-container > div {
     transform: translateX(-50%) translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(-7px);
+    transform: translateX(-50%) translateY(-0.4375rem); /* -7px */
   }
 }
