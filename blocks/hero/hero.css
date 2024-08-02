@@ -67,7 +67,8 @@ main .hero-container > div {
 
 /* Arrow Animation */
 .arrow-container {
-  background-image: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/arrow-down.svg');
+  background-image: url('../../icons/arrowdown.svg');
+  background-repeat: no-repeat;
   position: absolute;
   z-index: 1;
   top: 88%;
