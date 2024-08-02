@@ -40,7 +40,7 @@ export default function decorate(block) {
 
       // Insert the Herz icon before the button text
       const herzSVG = document.createElement('img')
-      herzSVG.src = '/icons/herz.svg'
+      herzSVG.src = '../../icons/herz.svg'
       herzSVG.alt = 'Herz Icon'
       herzSVG.style.marginRight = '8px'
       herzSVG.style.position = 'relative'
@@ -49,10 +49,10 @@ export default function decorate(block) {
 
       // Insert the Link Forward icon after the button text
       const arrowSVG = document.createElement('img')
-      arrowSVG.src = '/icons/link_forward.svg'
-      arrowSVG.style.marginLeft = '8px'
+      arrowSVG.src = '../../icons/linkforward.svg'
+      arrowSVG.style.marginLeft = '16px'
       arrowSVG.style.position = 'relative'
-      arrowSVG.style.top = '2px'
+      arrowSVG.style.top = '-2px'
       secondButton.appendChild(arrowSVG)
     }
   }
@@ -60,7 +60,7 @@ export default function decorate(block) {
   // // Add PiggySVG before strong text
   // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
   //   const piggySVG = document.createElement('img')
-  //   piggySVG.src = '/icons/PiggySVG.svg'
+  //   piggySVG.src = '../../icons/piggy.svg'
   //   piggySVG.alt = 'Piggy Bank Icon'
   //   piggySVG.style.marginRight = '8px'
   //   piggySVG.style.position = 'relative'
