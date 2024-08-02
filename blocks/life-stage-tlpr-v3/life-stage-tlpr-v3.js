@@ -10,11 +10,27 @@ export default function decorate(block) {
 
   const columnsWrapper = document.createElement('div')
   columnsWrapper.classList.add('columns-wrapper')
-
-  // Reverse the order of columns
-  columnsWrapper.appendChild(leftDiv)
-  columnsWrapper.appendChild(rightDiv)
   block.appendChild(columnsWrapper)
+
+  // check screen width and update column order
+  const updateColumnOrder = () => {
+    // Clear existing children
+    while (columnsWrapper.firstChild) {
+      columnsWrapper.removeChild(columnsWrapper.firstChild)
+    }
+    if (window.innerWidth < 900) {
+      columnsWrapper.appendChild(rightDiv)
+      columnsWrapper.appendChild(leftDiv)
+    } else {
+      columnsWrapper.appendChild(leftDiv)
+      columnsWrapper.appendChild(rightDiv)
+    }
+  }
+
+  updateColumnOrder()
+
+  // resize event listener
+  window.addEventListener('resize', updateColumnOrder)
 
   // Add badges to the Text column
   leftDiv?.querySelectorAll('ul').forEach((ul) => {
@@ -58,14 +74,14 @@ export default function decorate(block) {
 
   // // Add PiggySVG before strong text
   // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
-  //   const piggySVG = document.createElement('img')
-  //   piggySVG.src = '../../icons/piggy.svg'
-  //   piggySVG.alt = 'Piggy Bank Icon'
-  //   piggySVG.style.marginRight = '8px'
-  //   piggySVG.style.position = 'relative'
-  //   piggySVG.style.bottom = '6px'
-  //   strong.insertBefore(piggySVG, strong.firstChild)
-  // })
+  //   const piggySVG = document.createElement('img');
+  //   piggySVG.src = '../../icons/piggy.svg';
+  //   piggySVG.alt = 'Piggy Bank Icon';
+  //   piggySVG.style.marginRight = '8px';
+  //   piggySVG.style.position = 'relative';
+  //   piggySVG.style.bottom = '6px';
+  //   strong.insertBefore(piggySVG, strong.firstChild);
+  // });
 
   // AOS animation
   rightDiv.dataset.aos = 'fade-right'
