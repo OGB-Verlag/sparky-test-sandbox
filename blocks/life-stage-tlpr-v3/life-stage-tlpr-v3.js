@@ -12,32 +12,17 @@ export default function decorate(block) {
   columnsWrapper.classList.add('columns-wrapper')
 
   // Reverse the order of columns
-  columnsWrapper.appendChild(leftDiv)
   columnsWrapper.appendChild(rightDiv)
+  columnsWrapper.appendChild(leftDiv)
   block.appendChild(columnsWrapper)
 
   // Add badges to the Text column
-  // the tag list is the last pargraph before the link if there are 3 paragraphs or more
-  // or the last paragraph if there are 2 paragraphs, that has only a single child node (text)
-  const contentPars = leftDiv.querySelectorAll('p')
-  const lastContentPar = contentPars[contentPars.length - 1]
-  let tagListPar
-  if (lastContentPar.matches('.button-container') && contentPars.length > 2) {
-    tagListPar = contentPars[contentPars.length - 2]
-  } else if (contentPars.length > 1) {
-    tagListPar = contentPars[contentPars.length - 1]
-  }
-  if (tagListPar && tagListPar.childNodes.length === 1) {
-    const ul = document.createElement('ul')
-    ul.className = 'badges'
-    tagListPar.textContent.split(',').forEach((tag) => {
-      const li = document.createElement('li')
-      li.textContent = tag.trim()
-      li.className = 'badge'
-      ul.appendChild(li)
+  leftDiv?.querySelectorAll('ul').forEach((ul) => {
+    ul.classList.add('badges')
+    ul.querySelectorAll('li').forEach((li) => {
+      li.classList.add('badge')
     })
-    tagListPar.replaceWith(ul)
-  }
+  })
 
   // Move the first button to 'top-div'
   const firstButtonContainer = leftDiv.querySelector('.button-container')
@@ -45,16 +30,43 @@ export default function decorate(block) {
     topDiv.appendChild(firstButtonContainer)
   }
 
-  // Replace first 'button' with 'second-button'
+  // Replace first 'button' with 'second-button' and insert SVG icons
   const secondButtonContainer = leftDiv.querySelectorAll('.button-container')[0]
   if (secondButtonContainer) {
     const secondButton = secondButtonContainer.querySelector('.button')
     if (secondButton) {
       secondButton.classList.remove('button')
       secondButton.classList.add('second-button')
+
+      const herzSVG = document.createElement('img')
+      herzSVG.src = '../../icons/herz.svg'
+      herzSVG.alt = 'Herz Icon'
+      herzSVG.style.marginRight = '8px'
+      herzSVG.style.position = 'relative'
+      herzSVG.style.top = '-1px'
+      secondButton.insertBefore(herzSVG, secondButton.firstChild)
+
+      const arrowSVG = document.createElement('img')
+      arrowSVG.src = '../../icons/linkforward.svg'
+      arrowSVG.alt = 'Link Forward Icon'
+      arrowSVG.style.marginLeft = '16px'
+      arrowSVG.style.position = 'relative'
+      arrowSVG.style.top = '-2px'
+      secondButton.appendChild(arrowSVG)
     }
   }
 
-  rightDiv.dataset.aos = 'fade-left'
-  //leftDiv.dataset.aos = 'fade-right'
+  // // Add PiggySVG before strong text
+  // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
+  //   const piggySVG = document.createElement('img')
+  //   piggySVG.src = '../../icons/piggy.svg'
+  //   piggySVG.alt = 'Piggy Bank Icon'
+  //   piggySVG.style.marginRight = '8px'
+  //   piggySVG.style.position = 'relative'
+  //   piggySVG.style.bottom = '6px'
+  //   strong.insertBefore(piggySVG, strong.firstChild)
+  // })
+
+  // AOS animation
+  rightDiv.dataset.aos = 'fade-right'
 }
