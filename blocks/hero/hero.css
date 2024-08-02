@@ -1,11 +1,10 @@
+main .hero-container {
+  padding: 6px 0 0 0;
+}
+
 main .hero-container > div {
   max-width: unset;
   background: rgba(33, 115, 238, 0.1);
-}
-
-/*TODO move the distance to the header*/
-main .hero-container {
-  padding: 6px 0 0 0;
 }
 
 .hero {
@@ -14,28 +13,23 @@ main .hero-container {
   min-height: 477px;
 }
 
-.hero h2 {
+.hero h2,
+.hero h6 {
   font-family: var(--heading-font-family);
-  /* TODO: font-family:  font-family: 'Work Sans'; */
-  font-weight: 800;
-  max-width: 800;
-  margin-left: auto;
-  margin-top: 25px;
-  text-transform: uppercase;
   color: #fff;
   font-style: normal;
 }
 
+.hero h2 {
+  font-weight: 800;
+  max-width: 800px;
+  margin: 25px auto 0 auto;
+  text-transform: uppercase;
+}
+
 .hero h6 {
-  font-family: var(--heading-font-family);
-  /* TODO: font-family:  font-family: 'Work Sans'; */
   font-weight: 400;
-  max-width: 600;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 40px;
-  color: white;
+  margin: 40px auto 0 auto;
 }
 
 .hero picture {
@@ -52,33 +46,18 @@ main .hero-container {
   height: 100%;
 }
 
-@media (width >= 900px) {
+@media (min-width: 900px) {
+  .hero {
+    min-height: 398px;
+  }
+
   .hero h2 {
-    font-family: var(--heading-font-family);
-    /* TODO: font-family:  font-family: 'Work Sans'; */
-    font-weight: 800;
-    max-width: 800;
     margin-left: 120px;
     margin-top: 55px;
-    text-transform: uppercase;
-    color: #fff;
-    font-style: normal;
   }
 
   .hero h6 {
-    font-family: var(--heading-font-family);
-    /* TODO: font-family:  font-family: 'Work Sans'; */
-    font-weight: 400;
-    max-width: 600;
-    margin-left: auto;
-    margin-right: auto;
     margin-left: 120px;
-    margin-top: 40px;
-    color: white;
-  }
-
-  .hero {
-    min-height: 398px;
   }
 
   main .hero-container {
@@ -86,6 +65,7 @@ main .hero-container {
   }
 }
 
+/* Arrow Animation */
 .arrow-container {
   background-image: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/arrow-down.svg');
   position: absolute;

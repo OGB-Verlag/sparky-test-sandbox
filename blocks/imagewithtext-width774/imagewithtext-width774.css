@@ -1,18 +1,15 @@
 main .imagewithtext-width774 > div {
-  max-width: 774;
+  max-width: 774px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .imagewithtext-width774-wrapper {
   display: block;
   max-width: 774px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .imagewithtext-width774 p {
@@ -32,7 +29,7 @@ main .imagewithtext-width774 > div {
 
 @media (max-width: 900px) {
   .imagewithtext-width774-wrapper p {
-    max-width: 361;
+    max-width: 361px;
     height: auto;
     color: #141414;
     display: block;
@@ -46,9 +43,7 @@ main .imagewithtext-width774 > div {
   main .imagewithtext-width774 > div {
     max-width: 393px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 }
