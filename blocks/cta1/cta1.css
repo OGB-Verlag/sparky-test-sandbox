@@ -1,10 +1,7 @@
 main .cta1-container > div {
   max-width: 393px;
   background-color: #fce9ef;
-  margin-top: 48px;
-  margin-bottom: 52px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 48px auto 52px auto;
 }
 
 .cta1 {
@@ -56,41 +53,37 @@ main .cta1-container > div {
   text-transform: none;
 }
 
+.cta1 .button::after {
+  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
+  margin-left: 8px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.cta1 > div:nth-child(2) > div {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 900px) {
   main .cta1-container > div {
     max-width: 1152px;
   }
 
   .cta1 {
-    position: relative;
     padding: 60px 98px;
     min-width: 1152px;
     min-height: 465px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
-    margin: 0 auto;
   }
 
   .cta1 h1 {
     font-family: Wigrum-bold;
-    font-weight: 900;
     font-size: 50px !important;
-    line-height: 120%;
-    margin-top: 40px;
-    color: #e60040;
-    text-transform: uppercase;
-    text-align: left;
   }
 
   .cta1 h6 {
-    font-family: Wigrum-Regular;
-    font-weight: 500;
     font-size: 24px !important;
-    line-height: 120%;
-    color: #e60040;
-    text-align: left;
     margin-top: 13px;
   }
 
@@ -100,30 +93,7 @@ main .cta1-container > div {
 
   .cta1 a.button:any-link,
   .cta1 button {
-    background-color: white;
-    color: #e60040;
     font-size: 17px;
-    font-weight: 500;
     min-width: 956px;
-    max-height: 44px;
-    border-radius: 4px;
-    border: 1px solid var(--HFS-rot-400, #e60040);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: none;
   }
-}
-
-.cta1 .button::after {
-  content: url('https://author-p136111-e1367719.adobeaemcloud.com/content/dam/universal-editor-content-dam/link_forward.svg');
-  margin-left: 8px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-}
-
-/* Add margin-bottom to the div containing the h6 element */
-.cta1 > div:nth-child(2) > div {
-  margin-bottom: 15px;
 }
