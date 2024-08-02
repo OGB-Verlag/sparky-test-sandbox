@@ -1,6 +1,6 @@
 /*
  * Live Stage :: Picture-Left Text-Right v2
- * v2 mean: "Finanziert durch", use badges on the buttom of the paragraph.
+ * v2 mean: "Finanziert durch", use badges on the bottom of the paragraph.
  */
 
 /* TODO: Ajust font-family, font-size, paddings/margins, & unit of measurement */
@@ -42,7 +42,7 @@
   color: #000d77;
   font-size: 15px;
   font-weight: 500;
-  padding: 20px 0px 6px 0px;
+  padding: 20px 0 6px;
 }
 
 .column-left p strong::before {

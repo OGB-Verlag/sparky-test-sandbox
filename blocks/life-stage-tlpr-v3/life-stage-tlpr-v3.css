@@ -44,7 +44,7 @@
   color: #000d77;
   font-size: 15px;
   font-weight: 500;
-  padding: 20px 0px 6px 0px;
+  padding: 20px 0 6px;
 }
 
 .column-left p strong::before {

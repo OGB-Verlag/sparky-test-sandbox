@@ -1,18 +1,15 @@
 main .subpages > div {
   max-width: 393px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .section.subpages .default-content-wrapper h2 {
   color: #000959;
   display: block;
   font-family: 'Wigrum-Bold', sans-serif;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px 0 10px;
   font-size: 32px !important;
   font-weight: 900;
   line-height: 110%;
@@ -27,7 +24,6 @@ main .subpages > div {
   font-size: 16px !important;
   font-weight: 400;
   line-height: 150%;
-  font-style: normal;
   margin-top: 8px;
 }
 
@@ -38,7 +34,6 @@ main .subpages > div {
   font-size: 17px !important;
   font-weight: 600;
   line-height: 150%;
-  font-style: normal;
 }
 
 .section.subpages .default-content-wrapper p picture {
@@ -49,8 +44,7 @@ main .subpages > div {
 .section.subpages .default-content-wrapper p picture img {
   max-width: 361px;
   height: auto;
-  margin-bottom: 6px;
-  margin-top: 10px;
+  margin: 10px 0 6px;
 }
 
 @media (min-width: 900px) {
@@ -62,11 +56,6 @@ main .subpages > div {
     margin-top: 60px;
   }
 
-  .section.subpages .default-content-wrapper p picture img {
-    max-width: 770px;
-    margin-bottom: 30px;
-  }
-
   .section.subpages .default-content-wrapper p {
     font-size: 18px !important;
   }
@@ -74,5 +63,10 @@ main .subpages > div {
   .section.subpages .default-content-wrapper p > strong {
     font-size: 19px !important;
     margin-top: 30px;
+  }
+
+  .section.subpages .default-content-wrapper p picture img {
+    max-width: 770px;
+    margin-bottom: 30px;
   }
 }
