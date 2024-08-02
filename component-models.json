@@ -490,11 +490,16 @@
     "id": "video",
     "fields": [
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "videourl",
+        "label": "Video URL enfügen"
+      },
+      {
         "component": "reference",
-        "label": "Video DAM Content",
-        "description": "Video auswählen",
-        "name": "videoreference",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "thumbnail",
+        "label": "Vorschaubild auswählen"
       }
     ]
   },
