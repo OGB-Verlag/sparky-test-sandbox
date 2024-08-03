@@ -1,13 +1,22 @@
-.backward-button-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.backward-button {
+  color: #3f4999 !important;
+  font-family: Wigrum-Regular;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.05rem */
+  text-decoration-line: underline;
+  margin: 0.4rem 0 0 0;
+  cursor: pointer;
 }
 
-.backward-button {
-  background-color: red !important;
-  color: black !important;
-  padding-left: 0.5rem;
+.backward-button:hover {
+  color: #c60000 !important;
+}
+
+/* 900px */
+@media (min-width: 56.25rem) {
+  .backward-button {
+    margin: 0.4rem 0 0 0.25rem;
+  }
 }

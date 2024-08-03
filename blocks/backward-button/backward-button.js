@@ -9,7 +9,7 @@ export default function decorate(block) {
   backwardSVG.src = '../../icons/backward.svg'
   backwardSVG.style.marginRight = '0.5rem'
   backwardSVG.style.position = 'relative'
-  backwardSVG.style.top = '4px'
+  backwardSVG.style.top = '7px'
   button.insertBefore(backwardSVG, button.firstChild)
 
   block.appendChild(button)
