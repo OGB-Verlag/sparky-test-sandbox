@@ -92,7 +92,7 @@
           }
         },
         {
-          "title": "zurück zur Startseite Button",
+          "title": "Zurück zur Startseite Button",
           "id": "backward-button",
           "plugins": {
             "xwalk": {

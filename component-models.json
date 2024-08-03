@@ -591,21 +591,6 @@
   },
   {
     "id": "backward-button",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "backward-button",
-        "value": "",
-        "label": "Button-Link hinzufügen ",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "backward-button",
-        "value": "zurück zur Startseite",
-        "label": "Button-Text hinzufügen",
-        "valueType": "string"
-      }
-    ]
+    "fields": []
   }
 ]
