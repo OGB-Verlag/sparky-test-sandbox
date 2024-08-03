@@ -14,6 +14,7 @@
       "image",
       "button",
       "title",
+      "backward-button",
       "life-stage-pltr-v2",
       "life-stage-tlpr-v3",
       "hero",
@@ -21,15 +22,8 @@
       "imagewithtext-width774",
       "image-advanced",
       "video",
-      "quote",
-      "breadcrumb",
       "banner1",
-      "cta1",
-      "columns"
+      "cta1"
     ]
-  },
-  {
-    "id": "cards",
-    "components": ["card"]
   }
 ]

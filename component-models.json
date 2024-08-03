@@ -111,44 +111,6 @@
     ]
   },
   {
-    "id": "columns",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "value": "",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
-    ]
-  },
-  {
-    "id": "card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "section",
     "fields": [
       {
@@ -504,25 +466,6 @@
     ]
   },
   {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "text-area",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "value": ""
-      }
-    ]
-  },
-  {
     "id": "imagewithtext",
     "fields": [
       {
@@ -642,6 +585,25 @@
         "name": "content_cta1Text",
         "value": "",
         "label": "Button Text hinzufügen",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "backward-button",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "backward-button",
+        "value": "",
+        "label": "Button-Link hinzufügen ",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "backward-button",
+        "value": "zurück zur Startseite",
+        "label": "Button-Text hinzufügen",
         "valueType": "string"
       }
     ]
