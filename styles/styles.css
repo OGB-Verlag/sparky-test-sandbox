@@ -89,49 +89,13 @@ textarea:focus {
   --tw-text-opacity: 1;
   --darkcharcoal: #333333;
   --darkgrey: #666666;
-  --orange: #f26841;
   --grey: #808080;
-  --darkblack: #030303;
-  --green: #41c66e;
-  --greyishblue: #365069;
-  --floralwhite: #fff9f2;
-  --lilen: #fff4e7;
-  --dustygrey: #999999;
-  --matterhorn: #4d4d4d;
-  --chinesesilver: #cccccc;
-  --midnight: #20303f;
-  --pattensblue: #d7dce1;
-  --rosewhite: #fef0ec;
-  --solitude: #e5e7eb;
-  --swansdown: #e3f6e9;
-  --camarone: #277742;
-  --zinc: #afb9c3;
-  --cloud: #ebeef0;
-  --silver: #c4c4c4;
-  --arsenic: #364754;
-  --whisper: #ebebeb;
-  --fossil: #a9a9a9;
-  --blackpearl: #010812;
-  --lightgrey: #ebeaea;
-  --blue: #007bff;
-  --whitesmoke: #f8f8f8;
-  --coral: #fac3b3;
-  --salmon: #f58667;
-  --seashell: #fff7f4;
-  --pale: #eef3ff;
-  --cinnabar: #da4d34;
-  --coralred: #ef4444;
-  --flamingo: #eb5752;
-  --mischka: #9ca3af;
-  --midorange: #f26741;
-  --pearl: #f0f0f0;
-  --submidorange: #fce6e5;
-  --skyblue: #def3fd;
+
 
   /* fonts */
-  --body-font-family: Wigrum-Regular, roboto, roboto-fallback;
-  --heading-font-family: Wigrum-Bold, sans-serif;
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --body-font-family: 'Wigrum-Regular', roboto, roboto-fallback;
+  --heading-font-family: 'Wigrum-Bold', sans-serif;
+  --fixed-font-family: 'Wigrum-Regular', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
