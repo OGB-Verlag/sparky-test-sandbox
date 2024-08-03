@@ -595,7 +595,7 @@
       {
         "component": "aem-content",
         "name": "backward",
-        "value": "/",
+        "value": "/content/sparky-sandbox-content/index",
         "label": "Zurück zur Startseite Path",
         "valueType": "string"
       },
