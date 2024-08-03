@@ -591,6 +591,21 @@
   },
   {
     "id": "backward-button",
-    "fields": []
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "backward",
+        "value": "/",
+        "label": "Zurück zur Startseite Path",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "backwardText",
+        "value": "zurück zur Startseite",
+        "label": "Zurück zur Startseite Button Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]

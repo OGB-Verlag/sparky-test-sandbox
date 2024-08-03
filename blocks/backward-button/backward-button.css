@@ -1,5 +1,13 @@
-.backward-button {
-  background-color: blue !important;
-  color: black !important;
-  text-align: center;
+/* .backward-button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
+
+.backward-button {
+  background-color: red !important;
+  color: black !important;
+  padding-left: 0.5rem;
+} */
