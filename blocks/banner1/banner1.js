@@ -1,7 +1,7 @@
 export default function decorate(block) {
-  const buttons = block.querySelectorAll('.banner1 .button')
+  const button = block.querySelector('.button')
 
-  buttons.forEach((button) => {
+  if (button) {
     const beforeIcon = document.createElement('img')
     beforeIcon.src = '../../icons/blueherz.svg'
     beforeIcon.style.marginRight = '0.6rem'
@@ -15,5 +15,5 @@ export default function decorate(block) {
     // Rotate icons
     beforeIcon.style.transform = 'rotate(90deg)'
     afterIcon.style.transform = 'rotate(90deg)'
-  })
+  }
 }
