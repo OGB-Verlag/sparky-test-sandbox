@@ -56,7 +56,6 @@ export default function decorate(block) {
 
       const herzSVG = document.createElement('img')
       herzSVG.src = '../../icons/herz.svg'
-      herzSVG.alt = 'Herz Icon'
       herzSVG.style.marginRight = '8px'
       herzSVG.style.position = 'relative'
       herzSVG.style.top = '-1px'
@@ -64,7 +63,6 @@ export default function decorate(block) {
 
       const arrowSVG = document.createElement('img')
       arrowSVG.src = '../../icons/linkforward.svg'
-      arrowSVG.alt = 'Link Forward Icon'
       arrowSVG.style.marginLeft = '16px'
       arrowSVG.style.position = 'relative'
       arrowSVG.style.top = '-2px'
@@ -76,7 +74,6 @@ export default function decorate(block) {
   // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
   //   const piggySVG = document.createElement('img');
   //   piggySVG.src = '../../icons/piggy.svg';
-  //   piggySVG.alt = 'Piggy Bank Icon';
   //   piggySVG.style.marginRight = '8px';
   //   piggySVG.style.position = 'relative';
   //   piggySVG.style.bottom = '6px';

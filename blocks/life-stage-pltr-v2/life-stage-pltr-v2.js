@@ -61,7 +61,6 @@ export default function decorate(block) {
   // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
   //   const piggySVG = document.createElement('img')
   //   piggySVG.src = '../../icons/piggy.svg'
-  //   piggySVG.alt = 'Piggy Bank Icon'
   //   piggySVG.style.marginRight = '8px'
   //   piggySVG.style.position = 'relative'
   //   piggySVG.style.bottom = '6px'
