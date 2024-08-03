@@ -1,4 +1,4 @@
-/* .backward-button-wrapper {
+.backward-button-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -10,4 +10,4 @@
   background-color: red !important;
   color: black !important;
   padding-left: 0.5rem;
-} */
+}

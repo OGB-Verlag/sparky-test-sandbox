@@ -591,21 +591,6 @@
   },
   {
     "id": "backward-button",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "backward",
-        "value": "/content/sparky-sandbox-content/index",
-        "label": "Zurück zur Startseite Path",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "backwardText",
-        "value": "zurück zur Startseite",
-        "label": "Zurück zur Startseite Button Text",
-        "valueType": "string"
-      }
-    ]
+    "fields": []
   }
 ]
