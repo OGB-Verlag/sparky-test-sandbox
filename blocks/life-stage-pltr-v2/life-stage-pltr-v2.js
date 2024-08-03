@@ -30,7 +30,7 @@ export default function decorate(block) {
     topDiv.appendChild(firstButtonContainer)
   }
 
-  // Replace first 'button' with 'second-button' and insert SVG icon
+  // Replace first 'button' with 'second-button'
   const secondButtonContainer = leftDiv.querySelectorAll('.button-container')[0]
   if (secondButtonContainer) {
     const secondButton = secondButtonContainer.querySelector('.button')
@@ -38,7 +38,7 @@ export default function decorate(block) {
       secondButton.classList.remove('button')
       secondButton.classList.add('second-button')
 
-      // Insert the Herz icon before the button text
+      // Insert icon before and after the button text
       const herzSVG = document.createElement('img')
       herzSVG.src = '../../icons/herz.svg'
       herzSVG.alt = 'Herz Icon'
@@ -47,7 +47,6 @@ export default function decorate(block) {
       herzSVG.style.top = '-1px'
       secondButton.insertBefore(herzSVG, secondButton.firstChild)
 
-      // Insert the Link Forward icon after the button text
       const arrowSVG = document.createElement('img')
       arrowSVG.src = '../../icons/linkforward.svg'
       arrowSVG.style.marginLeft = '16px'
@@ -57,16 +56,20 @@ export default function decorate(block) {
     }
   }
 
-  // // Add PiggySVG before strong text
-  // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
-  //   const piggySVG = document.createElement('img')
-  //   piggySVG.src = '../../icons/piggy.svg'
-  //   piggySVG.style.marginRight = '8px'
-  //   piggySVG.style.position = 'relative'
-  //   piggySVG.style.bottom = '6px'
-  //   strong.insertBefore(piggySVG, strong.firstChild)
-  // })
+  // AOS https://michalsnik.github.io/aos/
+  // Animation based on screen width
+  const setAOSAnimation = () => {
+    if (window.innerWidth < 900) {
+      rightDiv.dataset.aos = 'zoom-in'
+      leftDiv.dataset.aos = ''
+    } else {
+      rightDiv.dataset.aos = 'zoom-in-left'
+      leftDiv.dataset.aos = 'zoom-in-right'
+    }
+  }
 
-  // AOS animation
-  rightDiv.dataset.aos = 'fade-right'
+  setAOSAnimation()
+
+  // Event listener for AOS animation
+  window.addEventListener('resize', setAOSAnimation)
 }

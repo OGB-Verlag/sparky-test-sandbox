@@ -54,6 +54,7 @@ export default function decorate(block) {
       secondButton.classList.remove('button')
       secondButton.classList.add('second-button')
 
+      // Insert icon before and after the button text
       const herzSVG = document.createElement('img')
       herzSVG.src = '../../icons/herz.svg'
       herzSVG.style.marginRight = '8px'
@@ -70,16 +71,20 @@ export default function decorate(block) {
     }
   }
 
-  // // Add PiggySVG before strong text
-  // leftDiv?.querySelectorAll('p strong').forEach((strong) => {
-  //   const piggySVG = document.createElement('img');
-  //   piggySVG.src = '../../icons/piggy.svg';
-  //   piggySVG.style.marginRight = '8px';
-  //   piggySVG.style.position = 'relative';
-  //   piggySVG.style.bottom = '6px';
-  //   strong.insertBefore(piggySVG, strong.firstChild);
-  // });
+  // AOS https://michalsnik.github.io/aos/
+  // Animation based on screen width
+  const setAOSAnimation = () => {
+    if (window.innerWidth < 900) {
+      rightDiv.dataset.aos = 'zoom-in'
+      leftDiv.dataset.aos = ''
+    } else {
+      rightDiv.dataset.aos = 'zoom-in-right'
+      leftDiv.dataset.aos = 'zoom-in-left'
+    }
+  }
 
-  // AOS animation
-  rightDiv.dataset.aos = 'fade-right'
+  setAOSAnimation()
+
+  // Event listener for AOS animation
+  window.addEventListener('resize', setAOSAnimation)
 }
