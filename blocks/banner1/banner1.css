@@ -1,30 +1,24 @@
-/*
- * Banner1 Container Styles
- */
-
-/* Base Styles */
-main .banner1-container {
-  width: 100%;
+main .banner1-container > div {
+  max-width: 24.5625rem; /* 393px */
   background-color: #000d77;
-  margin-top: 5rem;
+  margin: 1.5rem auto 0 auto; /* 48px 52px */
 }
 
 .banner1 {
   position: relative;
-  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  padding: 2rem 1rem 0.3rem 5.4rem;
   max-width: 24.5625rem;
   height: 23.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 auto;
 }
 
 .banner1 h6 {
   font-family: 'Wigrum-Regular', sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem !important;
+  font-weight: 100;
+  font-size: 1.08rem !important;
   line-height: 120%;
   color: #fafafa;
   text-align: left;
@@ -38,7 +32,7 @@ main .banner1-container {
   font-family: 'Wigrum-Regular', sans-serif;
   font-size: 1.5rem !important;
   font-weight: 500;
-  min-width: 18.125rem;
+  min-width: 20.5rem;
   max-height: 2.625rem;
   border-radius: 0.25rem;
   display: flex;
@@ -46,9 +40,9 @@ main .banner1-container {
   justify-content: center;
   text-transform: uppercase;
   position: absolute;
-  left: calc(100% - 21.875rem);
+  left: calc(100% - 21.6rem);
   transform: translateY(-50%) rotate(-90deg);
-  margin-top: -6.25rem;
+  margin-top: -7.48rem;
 }
 
 .banner1 > div {
@@ -67,6 +61,11 @@ main .banner1-container {
 
 /* Media Queries */
 @media (min-width: 56.25rem) {
+  main .banner1-container > div {
+    min-width: 90rem;
+    margin: 5.6rem auto 1rem auto; /* Adds flexbox properties */
+  }
+
   .banner1 {
     padding: 3.5rem 11.125rem;
     min-width: 100%;
@@ -79,7 +78,9 @@ main .banner1-container {
 
   .banner1 a.button:any-link,
   .banner1 button {
-    left: calc(100% - 41.875rem);
+    min-width: 18.125rem;
+    left: calc(100% - 41.5rem);
+    margin-top: -6.4rem;
   }
 
   .banner1 > div:nth-of-type(1) h6 {

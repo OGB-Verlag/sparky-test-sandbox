@@ -1,7 +1,7 @@
 main .cta1-container > div {
   max-width: 24.5625rem; /* 393px */
   background-color: #fce9ef;
-  margin: 3rem auto 3.25rem auto; /* 48px 52px */
+  margin: 1.5rem auto 3.25rem auto; /* 48px 52px */
 }
 
 .cta1 {
@@ -13,7 +13,6 @@ main .cta1-container > div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .cta1 h1 {
@@ -60,7 +59,7 @@ main .cta1-container > div {
 /* 900px */
 @media (min-width: 56.25rem) {
   main .cta1-container > div {
-    max-width: 72rem; /* 1152px */
+    min-width: 72rem; /* 1152px */
   }
 
   .cta1 {
