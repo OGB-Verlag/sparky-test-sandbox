@@ -149,6 +149,67 @@
     ]
   },
   {
+    "id": "life-stage-pltr-v1",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "content_cta2",
+        "value": "",
+        "label": "Button-Link hinzufügen ",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "content_cta2Text",
+        "value": "",
+        "label": "Button-Text hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Bild auswählen",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alternativtext für Bild hinzufügen",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "content_text",
+        "value": "",
+        "label": "Text hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "content_text2",
+        "value": "",
+        "label": "Text 2 hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "content_cta",
+        "value": "",
+        "label": "Button-Link hinzufügen",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "content_ctaText",
+        "value": "",
+        "label": "Button-Text hinzufügen",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "life-stage-pltr-v2",
     "fields": [
       {
@@ -187,11 +248,34 @@
         "valueType": "string"
       },
       {
-        "component": "text",
+        "component": "multiselect",
         "name": "content_bages",
-        "label": "Finanzierungsarten",
+        "label": "Finanzierungsarten auswählen",
+        "valueType": "string",
         "required": false,
-        "multi": true
+        "options": [
+          {
+            "name": "",
+            "children": [
+              {
+                "name": "Lohnsteuer",
+                "value": "Lohnsteuer"
+              },
+              {
+                "name": "Krankenversicherung",
+                "value": "Krankenversicherung"
+              },
+              {
+                "name": "Unfallversicherung",
+                "value": "Unfallversicherung"
+              },
+              {
+                "name": "Arbeitslosenversicherung",
+                "value": "Arbeitslosenversicherung"
+              }
+            ]
+          }
+        ]
       },
       {
         "component": "aem-content",

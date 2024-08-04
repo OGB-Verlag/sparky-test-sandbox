@@ -12,7 +12,7 @@ export default function decorate(block) {
   columnsWrapper.classList.add('columns-wrapper')
   block.appendChild(columnsWrapper)
 
-  // check screen width and update column order
+  // check screen width and update column order to have img allways on top
   const updateColumnOrder = () => {
     // Clear existing children
     while (columnsWrapper.firstChild) {
