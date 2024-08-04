@@ -31,10 +31,10 @@ main .subpages > div {
 .section.subpages .default-content-wrapper p > strong {
   color: #141414;
   display: block;
-  font-family: 'Wigrum-Regular', sans-serif;
-  font-size: 1.0625rem !important; /* 17px */
-  font-weight: 600;
-  line-height: 150%;
+  font-family: 'Wigrum-Bold', sans-serif;
+  font-size: 10.06rem !important; /* 17px */
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .section.subpages .default-content-wrapper p picture {
