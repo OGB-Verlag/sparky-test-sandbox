@@ -40,7 +40,9 @@ export default function decorate(block) {
 
       // Insert icon before and after the button text
       const herzSVG = document.createElement('img')
-      herzSVG.src = '../../icons/herz.svg'
+      // Make icon vissible also from Universal Editor
+      // herzSVG.src = '../../icons/herz.svg'
+      herzSVG.src = 'https://raw.githubusercontent.com/OGB-Verlag/sparky-test-sandbox/main/assets/icons/herz.svg'
       herzSVG.alt = 'Herz Icon'
       herzSVG.style.marginRight = '8px'
       herzSVG.style.position = 'relative'
@@ -48,7 +50,8 @@ export default function decorate(block) {
       secondButton.insertBefore(herzSVG, secondButton.firstChild)
 
       const arrowSVG = document.createElement('img')
-      arrowSVG.src = '../../icons/linkforward.svg'
+      arrowSVG.src =
+        'https://raw.githubusercontent.com/OGB-Verlag/sparky-test-sandbox/main/assets/icons/linkforward.svg'
       arrowSVG.style.marginLeft = '16px'
       arrowSVG.style.position = 'relative'
       arrowSVG.style.top = '-2px'

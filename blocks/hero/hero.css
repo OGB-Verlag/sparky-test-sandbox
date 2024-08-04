@@ -68,7 +68,10 @@ main .hero-container > div {
 
 /* Arrow Animation */
 .arrow-container {
-  background-image: url('../../icons/arrowdown.svg');
+  /* Make icon vissible also from Universal Editor */
+  /* background-image: url('../../icons/arrowdown.svg'); */
+  background-image: url('https://raw.githubusercontent.com/OGB-Verlag/sparky-test-sandbox/main/assets/icons/arrowdown.svg');
+
   background-repeat: no-repeat;
   position: absolute;
   z-index: 1;
