@@ -32,7 +32,7 @@ main .subpages > div {
   color: #141414;
   display: block;
   font-family: 'Wigrum-Bold', sans-serif;
-  font-size: 10.06rem !important; /* 17px */
+  font-size: 1.06rem !important; /* 17px */
   font-weight: 700;
   line-height: 20px;
 }
