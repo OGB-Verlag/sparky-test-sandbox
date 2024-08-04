@@ -452,12 +452,10 @@
     "id": "video",
     "fields": [
       {
-        "component": "reference",
+        "component": "text",
         "valueType": "string",
         "name": "videourl",
-        "label": "Video auswählen",
-        "description": "",
-        "multi": false
+        "label": "Video URL enfügen"
       },
       {
         "component": "reference",
@@ -467,6 +465,7 @@
       }
     ]
   },
+
   {
     "id": "imagewithtext",
     "fields": [
