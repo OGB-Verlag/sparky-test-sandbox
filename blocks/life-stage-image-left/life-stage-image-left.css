@@ -4,7 +4,7 @@
 
 /* TODO: Adjust font-family, font-size, paddings/margins, & unit of measurement */
 
-.life-stage-pltr-v2.block {
+.life-stage-image-left.block {
   display: flex;
   flex-direction: column;
   max-width: 25rem; /* 400px */
@@ -75,11 +75,11 @@ button {
 
 @media (min-width: 56.25rem) {
   /* 900px */
-  .life-stage-pltr-v2-wrapper {
+  .life-stage-image-left-wrapper {
     margin-bottom: 3.125rem; /* 50px */
   }
 
-  .life-stage-pltr-v2.block {
+  .life-stage-image-left.block {
     max-width: 65rem; /* 1040px */
   }
 
