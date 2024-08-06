@@ -153,16 +153,16 @@
     "fields": [
       {
         "component": "aem-content",
-        "name": "content_cta2",
+        "name": "content_buttonlinkheadline",
         "value": "",
         "label": "Button Link Headline",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_cta2Text",
+        "name": "content_buttonlinkheadlineText",
         "value": "",
-        "label": "Button-Text",
+        "label": "Button Text",
         "valueType": "string"
       },
       {
@@ -187,24 +187,17 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "name": "content_bages",
-        "label": "Finanzierungsarten",
-        "required": false,
-        "multi": true
-      },
-      {
         "component": "aem-content",
-        "name": "content_cta",
+        "name": "content_buttonlinkcontentline",
         "value": "",
         "label": "Button Link Content",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_ctaText",
+        "name": "content_buttonlinkcontentlineText",
         "value": "",
-        "label": "Button-Text",
+        "label": "Button Text",
         "valueType": "string"
       }
     ]
@@ -223,7 +216,7 @@
         "component": "text",
         "name": "content_cta2Text",
         "value": "",
-        "label": "Button-Text",
+        "label": "Button Text",
         "valueType": "string"
       },
       {
@@ -265,7 +258,7 @@
         "component": "text",
         "name": "content_ctaText",
         "value": "",
-        "label": "Button-Text",
+        "label": "Button Text",
         "valueType": "string"
       }
     ]
