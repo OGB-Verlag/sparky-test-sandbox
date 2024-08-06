@@ -78,23 +78,6 @@ button {
   justify-content: center;
 }
 
-.badge {
-  display: inline-block;
-  padding: 0.25rem 1rem; /* 4px 8px */
-  margin: 0.2em;
-  font-size: 1.06rem !important; /* 12px */
-  font-weight: 500;
-  line-height: 120%;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 1rem; /* 8px */
-  color: #e60040;
-  background-color: #fce9ef;
-  height: 2.25rem; /* 30px */
-  align-content: center;
-}
-
 @media (min-width: 56.25rem) {
   /* 900px */
   .life-stage-tlpr-v3-wrapper {
@@ -158,10 +141,5 @@ button {
     max-height: 2.5rem; /* 40px */
     font-size: 1.375rem; /* 22px */
     padding: 0 2.875rem; /* 46px */
-  }
-
-  .badge {
-    font-size: 1.12rem !important; /* 12px */
-    height: 2.5rem; /* 30px */
   }
 }

@@ -460,7 +460,7 @@
       {
         "component": "aem-content",
         "name": "content_banner1",
-        "value": "",
+        "value": "#",
         "label": "Bitte nur ein # Zeichen hinzufügen",
         "valueType": "string"
       },
