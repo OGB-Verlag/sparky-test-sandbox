@@ -168,15 +168,15 @@
           }
         },
         {
-          "title": "Call-to-Action 1",
-          "id": "cta1",
+          "title": "Call-to-Action",
+          "id": "cta",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "cta1",
-                  "model": "cta1"
+                  "name": "cta",
+                  "model": "cta"
                 }
               }
             }

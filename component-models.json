@@ -460,7 +460,7 @@
     ]
   },
   {
-    "id": "cta1",
+    "id": "cta",
     "fields": [
       {
         "component": "richtext",
@@ -471,21 +471,21 @@
       },
       {
         "component": "richtext",
-        "name": "text2",
+        "name": "textctabelow",
         "value": "",
         "label": "Text Below",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "content_cta1",
+        "name": "content_cta",
         "value": "",
         "label": "Button Link",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_cta1Text",
+        "name": "content_ctaText",
         "value": "",
         "label": "Button Text",
         "valueType": "string"
