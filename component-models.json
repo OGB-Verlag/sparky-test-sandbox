@@ -357,13 +357,13 @@
         "component": "text",
         "valueType": "string",
         "name": "videourl",
-        "label": "Video URL enfügen"
+        "label": "Video URL"
       },
       {
         "component": "reference",
         "valueType": "string",
         "name": "thumbnail",
-        "label": "VorschauSelect Image"
+        "label": "Thumbnail"
       }
     ]
   },
@@ -383,7 +383,7 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alternativtext für Bild links hinzufügen",
+        "label": "Image Alternative Text",
         "description": "",
         "value": ""
       },
@@ -391,14 +391,14 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Text unter dem Bild",
+        "label": "Text",
         "description": "",
         "valueType": "string"
       }
     ]
   },
   {
-    "id": "imagewithtext-width774",
+    "id": "imagewithtext774px",
     "fields": [
       {
         "component": "reference",
@@ -412,7 +412,7 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alternativtext für Bild links hinzufügen",
+        "label": "Image Alternative Text",
         "description": "",
         "value": ""
       },
@@ -420,7 +420,7 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Text unter dem Bild",
+        "label": "Text",
         "description": "",
         "valueType": "string"
       }

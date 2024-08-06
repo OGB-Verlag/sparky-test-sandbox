@@ -1,4 +1,3 @@
-/* General Styles */
 .imagewithtext-wrapper {
   display: flex;
   flex-direction: column;
@@ -25,7 +24,6 @@
   font-size: 20px;
 }
 
-/* Media Queries */
 @media (max-width: 900px) {
   .imagewithtext-wrapper img {
     padding: 4em 2em 0;

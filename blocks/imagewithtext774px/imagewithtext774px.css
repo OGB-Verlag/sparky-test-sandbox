@@ -1,18 +1,18 @@
-main .imagewithtext-width774 > div {
+main .imagewithtext774px > div {
   max-width: 48.375rem; /* 774px */
   height: auto;
   margin: 0 auto;
   padding: 0 0.625rem; /* 10px */
 }
 
-.imagewithtext-width774-wrapper {
+.imagewithtext774px-wrapper {
   display: block;
   max-width: 48.375rem; /* 774px */
   height: auto;
   margin: 0 auto;
 }
 
-.imagewithtext-width774 p {
+.imagewithtext774px p {
   color: #141414;
   display: block;
   font-family: 'Wigrum-Regular', sans-serif;
@@ -22,14 +22,14 @@ main .imagewithtext-width774 > div {
   margin-top: 0.5rem; /* 8px */
 }
 
-.imagewithtext-width774 .default-content-wrapper p > strong {
+.imagewithtext774px .default-content-wrapper p > strong {
   font-family: 'Wigrum-Bold', sans-serif;
   font-weight: 700;
 }
 
 @media (max-width: 56.25rem) {
   /* 900px */
-  .imagewithtext-width774-wrapper p {
+  .imagewithtext774px-wrapper p {
     max-width: 22.5625rem; /* 361px */
     height: auto;
     color: #141414;
@@ -41,7 +41,7 @@ main .imagewithtext-width774 > div {
     margin-top: 0.5rem; /* 8px */
   }
 
-  main .imagewithtext-width774 > div {
+  main .imagewithtext774px > div {
     max-width: 24.5625rem; /* 393px */
     height: auto;
     margin: 0 auto;
