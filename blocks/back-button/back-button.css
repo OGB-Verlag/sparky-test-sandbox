@@ -1,4 +1,4 @@
-.backward-button {
+.back-button {
   color: #3f4999 !important;
   font-family: Wigrum-Regular;
   font-size: 0.875rem;
@@ -10,13 +10,13 @@
   cursor: pointer;
 }
 
-.backward-button:hover {
+.back-button:hover {
   color: #c60000 !important;
 }
 
 /* 900px */
 @media (min-width: 56.25rem) {
-  .backward-button {
+  .back-button {
     margin: 0.4rem 0 0 0.25rem;
   }
 }

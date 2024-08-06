@@ -1,6 +1,6 @@
 export default function decorate(block) {
   const button = document.createElement('a')
-  button.classList.add('backward-button')
+  button.classList.add('back-button')
   button.textContent = 'zurück zur Startseite'
   button.setAttribute('href', '/')
   button.style.textDecoration = 'underline'
