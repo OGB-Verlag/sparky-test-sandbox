@@ -427,33 +427,33 @@
     ]
   },
   {
-    "id": "banner1",
+    "id": "banner",
     "fields": [
       {
         "component": "richtext",
-        "name": "text1",
+        "name": "textbannerabove",
         "value": "",
-        "label": "Text 1 hinzufügen",
+        "label": "Text Above",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "text2",
+        "name": "textbannerbelow",
         "value": "",
-        "label": "Text 2 hinzufügen",
+        "label": "Text Below",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "content_banner1",
-        "value": "#",
-        "label": "Bitte nur ein # Zeichen hinzufügen",
+        "name": "content_banner",
+        "value": "",
+        "label": "",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_banner1Text",
-        "value": "jdkjdkfjdk",
+        "name": "content_bannerText",
+        "value": "Unser Fazit",
         "label": "Vertikale Text",
         "valueType": "string"
       }
@@ -464,16 +464,16 @@
     "fields": [
       {
         "component": "richtext",
-        "name": "text1",
+        "name": "textctaabove",
         "value": "",
-        "label": "Text 1 hinzufügen",
+        "label": "Text Above",
         "valueType": "string"
       },
       {
         "component": "richtext",
         "name": "text2",
         "value": "",
-        "label": "Text 2 hinzufügen",
+        "label": "Text Below",
         "valueType": "string"
       },
       {
