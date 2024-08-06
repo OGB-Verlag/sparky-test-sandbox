@@ -58,7 +58,7 @@
         "component": "text",
         "valueType": "string",
         "name": "alt",
-        "value": "Mein Herz für ein Soziales Österreich",
+        "value": "",
         "label": "Alt Text"
       }
     ]
@@ -155,35 +155,35 @@
         "component": "aem-content",
         "name": "content_cta2",
         "value": "",
-        "label": "Button-Link hinzufügen ",
+        "label": "Button Link Headline",
         "valueType": "string"
       },
       {
         "component": "text",
         "name": "content_cta2Text",
         "value": "",
-        "label": "Button-Text hinzufügen",
+        "label": "Button-Text",
         "valueType": "string"
       },
       {
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Bild auswählen",
+        "label": "Select Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alternativtext für Bild hinzufügen",
+        "label": "Image Alternative Text",
         "value": ""
       },
       {
         "component": "richtext",
         "name": "content_text",
         "value": "",
-        "label": "Text hinzufügen",
+        "label": "Text",
         "valueType": "string"
       },
       {
@@ -197,14 +197,14 @@
         "component": "aem-content",
         "name": "content_cta",
         "value": "",
-        "label": "Button-Link hinzufügen",
+        "label": "Button Link Content",
         "valueType": "string"
       },
       {
         "component": "text",
         "name": "content_ctaText",
         "value": "",
-        "label": "Button-Text hinzufügen",
+        "label": "Button-Text",
         "valueType": "string"
       }
     ]
@@ -216,35 +216,35 @@
         "component": "aem-content",
         "name": "content_cta2",
         "value": "",
-        "label": "Button-Link hinzufügen ",
+        "label": "Button-Link ",
         "valueType": "string"
       },
       {
         "component": "text",
         "name": "content_cta2Text",
         "value": "",
-        "label": "Button-Text hinzufügen",
+        "label": "Button-Text",
         "valueType": "string"
       },
       {
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Bild auswählen",
+        "label": "Select Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alternativtext für Bild hinzufügen",
+        "label": "Image Alternative Text",
         "value": ""
       },
       {
         "component": "richtext",
         "name": "content_text",
         "value": "",
-        "label": "Text hinzufügen",
+        "label": "Text",
         "valueType": "string"
       },
       {
@@ -258,14 +258,14 @@
         "component": "aem-content",
         "name": "content_cta",
         "value": "",
-        "label": "Button-Link hinzufügen",
+        "label": "Button-Link",
         "valueType": "string"
       },
       {
         "component": "text",
         "name": "content_ctaText",
         "value": "",
-        "label": "Button-Text hinzufügen",
+        "label": "Button-Text",
         "valueType": "string"
       }
     ]
@@ -278,7 +278,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "description": "Bild auswählen",
+        "description": "Select Image",
         "multi": true
       },
       {
@@ -377,7 +377,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "thumbnail",
-        "label": "Vorschaubild auswählen"
+        "label": "VorschauSelect Image"
       }
     ]
   },
@@ -389,7 +389,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Bild auswählen",
+        "label": "Select Image",
         "description": "",
         "multi": true
       },
@@ -418,7 +418,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Bild auswählen",
+        "label": "Select Image",
         "description": "",
         "multi": true
       },
@@ -467,8 +467,8 @@
       {
         "component": "text",
         "name": "content_banner1Text",
-        "value": "",
-        "label": "Vertikale Text hinzufügen",
+        "value": "jdkjdkfjdk",
+        "label": "Vertikale Text",
         "valueType": "string"
       }
     ]
@@ -494,14 +494,14 @@
         "component": "aem-content",
         "name": "content_cta1",
         "value": "",
-        "label": "Button-Link hinzufügen",
+        "label": "Button-Link",
         "valueType": "string"
       },
       {
         "component": "text",
         "name": "content_cta1Text",
         "value": "",
-        "label": "Button Text hinzufügen",
+        "label": "Button Text",
         "valueType": "string"
       }
     ]
