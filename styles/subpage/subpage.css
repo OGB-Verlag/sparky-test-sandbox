@@ -1,12 +1,12 @@
 /* Existing CSS */
-main .subpages > div {
+main .subpage > div {
   max-width: 24.5625rem; /* 393px */
   height: auto;
   margin: 0 auto;
   padding: 0 0.625rem; /* 10px */
 }
 
-.section.subpages .default-content-wrapper h2 {
+.section.subpage .default-content-wrapper h2 {
   color: #000959;
   display: block;
   font-family: 'Wigrum-Bold', sans-serif;
@@ -18,7 +18,7 @@ main .subpages > div {
   text-transform: uppercase;
 }
 
-.section.subpages .default-content-wrapper p {
+.section.subpage .default-content-wrapper p {
   color: #141414;
   display: block;
   font-family: 'Wigrum-Regular', sans-serif;
@@ -28,7 +28,7 @@ main .subpages > div {
   margin-top: 0rem; /* 8px */
 }
 
-.section.subpages .default-content-wrapper p > strong {
+.section.subpage .default-content-wrapper p > strong {
   color: #141414;
   display: block;
   font-family: 'Wigrum-Regular', sans-serif;
@@ -37,36 +37,36 @@ main .subpages > div {
   line-height: 20px;
 }
 
-.section.subpages .default-content-wrapper p picture {
+.section.subpage .default-content-wrapper p picture {
   display: flex;
   justify-content: center;
 }
 
-.section.subpages .default-content-wrapper p picture img,
+.section.subpage .default-content-wrapper p picture img,
 .video-wrapper video {
   max-width: 22.5625rem; /* 361px */
 }
 
 @media (min-width: 56.25rem) {
   /* 900px */
-  main .subpages > div {
+  main .subpage > div {
     max-width: 72rem; /* 1152px */
   }
 
-  .section.subpages .default-content-wrapper h2 {
+  .section.subpage .default-content-wrapper h2 {
     margin-top: 2.5rem; /* 60px */
   }
 
-  .section.subpages .default-content-wrapper p {
+  .section.subpage .default-content-wrapper p {
     font-size: 1.125rem !important; /* 18px */
   }
 
-  .section.subpages .default-content-wrapper p > strong {
+  .section.subpage .default-content-wrapper p > strong {
     font-size: 1.1875rem !important; /* 19px */
     margin-top: 1.875rem; /* 30px */
   }
 
-  .section.subpages .default-content-wrapper p picture img,
+  .section.subpage .default-content-wrapper p picture img,
   .video-wrapper video {
     max-width: 48.125rem; /* 770px */
     margin-bottom: 1rem; /* 30px */
