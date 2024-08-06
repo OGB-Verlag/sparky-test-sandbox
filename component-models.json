@@ -153,14 +153,14 @@
     "fields": [
       {
         "component": "aem-content",
-        "name": "content_buttonlinkheadline",
+        "name": "content_buttonlinkheadlineleft",
         "value": "",
         "label": "Button Link Headline",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_buttonlinkheadlineText",
+        "name": "content_buttonlinkheadlineleftText",
         "value": "",
         "label": "Button Text",
         "valueType": "string"
@@ -188,14 +188,14 @@
       },
       {
         "component": "aem-content",
-        "name": "content_buttonlinkcontentline",
+        "name": "content_buttonlinkcontentlineleft",
         "value": "",
         "label": "Button Link Content",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_buttonlinkcontentlineText",
+        "name": "content_buttonlinkcontentlineleftText",
         "value": "",
         "label": "Button Text",
         "valueType": "string"
@@ -207,14 +207,14 @@
     "fields": [
       {
         "component": "aem-content",
-        "name": "content_buttonlinkheadline",
+        "name": "content_buttonlinkheadlineright",
         "value": "",
         "label": "Button Link ",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_buttonlinkheadlineText",
+        "name": "content_buttonlinkheadlinerightText",
         "value": "",
         "label": "Button Text",
         "valueType": "string"
@@ -242,14 +242,14 @@
       },
       {
         "component": "aem-content",
-        "name": "content_buttonlinkcontentline",
+        "name": "content_buttonlinkcontentlineright",
         "value": "",
         "label": "Button Link",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_buttonlinkcontentlineText",
+        "name": "content_buttonlinkcontentlinerightText",
         "value": "",
         "label": "Button Text",
         "valueType": "string"
