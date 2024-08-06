@@ -203,18 +203,18 @@
     ]
   },
   {
-    "id": "life-stage-tlpr-v3",
+    "id": "life-stage-image-right",
     "fields": [
       {
         "component": "aem-content",
-        "name": "content_cta2",
+        "name": "content_buttonlinkheadline",
         "value": "",
-        "label": "Button-Link ",
+        "label": "Button Link ",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_cta2Text",
+        "name": "content_buttonlinkheadlineText",
         "value": "",
         "label": "Button Text",
         "valueType": "string"
@@ -241,22 +241,15 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "name": "content_bages",
-        "label": "Finanzierungsarten",
-        "required": false,
-        "multi": true
-      },
-      {
         "component": "aem-content",
-        "name": "content_cta",
+        "name": "content_buttonlinkcontentline",
         "value": "",
-        "label": "Button-Link",
+        "label": "Button Link",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "content_ctaText",
+        "name": "content_buttonlinkcontentlineText",
         "value": "",
         "label": "Button Text",
         "valueType": "string"
@@ -487,7 +480,7 @@
         "component": "aem-content",
         "name": "content_cta1",
         "value": "",
-        "label": "Button-Link",
+        "label": "Button Link",
         "valueType": "string"
       },
       {
